@@ -1,0 +1,149 @@
+{
+    "type": "generic",
+    "pools": [
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:player_head",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"Fossilized Skull\"}'},SkullOwner:{Id:[I;-790239721,-1986901244,-1080269818,-2007866811],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjQ1MTQ5YjNkZDk1M2U5YWU4NDM1ZDJmMGQ5OWEzZWQ4YWUwZDNlZGVmMzEzM2RkNWRlMGJjYTNiYzJiZmZiNyJ9fX0=\"}]}}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:player_head",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"Golden Skull\"}'},SkullOwner:{Id:[I;222827510,-293517993,-1565129656,1437317594],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI0YzEyOWJhOTZkMjM3YmE2NWY5ZTA2Mjk1OGQyN2FiYWFmY2IxYjQyMjkzMGI3MmUxYzUyZjBiYmRhYjkyIn19fQ==\"}]}}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:player_head",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"Shale Fossil (Shell)\"}'},SkullOwner:{Id:[I;983914072,-1390263354,-1822291092,559797102],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmIyYjQ1MTBkYjhiNDYzNWNlYmRjMTcxMTU0MjBmZjMyMzhlZGQ1YTRkNmUyYmVmMThhNzc4NTI2ODkzYTQ5OCJ9fX0=\"}]}}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:player_head",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"Shale Fossil (Dinosaur Skull)\"}'},SkullOwner:{Id:[I;-845320127,-1977531380,-1782117284,-2078809856],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmFiMDM5MTA4YTBlYzQ4ZTExN2Y4MDM2NzI4MTJiMDM3YzQ5ZjAzMjZjNzc3YjllOWUzMDM3ZjYyMDljMTI3YSJ9fX0=\"}]}}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:player_head",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"Ruby Geode\"}'},SkullOwner:{Id:[I;1004160703,-41401895,-1630229138,-1900243094],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjMzMzA4ZDY2MzQ0ZGZjOGQ2Mjg4ZWZlODE3YzllNWE5M2VjMmNiMjU1YmVjNjIxMmE0ZGM2YjQzODY2MTk4MiJ9fX0=\"}]}}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:player_head",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"Shale Fossil (Fish)\"}'},SkullOwner:{Id:[I;537917583,1733904601,-1154969748,-453867529],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzA3M2I1YjE2NDQzY2Y3ZDcxNzdjN2UyMTNlMmIyMjQ0MDZhMTlkZDU1Yjk0ZTU3OGMzM2Y2ODRjNmU1ODVlNiJ9fX0=\"}]}}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:player_head",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"Aquamarine Geode\"}'},SkullOwner:{Id:[I;1256752042,1783841091,-1931829350,-1926248510],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzRiZDkxODZmMDI1NWY0Nzg4NWVmZTFkN2UxYzdmMTI2MTg4ODUxMGU4ZDE4N2Q3ZmM0NWNkNzU1ODM5YjdkIn19fQ==\"}]}}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:filled_map",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"#12 - DEATH\",\"color\":\"gray\"}',Lore:['{\"text\":\"HEEEEEEEEELP\"}']},map:245}"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "bonus_rolls": 0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "archeology:ender_dragon_shard"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "archeology:creeper_shard"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "archeology:shovel_shard"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "archeology:temple_shard"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "archeology:hoe_shard"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "archeology:propagule_shard"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "archeology:slime_shard"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "archeology:diamond_shard"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "archeology:sun_shard"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "archeology:sword_shard"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "archeology:axe_shard"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "archeology:emerald_shard"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "archeology:snowflake_shard"
+                }
+            ]
+        }
+    ]
+}

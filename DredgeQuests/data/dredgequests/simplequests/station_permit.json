@@ -1,0 +1,62 @@
+{
+  "category": "dredgequests:world_of_dredge",
+  "task": "Create a bus station permit",
+  "icon": {
+    "item": "minecraft:paper"
+  },
+  "repeat_delay": 1,
+  "type": "simplequests:quest",
+  "loot_table": "dredgequests:bus_permit",
+  "entries": {
+    "Iron": {
+      "id": "simplequests:item",
+      "predicate": {
+        "items": [
+          "minecraft:iron_ingot"
+        ]
+      },
+      "amount": 64,
+      "consumeItems": true
+    },
+    "Quartz": {
+      "id": "simplequests:item",
+      "predicate": {
+        "items": [
+          "minecraft:quartz"
+        ]
+      },
+      "amount": 64,
+      "consumeItems": true
+    },
+    "Smooth Stone": {
+      "id": "simplequests:item",
+      "predicate": {
+        "items": [
+          "minecraft:smooth_stone"
+        ]
+      },
+      "amount": 64,
+      "consumeItems": true
+    },
+    "Glass": {
+      "id": "simplequests:item",
+      "predicate": {
+        "items": [
+          "minecraft:glass"
+        ]
+      },
+      "amount": 32,
+      "consumeItems": true
+    },
+    "Spruce Logs": {
+      "id": "simplequests:item",
+      "predicate": {
+        "items": [
+          "minecraft:spruce_log"
+        ]
+      },
+      "amount": 32,
+      "consumeItems": true
+    }
+  }
+}

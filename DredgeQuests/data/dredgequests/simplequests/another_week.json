@@ -1,0 +1,11 @@
+{
+  "category": "dredgequests:world_of_dredge",
+  "task": "Survive Another Week",
+  "icon": {
+    "item": "minecraft:echo_shard"
+  },
+  "repeat_delay": "1w",
+  "type": "simplequests:quest",
+  "loot_table": "dredgequests:remnant",
+  "entries": {}
+}

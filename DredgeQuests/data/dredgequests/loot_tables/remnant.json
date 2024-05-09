@@ -1,0 +1,21 @@
+{
+    "type": "generic",
+    "pools": [
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:echo_shard",
+                    "functions": [
+                        {
+                          "function": "set_nbt",
+                          "tag": "{display:{Name:'{\"text\":\"Remnant\",\"color\":\"blue\",\"bold\":true,\"italic\":false,\"underlined\":true}',Lore:['{\"text\":\"All that is left of what is now long, long dead.\"}','{\"text\":\"Holds magical significance, so is often used as currency.\"}']},Enchantments:[{}]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

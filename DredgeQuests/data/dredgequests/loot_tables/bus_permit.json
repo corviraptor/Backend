@@ -1,0 +1,21 @@
+{
+    "type": "generic",
+    "pools": [
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:paper",
+                    "functions": [
+                        {
+                          "function": "set_nbt",
+                          "tag": "{display:{Name:'{\"text\":\"Bus Station Permit\",\"italic\":true}',Lore:['{\"text\":\"Submit this at the bus in Flotsam\"}','{\"text\":\"to request a new bus station anywhere!\"}']},Enchantments:[{}]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
