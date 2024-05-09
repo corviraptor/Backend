@@ -1,0 +1,21 @@
+{
+    "name": "Earth Imp",
+    "description": "Born from the deepest crevasses, you embody the essence of earth.",
+    "powers": [
+        "imps_dredge:earthimp/hardhands",
+        "imps_dredge:earthimp/armorplating",
+        "imps_dredge:earthimp/cave_vision",
+        "imps_dredge:earthimp/lithovore",
+        "imps_dredge:earthimp/earthimp_nofood",
+        "imps_dredge:waterdamage",
+        "imps_dredge:raindamage",
+        "imps_dredge:earthimp/armormeter/armormeter_hud",
+        "imps_dredge:earthimp/armormeter/armormeter_drain",
+        "imps_dredge:earthimp/armormeter/armormeter_effect",
+        "imps_dredge:heatmeter/heatmeter_waterdamage"
+    ],
+    "icon": {
+        "item": "quartz"
+    },
+    "impact": 3
+}

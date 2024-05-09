@@ -1,0 +1,19 @@
+{
+    "replace": false,
+    "origins": [
+        "dredgeorigins:calamari",
+        "dredgeorigins:beevory",
+        "dredgeorigins:dev",
+        "dredgeorigins:kibby",
+        "dredgeorigins:feline",
+        "dredgeorigins:zombie",
+        "dredgeorigins:slime_no_tint",
+        "dredgeorigins:squid",
+        "dredgeorigins:creeper",
+        "dredgeorigins:goat",
+        "dredgeorigins:wolverine",
+        "dredgeorigins:phantom",
+        "dredgeorigins:cumulus",
+        "dredgeorigins:giant"
+    ]
+}

@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "origins:climbing",
+    "origins:master_of_webs",
+    "origins:carnivore",
+    "origins:fragile",
+    "origins:arthropod",
+    "dredgeorigins:arachnid/spiders_ignore"
+  ],
+  "icon": {
+    "item": "minecraft:cobweb"
+  },
+  "order": 1,
+  "impact": 1,
+  "loading_priority": 10
+}

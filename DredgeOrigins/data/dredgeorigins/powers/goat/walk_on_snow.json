@@ -1,0 +1,5 @@
+{
+  "name": "Light Weight",
+  "description":"Your small size and large, hoofed feet stop you from sinking in powder snow.",
+  "type": "dredgeclient:walk_on_snow"
+}

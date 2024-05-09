@@ -1,0 +1,172 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "l0": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:earthimp/armormeter/armormeter_hud",
+                    "comparison": ">=",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:earthimp/armormeter/armormeter_hud",
+                    "comparison": "<",
+                    "compare_to": 10
+                }
+            ]
+        },
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": -0.05
+        }
+    },
+    "l0_": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:earthimp/armormeter/armormeter_hud",
+                    "comparison": ">=",
+                    "compare_to": 10
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:earthimp/armormeter/armormeter_hud",
+                    "comparison": "<",
+                    "compare_to": 20
+                }
+            ]
+        },
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": -0.1
+        }
+    },
+    "l0__": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:earthimp/armormeter/armormeter_hud",
+                    "comparison": ">=",
+                    "compare_to": 20
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:earthimp/armormeter/armormeter_hud",
+                    "comparison": "<",
+                    "compare_to": 30
+                }
+            ]
+        },
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": -0.15
+        }
+    },
+    "l0___": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:earthimp/armormeter/armormeter_hud",
+                    "comparison": ">=",
+                    "compare_to": 30
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:earthimp/armormeter/armormeter_hud",
+                    "comparison": "<",
+                    "compare_to": 40
+                }
+            ]
+        },
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": -0.2
+        }
+    },
+    "l0____": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:earthimp/armormeter/armormeter_hud",
+                    "comparison": ">=",
+                    "compare_to": 40
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:earthimp/armormeter/armormeter_hud",
+                    "comparison": "<",
+                    "compare_to": 50
+                }
+            ]
+        },
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": -0.25
+        }
+    },
+    "l0_____": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:earthimp/armormeter/armormeter_hud",
+                    "comparison": ">=",
+                    "compare_to": 50
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:earthimp/armormeter/armormeter_hud",
+                    "comparison": "<",
+                    "compare_to": 60
+                }
+            ]
+        },
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": -0.3
+        }
+    },
+    "l0______": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:earthimp/armormeter/armormeter_hud",
+                    "comparison": ">=",
+                    "compare_to": 60
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:earthimp/armormeter/armormeter_hud",
+                    "comparison": "<=",
+                    "compare_to": 70
+                }
+            ]
+        },
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": -0.35
+        }
+    }
+}

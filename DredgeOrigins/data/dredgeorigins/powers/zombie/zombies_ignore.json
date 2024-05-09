@@ -1,0 +1,9 @@
+{
+  "name": "One of Them",
+  "description": "You're one with other zombies. They'll ignore your presence.",
+  "type": "apugli:mobs_ignore",
+  "mob_condition": {
+    "type": "origins:entity_group",
+    "group": "undead"
+  }
+}

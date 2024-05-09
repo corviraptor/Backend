@@ -1,0 +1,214 @@
+{
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 80,
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+            "bar_index": 14,
+            "condition": {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:nbt",
+                    "nbt": "{homeRun: 1b}"
+                }
+            }
+        }
+    },
+    "reset-resource": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "dredgetrinkets:home_run_bat_resource",
+                    "operation": "set",
+                    "change": 0
+                },
+                {
+                    "type": "origins:modify_inventory",
+                    "item_condition": {
+                        "type": "origins:nbt",
+                        "nbt": "{homeRun: 1b}"
+                    },
+                    "item_action": {
+                        "type": "origins:modify",
+                        "modifier": "dredgetrinkets:knockback2"
+                    }
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:moving"
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:nbt",
+                        "nbt": "{homeRun: 1b}"
+                    },
+                    "inverted": true
+                }
+            ]
+        },
+        "interval": 5
+    },
+    "inc-resource": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "dredgetrinkets:home_run_bat_resource",
+            "operation": "add",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:moving",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:nbt",
+                        "nbt": "{homeRun: 1b}"
+                    }
+                }
+            ]
+        },
+        "interval": 5
+    },
+    "set-knockback": {
+        "type": "origins:active_self",
+        "cooldown": 10,
+        "key": {
+            "key": "key.sneak",
+            "continuous": true
+        },
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "dredgetrinkets:home_run_bat_resource",
+                        "comparison": ">=",
+                        "compare_to": "80"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "item_condition": {
+                                    "type": "origins:nbt",
+                                    "nbt": "{homeRun: 1b}"
+                                },
+                                "item_action": {
+                                    "type": "origins:modify",
+                                    "modifier": "dredgetrinkets:knockback10"
+                                }
+                            },
+                            {
+                                "type": "origins:swing_hand"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "dredgetrinkets:home_run_bat_resource",
+                        "comparison": ">=",
+                        "compare_to": "50"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "item_condition": {
+                                    "type": "origins:nbt",
+                                    "nbt": "{homeRun: 1b}"
+                                },
+                                "item_action": {
+                                    "type": "origins:modify",
+                                    "modifier": "dredgetrinkets:knockback7"
+                                }
+                            },
+                            {
+                                "type": "origins:swing_hand"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "dredgetrinkets:home_run_bat_resource",
+                        "comparison": ">=",
+                        "compare_to": "30"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "item_condition": {
+                                    "type": "origins:nbt",
+                                    "nbt": "{homeRun: 1b}"
+                                },
+                                "item_action": {
+                                    "type": "origins:modify",
+                                    "modifier": "dredgetrinkets:knockback5"
+                                }
+                            },
+                            {
+                                "type": "origins:swing_hand"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "dredgetrinkets:home_run_bat_resource",
+                        "comparison": ">=",
+                        "compare_to": "10"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "item_condition": {
+                                    "type": "origins:nbt",
+                                    "nbt": "{homeRun: 1b}"
+                                },
+                                "item_action": {
+                                    "type": "origins:modify",
+                                    "modifier": "dredgetrinkets:knockback3"
+                                }
+                            },
+                            {
+                                "type": "origins:swing_hand"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

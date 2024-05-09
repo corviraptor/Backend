@@ -1,0 +1,22 @@
+{
+  "type": "origins:active_self",
+  "name": "Quick Swimmer",
+  "description": "You can swim faster to dash away from danger in a pinch.",
+  "cooldown": 600,
+  "hud_render": {
+    "should_render": true,
+    "bar_index": 1
+  },
+  "condition": {
+    "type": "origins:swimming"
+  },
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effect": {
+      "effect": "minecraft:dolphins_grace",
+      "duration": 300,
+      "amplifier": 2,
+      "show_particles": false
+    }
+  }
+}

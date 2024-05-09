@@ -1,0 +1,36 @@
+{
+    "name": "Living Conduit",
+    "description": "Your spark confers natural conduit powers. You also have the ability to swim freely in the Overworld, and your heat meter will not decrease.",
+    "condition": {
+        "type": "origins:fluid_height",
+        "fluid": "water",
+        "comparison": ">",
+        "compare_to": 0
+    },
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:apply_effect",
+                "effects": [
+                    {
+                        "effect": "minecraft:conduit_power",
+                        "duration": 200,
+                        "amplifier": 0,
+                        "show_particles": false,
+                        "show_icon": true
+                    },
+                    {
+                        "effect": "minecraft:dolphins_grace",
+                        "duration": 200,
+                        "amplifier": 0,
+                        "show_particles": false,
+                        "show_icon": true
+                    }
+                ]
+            }
+        ]
+    }
+}

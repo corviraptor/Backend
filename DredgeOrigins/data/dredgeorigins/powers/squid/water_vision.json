@@ -1,0 +1,15 @@
+{
+  "name": "Water Vision",
+  "description": "You can see perfectly underwater (toggleable with secondary action).",
+  "type": "origins:toggle_night_vision",
+  "strength": 1.0,
+  "condition": {
+    "type": "origins:submerged_in",
+    "fluid": "minecraft:water"
+  },
+  "active_by_default": true,
+  "key": {
+    "key": "key.origins.secondary_active",
+    "continuous": false
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Insulated",
+  "description": "You don't take damage from powder snow.",
+  "type": "origins:invulnerability",
+  "damage_condition": {
+    "type": "origins:name",
+    "name": "freeze"
+  }
+}

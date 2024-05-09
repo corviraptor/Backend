@@ -1,0 +1,19 @@
+{
+  "name": "Enemy of Birds",
+  "description": "You can't digest any meat, other than chicken and eggs.",
+  "type": "origins:prevent_item_use",
+  "item_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "dredgeorigins:not_cumulus_food"
+        }
+      },
+      {
+        "type": "origins:food"
+      }
+    ]
+  }
+}

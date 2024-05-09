@@ -1,0 +1,9 @@
+{
+    "name": "Lithovore",
+    "description": "Your diet is mineral-based. Eat netherrack, quartz, gold nuggets, or Netherite scrap using the [Primary Action] key.",
+    "hidden": true,
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:food"
+    }
+}

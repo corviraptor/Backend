@@ -1,0 +1,104 @@
+{
+    "name": "Armor Plating",
+    "description": "Nether rock consumption confers slight damage reduction. Press the [Primary Action] key while holding basalt, blackstone, or gilded blackstone to consume it.",
+    "type": "origins:multiple",
+    "l0": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": [
+                            {
+                                "item": "minecraft:blackstone"
+                            },
+                            {
+                                "item": "minecraft:basalt"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:earthimp/armormeter/armormeter_hud",
+                    "comparison": "!=",
+                    "compare_to": 70
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "imps_dredge:earthimp/armormeter/armormeter_hud",
+                    "change": 2,
+                    "operation": "add"
+                },
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    }
+                }
+            ]
+        },
+        "cooldown": 1,
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "l0_": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:gilded_blackstone"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:earthimp/armormeter/armormeter_hud",
+                    "comparison": "<=",
+                    "compare_to": 60
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "imps_dredge:earthimp/armormeter/armormeter_hud",
+                    "change": 10,
+                    "operation": "add"
+                },
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    }
+                }
+            ]
+        },
+        "cooldown": 1,
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    }
+}

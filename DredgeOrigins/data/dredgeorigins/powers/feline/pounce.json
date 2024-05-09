@@ -1,0 +1,47 @@
+{
+    "type": "origins:active_self",
+    "cooldown": 140,
+    "hud_render": {
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar_index": 20
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:add_velocity",
+                "x": 0,
+                "y": 0.2,
+                "z": 1.2,
+                "space": "local",
+                "set": true
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.blaze.shoot",
+                "volume": 1,
+                "pitch": 2
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "particle minecraft:poof ~ ~ ~ 0.6 0.02 0.6 0.1 10"
+            }
+        ]
+    },
+    "key": {
+        "key": "key.jump"
+    },
+    "condition": {
+        "type": "origins:on_block",
+        "inverted": true
+    },
+    "name": "Pounce",
+    "description": "Spring into the air and leap forwards in an arc.",
+    "badges": [
+        {
+            "type": "origins:keybind",
+            "sprite": "origins:textures/gui/badge/active.png",
+            "text": "Active ability, press %s while airborne to activate."
+        }
+    ]
+}

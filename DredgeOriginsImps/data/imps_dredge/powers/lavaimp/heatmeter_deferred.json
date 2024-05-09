@@ -1,0 +1,80 @@
+{
+    "name": "Extra Spark Maintenance",
+    "description": "Your birthplace necessitates that you remain warmer than most other imps. You can be outside of the Nether for less time as a result.",
+    "loading_priority": 1,
+    "type": "origins:multiple",
+    "l0": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:dimension",
+                    "dimension": "minecraft:the_nether"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:material",
+                                "materials": [
+                                    "lava",
+                                    "fire",
+                                    "portal"
+                                ]
+                            },
+                            {
+                                "type": "origins:block",
+                                "block": "magma_block"
+                            }
+                        ]
+                    },
+                    "radius": 10,
+                    "shape": "cube",
+                    "comparison": ">=",
+                    "compare_to": 1
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "imps_dredge:heatmeter/heatmeter_hud",
+            "change": -1,
+            "operation": "add"
+        }
+    },
+    "l1": {
+        "condition": {
+            "type": "origins:dimension",
+            "dimension": "minecraft:the_nether"
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "imps_dredge:heatmeter/heatmeter_hud",
+                    "change": 900,
+                    "operation": "add"
+                }
+            ]
+        }
+    },
+    "l2": {
+        "type": "origins:action_on_callback",
+        "execute_chosen_when_orb": false,
+        "entity_action_respawned": {
+            "type": "origins:change_resource",
+            "resource": "imps_dredge:heatmeter/heatmeter_hud",
+            "change": 750,
+            "operation": "set"
+        }
+    }
+}

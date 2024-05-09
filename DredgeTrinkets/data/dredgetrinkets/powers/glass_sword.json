@@ -1,0 +1,287 @@
+{
+    "type": "origins:multiple",
+    "glass-resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 4,
+        "hud_render": {
+            "should_render": false
+        },
+        "max_action": {
+            "type": "origins:change_resource",
+            "resource": "dredgetrinkets:glass_sword_glass-resource",
+            "operation": "set",
+            "change": 0
+        },
+        "min_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:block.beacon.deactivate",
+            "pitch": 1.1,
+            "volume": 0.5
+        }
+    },
+    "reset-glass-resource": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "dredgetrinkets:glass_sword_glass-resource",
+            "operation": "set",
+            "change": 0
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:nbt",
+                "nbt": "{glassSword: 1b}"
+            },
+            "inverted": true
+        },
+        "interval": 1
+    },
+    "level-1": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.attack_damage",
+            "operation": "addition",
+            "value": 1
+        },
+        "tick_rate": 5,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "dredgetrinkets:glass_sword_glass-resource",
+            "comparison": "==",
+            "compare_to": 1
+        }
+    },
+    "level-2": {
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.attack_damage",
+                "operation": "addition",
+                "value": 1
+            },
+            {
+                "attribute": "additionalentityattributes:critical_bonus_damage",
+                "operation": "addition",
+                "value": 0.5
+            }
+        ],
+        "tick_rate": 5,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "dredgetrinkets:glass_sword_glass-resource",
+            "comparison": "==",
+            "compare_to": 2
+        }
+    },
+    "level-3": {
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.attack_damage",
+                "operation": "addition",
+                "value": 2
+            },
+            {
+                "attribute": "additionalentityattributes:critical_bonus_damage",
+                "operation": "addition",
+                "value": 0.5
+            }
+        ],
+        "tick_rate": 5,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "dredgetrinkets:glass_sword_glass-resource",
+            "comparison": "==",
+            "compare_to": 3
+        }
+    },
+    "break-sword": {
+        "type": "origins:self_action_on_hit",
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:nbt",
+                "nbt": "{glassSword: 1b}"
+            }
+        },
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "dredgetrinkets:glass_sword_glass-resource",
+                        "comparison": "==",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:chance",
+                        "action": {
+                            "type": "origins:and",
+                            "actions": [
+                                {
+                                    "type": "origins:replace_inventory",
+                                    "slot": "weapon.mainhand",
+                                    "stack": {
+                                        "item": "minecraft:prismarine_crystals",
+                                        "tag": "{display:{Name:'{\"text\":\"Shards of the Blade\",\"color\":\"dark_aqua\",\"bold\":true}',Lore:['{\"text\":\"It is unusable like this. \"}','{\"text\":\"Perhaps it can be fixed?\"}']},CustomModelData:555013,brokenGlassSword:1b,AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:-1,Operation:0,UUID:[I;-2021409770,768492633,-1610433680,1947832016],Slot:\"mainhand\"}]}"
+                                    },
+                                    "item_condition": {
+                                        "type": "origins:nbt",
+                                        "nbt": "{glassSword: 1b}"
+                                    }
+                                },
+                                {
+                                    "type": "origins:play_sound",
+                                    "sound": "minecraft:block.glass.break",
+                                    "pitch": 0.5
+                                }
+                            ]
+                        },
+                        "chance": 0.05
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "dredgetrinkets:glass_sword_glass-resource",
+                        "comparison": "==",
+                        "compare_to": 2
+                    },
+                    "action": {
+                        "type": "origins:chance",
+                        "action": {
+                            "type": "origins:and",
+                            "actions": [
+                                {
+                                    "type": "origins:replace_inventory",
+                                    "slot": "weapon.mainhand",
+                                    "stack": {
+                                        "item": "minecraft:prismarine_crystals",
+                                        "tag": "{display:{Name:'{\"text\":\"Shards of the Blade\",\"color\":\"dark_aqua\",\"bold\":true}',Lore:['{\"text\":\"It is unusable like this. \"}','{\"text\":\"Perhaps it can be fixed?\"}']},CustomModelData:555013,brokenGlassSword:1b,AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:-1,Operation:0,UUID:[I;-2021409770,768492633,-1610433680,1947832016],Slot:\"mainhand\"}]}"
+                                    },
+                                    "item_condition": {
+                                        "type": "origins:nbt",
+                                        "nbt": "{glassSword: 1b}"
+                                    }
+                                },
+                                {
+                                    "type": "origins:play_sound",
+                                    "sound": "minecraft:block.glass.break",
+                                    "pitch": 0.5
+                                }
+                            ]
+                        },
+                        "chance": 0.1
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "dredgetrinkets:glass_sword_glass-resource",
+                        "comparison": "==",
+                        "compare_to": 3
+                    },
+                    "action": {
+                        "type": "origins:chance",
+                        "action": {
+                            "type": "origins:and",
+                            "actions": [
+                                {
+                                    "type": "origins:replace_inventory",
+                                    "slot": "weapon.mainhand",
+                                    "stack": {
+                                        "item": "minecraft:prismarine_crystals",
+                                        "tag": "{display:{Name:'{\"text\":\"Shards of the Blade\",\"color\":\"dark_aqua\",\"bold\":true}',Lore:['{\"text\":\"It is unusable like this. \"}','{\"text\":\"Perhaps it can be fixed?\"}']},CustomModelData:555013,brokenGlassSword:1b,AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:-1,Operation:0,UUID:[I;-2021409770,768492633,-1610433680,1947832016],Slot:\"mainhand\"}]}"
+                                    },
+                                    "item_condition": {
+                                        "type": "origins:nbt",
+                                        "nbt": "{glassSword: 1b}"
+                                    }
+                                },
+                                {
+                                    "type": "origins:play_sound",
+                                    "sound": "minecraft:block.glass.break",
+                                    "pitch": 0.5
+                                }
+                            ]
+                        },
+                        "chance": 0.2
+                    }
+                }
+            ]
+        }
+    },
+    "level-up": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.use"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "dredgetrinkets:glass_sword_glass-resource",
+                    "change": 1
+                },
+                {
+                    "type": "origins:if_else_list",
+                    "actions": [
+                        {
+                            "condition": {
+                                "type": "origins:resource",
+                                "resource": "dredgetrinkets:glass_sword_glass-resource",
+                                "comparison": "==",
+                                "compare_to": 1
+                            },
+                            "action": {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.grindstone.use",
+                                "pitch": 0.2
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:resource",
+                                "resource": "dredgetrinkets:glass_sword_glass-resource",
+                                "comparison": "==",
+                                "compare_to": 2
+                            },
+                            "action": {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.grindstone.use",
+                                "pitch": 0.6
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:resource",
+                                "resource": "dredgetrinkets:glass_sword_glass-resource",
+                                "comparison": "==",
+                                "compare_to": 3
+                            },
+                            "action": {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.grindstone.use",
+                                "pitch": 1.0
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:nbt",
+                "nbt": "{glassSword: 1b}"
+            }
+        }
+    }
+}

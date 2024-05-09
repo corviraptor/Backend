@@ -1,0 +1,29 @@
+{
+    "name": "Water Damage",
+    "description": "Water is too cold for you! Stay out of it, or take damage.",
+    "hidden": true,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "inverted": true,
+                "type": "origins:dimension",
+                "dimension": "minecraft:the_nether"
+            },
+            {
+                "type": "origins:fluid_height",
+                "fluid": "water",
+                "comparison": ">",
+                "compare_to": 0
+            }
+        ]
+    },
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "imps_dredge:heatmeter/heatmeter_hud",
+        "change": -30,
+        "operation": "add"
+    }
+}

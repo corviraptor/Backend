@@ -1,0 +1,22 @@
+{
+  "type": "origins:multiple",
+  "toggle": {
+    "type": "origins:toggle",
+    "key": {
+      "key": "key.origins.ternary_active"
+    }
+  },
+  "invul": {
+    "type": "origins:modify_damage_taken",
+    "modifier": {
+      "operation": "set_total",
+      "value": 0
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_toggle"
+    }
+  },
+  "name": "No Damage",
+  "description": "You take no damage"
+}

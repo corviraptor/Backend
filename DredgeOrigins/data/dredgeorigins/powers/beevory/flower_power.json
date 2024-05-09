@@ -1,0 +1,26 @@
+{
+    "name": "Flower Power",
+    "description": "When near multiple flowers, you gain regeneration.",
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:regeneration",
+            "duration": 200,
+            "amplifier": 0,
+            "show_particles": false
+        }
+    },
+    "interval": 40,
+    "condition": {
+        "type": "origins:block_in_radius",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:flowers"
+        },
+        "radius": "3",
+        "shape": "cube",
+        "comparison": ">=",
+        "compare_to": 3
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Gallop",
+  "description": "You're quick on your feet. Your base speed is 10% faster.",
+  "type": "origins:modify_attribute",
+  "attribute": "minecraft:generic.movement_speed",
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "value": "0.1"
+  }
+}

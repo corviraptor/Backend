@@ -1,0 +1,19 @@
+{
+    "name": "Pescetarian",
+    "description": "You can't digest any meat, other than fish.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "origins:notbirdfood"
+                }
+            },
+            {
+                "type": "origins:food"
+            }
+        ]
+    }
+}

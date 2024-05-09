@@ -1,0 +1,23 @@
+{
+    "name": "Air Imp",
+    "description": "Born from the highest peaks of the Basalt Deltas, you embody the essence of air.",
+    "powers": [
+        "imps_dredge:waterdamage",
+        "imps_dredge:raindamage",
+        "imps_dredge:heatmeter/heatmeter_waterdamage",
+        "imps_dredge:airimp/updraft",
+        "imps_dredge:airimp/wings",
+        "imps_dredge:airimp/slowfall",
+        "imps_dredge:airimp/elytra_flight_resource",
+        "imps_dredge:airimp/elytra_flight_resource_depletion",
+        "imps_dredge:airimp/elytra_flight",
+        "imps_dredge:airimp/unaware",
+        "imps_dredge:nethercuisine",
+        "imps_dredge:airimp/noenchant",
+        "imps_dredge:airimp/nocrit"
+    ],
+    "icon": {
+        "item": "minecraft:feather"
+    },
+    "impact": 3
+}

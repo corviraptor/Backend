@@ -1,0 +1,17 @@
+{
+  "powers": [
+    "moborigins:undead",
+    "moborigins:zombie_hunger",
+    "origins:carnivore",
+    "dredgeorigins:zombie/strong_fists",
+    "dredgeorigins:zombie/bad_swimmer",
+    "dredgeorigins:zombie/poison_immunity",
+    "dredgeorigins:zombie/base_armor",
+    "dredgeorigins:zombie/zombies_ignore"
+  ],
+  "icon": "minecraft:rotten_flesh",
+  "order": 0,
+  "impact": 1,
+  "name": "Zombie",
+  "description": "This classic undead creature craves meat. They don't handle sunlight or water all too well though."
+}

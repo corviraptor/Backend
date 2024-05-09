@@ -1,0 +1,13 @@
+{
+    "powers": [
+        "dredgeorigins:dev/flying",
+        "dredgeorigins:dev/cant_die",
+        "dredgeorigins:dev/cant_heal",
+        "dredgeorigins:dev/cant_hurt",
+        "dredgeorigins:dev/sacks"
+    ],
+    "icon": "minecraft:red_wool",
+    "unchoosable": true,
+    "name": "Admin",
+    "description": "Bundle of a few useful powers for admins to use in survival."
+}

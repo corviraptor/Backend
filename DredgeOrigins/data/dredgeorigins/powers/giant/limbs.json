@@ -1,0 +1,25 @@
+{
+  "type": "origins:multiple",
+  "name": "Hefty Legs",
+  "description": "You move 10% slower than a regular human, but you cannot slip on ice.",
+  "slowness": {
+    "type": "origins:attribute",
+    "modifier": {
+      "name": "Hefty Legs",
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "multiply_base",
+      "value": -0.1
+    }
+  },
+  "ice_slip": {
+    "type": "origins:modify_slipperiness",
+    "modifier": {
+      "operation": "addition",
+      "value": -0.38
+    },
+    "block_condition": {
+      "type": "origins:in_tag",
+      "tag": "ice"
+    }
+  }
+}

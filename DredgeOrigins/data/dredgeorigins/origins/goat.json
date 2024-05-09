@@ -1,0 +1,19 @@
+{
+  "name": "Goat",
+  "description": "These headstrong goatfolk pack a punch. Well suited for the cold, they don't do too well in the heat.",
+  "powers": [
+    "dredgeorigins:goat/leap",
+    "dredgeorigins:goat/horn_damage",
+    "dredgeorigins:goat/brace",
+    "dredgeorigins:goat/insulated",
+    "dredgeorigins:goat/walk_on_snow",
+    "dredgeorigins:goat/gallop",
+    "dredgeorigins:goat/small",
+    "dredgeorigins:goat/browser"
+  ],
+  "order": 6,
+  "impact": 2,
+  "icon": {
+    "item": "minecraft:goat_horn"
+  }
+}

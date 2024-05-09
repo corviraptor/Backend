@@ -1,0 +1,19 @@
+{
+  "type": "origins:multiple",
+  "toggle": {
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "key": {
+      "key": "key.origins.secondary_active"
+    }
+  },
+  "no_regen": {
+    "type": "origins:disable_regen",
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_toggle"
+    }
+  },
+  "name": "Cannot Regen",
+  "description": "You cannot regen health (off by default)."
+}

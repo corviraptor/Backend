@@ -1,0 +1,68 @@
+{
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 6,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "reset-comfort-resource": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "dredgetrinkets:comfort_pebble_resource",
+            "operation": "set",
+            "change": 0
+        },
+        "condition": {
+            "type": "origins:sneaking",
+            "inverted": true
+        },
+        "interval": 10
+    },
+    "add-comfort-resource": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "dredgetrinkets:comfort_pebble_resource",
+            "operation": "add",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:nbt",
+                        "nbt": "{comfort: 1b}"
+                    }
+                }
+            ]
+        },
+        "interval": 10
+    },
+    "apply-effects": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:regeneration",
+                "duration": 20
+            }
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "dredgetrinkets:comfort_pebble_resource",
+            "comparison": "==",
+            "compare_to": 6
+        },
+        "interval": 10
+    }
+}

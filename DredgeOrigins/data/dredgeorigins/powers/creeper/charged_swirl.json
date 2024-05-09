@@ -1,0 +1,9 @@
+{
+  "type": "apugli:energy_swirl",
+  "texture_location": "minecraft:textures/entity/creeper/creeper_armor.png",
+  "condition": {
+    "type": "apugli:status_effect_tag",
+    "tag": "apugli:charged_effects"
+  },
+  "hidden": true
+}

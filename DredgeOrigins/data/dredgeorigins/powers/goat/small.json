@@ -1,0 +1,11 @@
+{
+  "name": "Small",
+  "description": "You have 2 less hearts than humans.",
+  "type": "origins:attribute",
+  "modifier": {
+    "attribute": "minecraft:generic.max_health",
+    "operation": "addition",
+    "value": -4
+  },
+  "update_health": true
+}

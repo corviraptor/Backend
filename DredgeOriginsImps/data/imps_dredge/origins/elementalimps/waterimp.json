@@ -1,0 +1,17 @@
+{
+    "name": "Water Imp",
+    "description": "Born from scalding undersea vents, you embody the essence of water.",
+    "powers": [
+        "imps_dredge:waterimp/livingconduit",
+        "imps_dredge:waterimp/hydropump",
+        "imps_dredge:waterimp/luckycoral",
+        "imps_dredge:waterimp/shellarmor",
+        "imps_dredge:waterimp/eat_fish",
+        "imps_dredge:waterimp/armorrestriction",
+        "imps_dredge:waterimp/seaglasscannon"
+    ],
+    "icon": {
+        "item": "minecraft:heart_of_the_sea"
+    },
+    "impact": 3
+}

@@ -1,0 +1,16 @@
+{
+    "hidden": true,
+    "type": "origins:action_when_damage_taken",
+    "damage_condition": {
+        "type": "origins:amount",
+        "comparison": ">=",
+        "compare_to": 4
+    },
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "imps_dredge:earthimp/armormeter/armormeter_hud",
+        "change": -10,
+        "operation": "add"
+    },
+    "cooldown": 1
+}

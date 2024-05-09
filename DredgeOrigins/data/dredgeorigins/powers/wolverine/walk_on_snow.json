@@ -1,0 +1,5 @@
+{
+  "name": "Light Weight",
+  "description":"Your hunting prowess allows you to walk on snow.",
+  "type": "dredgeclient:walk_on_snow"
+}

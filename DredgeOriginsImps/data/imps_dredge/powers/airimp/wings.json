@@ -1,0 +1,13 @@
+{
+    "name": "Featherlight",
+    "description": "You don't take as much fall damage as other imps do and fall slightly slower.",
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:from_falling"
+    },
+    "modifier": {
+        "operation": "multiply_total_additive",
+        "value": -0.25,
+        "name": "fall_damage_reduction"
+    }
+}

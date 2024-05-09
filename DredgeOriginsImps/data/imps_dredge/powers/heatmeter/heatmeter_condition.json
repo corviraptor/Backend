@@ -1,0 +1,74 @@
+{
+    "name": "Spark Maintenance",
+    "description": "In the overworld, you must be by a source of heat to survive. Burn fuel with the [Primary Action] key or stay near fire/lava.",
+    "type": "origins:multiple",
+    "l0": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:dimension",
+                    "dimension": "minecraft:the_nether"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:material",
+                                "materials": [
+                                    "lava",
+                                    "fire",
+                                    "portal"
+                                ]
+                            },
+                            {
+                                "type": "origins:block",
+                                "block": "magma_block"
+                            }
+                        ]
+                    },
+                    "radius": 10,
+                    "shape": "cube",
+                    "comparison": ">=",
+                    "compare_to": 1
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "imps_dredge:heatmeter/heatmeter_hud",
+            "change": -2,
+            "operation": "add"
+        }
+    },
+    "l1": {
+        "condition": {
+            "type": "origins:dimension",
+            "dimension": "minecraft:the_nether"
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "imps_dredge:heatmeter/heatmeter_hud",
+            "change": 900,
+            "operation": "add"
+        }
+    },
+    "l2": {
+        "type": "origins:action_on_callback",
+        "execute_chosen_when_orb": false,
+        "entity_action_respawned": {
+            "type": "origins:change_resource",
+            "resource": "imps_dredge:heatmeter/heatmeter_hud",
+            "change": 750,
+            "operation": "set"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "powers": [
+    "origins:water_breathing",
+    "dredgeorigins:squid/dash",
+    "dredgeorigins:squid/ink_cloud",
+    "dredgeorigins:squid/pescetarian",
+    "dredgeorigins:squid/unsteady_legs",
+    "dredgeorigins:squid/water_vision",
+    "origins:air_from_potions",
+    "origins:like_water",
+    "dredgeorigins:squid/aquatic",
+    "origins:conduit_power_on_land"
+  ],
+  "icon": "minecraft:ink_sac",
+  "order": 10,
+  "impact": 2,
+  "name": "Squid",
+  "description": "This passive underwater creature can protect itself with a cloud of ink and a burst of speed."
+}

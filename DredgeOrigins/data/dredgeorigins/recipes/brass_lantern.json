@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BTB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "architects_palette:nether_brass_nugget"
+    },
+    "T": {
+      "item": "minecraft:torch"
+    }
+  },
+  "result": {
+    "item": "supplementaries:brass_lantern",
+    "count": 1
+  }
+}

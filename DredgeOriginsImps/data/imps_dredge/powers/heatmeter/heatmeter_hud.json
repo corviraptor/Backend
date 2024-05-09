@@ -1,0 +1,14 @@
+{
+    "name": "lowers meter in not nether",
+    "description": "tempy ture",
+    "hidden": true,
+    "type": "origins:resource",
+    "min": 0,
+    "max": 900,
+    "start_value": 900,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+        "bar_index": 15
+    }
+}

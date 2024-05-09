@@ -1,0 +1,20 @@
+{
+    "name": "Calamari",
+    "description": "The best failwoman.",
+    "powers": [
+        "peng:peng_swimspeed",
+        "peng:peng_waterbreath",
+        "peng:hunter_vision",
+        "peng:pescetarian",
+        "peng:peng_slide",
+        "peng:heat",
+        "peng:ice_speed",
+        "peng:toggle"
+    ],
+    "icon": {
+        "item": "minecraft:trident"
+    },
+    "order": 10,
+    "impact": 1,
+    "unchoosable": true
+}

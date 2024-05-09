@@ -1,0 +1,26 @@
+{
+    "type": "origins:action_over_time",
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:nbt",
+            "nbt": "{stealth: 1b}"
+        }
+    },
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effects": [
+            {
+                "effect": "minecraft:invisibility",
+                "duration": 20
+            },
+            {
+                "effect": "minecraft:slowness",
+                "amplifier": 1,
+                "duration": 20
+            }
+        ]
+    },
+    "interval": 10
+}

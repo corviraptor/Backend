@@ -1,0 +1,9 @@
+{
+    "name": "Airheaded",
+    "description": "You didn't bother paying attention in Imp School or whatever, so you can't enchant things. You can still use enchanted equipment if acquired through other means, and you can still use anvils to apply enchanted books.",
+    "type": "origins:prevent_block_use",
+    "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:enchanting_table"
+    }
+}

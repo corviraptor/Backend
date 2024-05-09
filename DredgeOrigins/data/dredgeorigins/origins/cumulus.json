@@ -1,0 +1,16 @@
+{
+    "name": "Cumulus",
+    "description": "Forever envious of their winged cousins, the cloud-borne Cumulus channel the power of thunderstorms in the very air they breathe.",
+    "icon": {
+        "item": "minecraft:lightning_rod"
+    },
+    "powers": [
+        "dredgeorigins:cumulus/eat_bird",
+        "dredgeorigins:cumulus/shocker",
+        "dredgeorigins:cumulus/evaporation",
+        "dredgeorigins:cumulus/flying_resource",
+        "dredgeorigins:cumulus/flying"
+    ],
+    "order": 5,
+    "impact": 1
+}

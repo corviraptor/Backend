@@ -1,0 +1,24 @@
+{
+  "powers": [
+    "phoenix:rebirth",
+    "phoenix:rejuvenation",
+    "phoenix:roost",
+    "dredgeorigins:phoenix/radiant_call",
+    "phoenix:helios_blessing",
+    "phoenix:flight",
+    "phoenix:ascent",
+    "phoenix:fireball",
+    "phoenix:gliding",
+    "phoenix:fiery_death",
+    "phoenix:golden_diet",
+    "phoenix:water_weakness",
+    "origins:more_kinetic_damage",
+    "origins:fire_immunity"
+  ],
+  "icon": "minecraft:fire_coral_fan",
+  "order": 0,
+  "impact": 2,
+  "name": "Phoenix",
+  "description": "Flying from the pages of mythology, the phoenix is a legendary firebird that can never truly die.",
+  "loading_priority": 10
+}

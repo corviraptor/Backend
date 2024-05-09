@@ -1,0 +1,28 @@
+{
+    "type": "origins:action_over_time",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:nbt",
+                    "nbt": "{buoy: 1b}"
+                }
+            },
+            {
+                "type": "origins:in_block",
+                "block_condition": {
+                    "type": "origins:block",
+                    "block": "minecraft:water"
+                }
+            }
+        ]
+    },
+    "entity_action": {
+        "type": "origins:add_velocity",
+        "y": 1
+    },
+    "interval": 5
+}

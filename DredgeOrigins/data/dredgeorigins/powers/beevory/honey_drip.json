@@ -1,0 +1,29 @@
+{
+    "type": "origins:multiple",
+    "hidden": true,
+    "drip": {
+        "type": "origins:particle",
+        "particle": {
+            "type": "minecraft:falling_honey"
+        },
+        "count": 7,
+        "speed": 1,
+        "spread": {
+            "x": 0.15,
+            "y": 0.3,
+            "z": 0.15
+        },
+        "frequency": 20,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": true,
+        "key": {
+            "key": "key.origins.ternary_active"
+        }
+    }
+}

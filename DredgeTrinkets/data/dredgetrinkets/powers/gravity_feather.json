@@ -1,0 +1,80 @@
+{
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 60,
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+            "bar_index": 23,
+            "condition": {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:nbt",
+                    "nbt": "{gravity: 1b}"
+                }
+            }
+        }
+    },
+    "feather": {
+        "type": "origins:active_self",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:nbt",
+                        "nbt": "{gravity: 1b}"
+                    }
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "dredgetrinkets:gravity_feather_resource",
+                    "comparison": "==",
+                    "compare_to": 60
+                }
+            ]
+        },
+        "key": {
+            "key": "key.use"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effects": [
+                        {
+                            "effect": "minecraft:levitation",
+                            "duration": 60,
+                            "amplifier": 2
+                        },
+                        {
+                            "effect": "minecraft:slow_falling",
+                            "duration": 200
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "dredgetrinkets:gravity_feather_resource",
+                    "operation": "set",
+                    "change": 0
+                }
+            ]
+        }
+    },
+    "change-resource": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "dredgetrinkets:gravity_feather_resource",
+            "operation": "add",
+            "change": 1
+        },
+        "interval": 10
+    }
+}

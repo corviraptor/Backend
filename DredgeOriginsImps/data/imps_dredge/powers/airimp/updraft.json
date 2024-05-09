@@ -1,0 +1,103 @@
+{
+    "name": "Updraft",
+    "description": "When standing on a magma block, when on fire, or above large amounts of lava, you have the ability to launch yourself into the air using [Secondary Action] key. Requires at least 6 hunger. Elytra flight goes away when landing or when flight duration ends.",
+    "type": "origins:multiple",
+    "key0": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:on_fire"
+                        },
+                        {
+                            "type": "origins:on_block",
+                            "block_condition": {
+                                "type": "origins:block",
+                                "block": "minecraft:magma_block"
+                            }
+                        },
+                        {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:block_in_radius",
+                                    "block_condition": {
+                                        "type": "origins:fluid",
+                                        "fluid_condition": {
+                                            "type": "origins:fluid",
+                                            "fluid": "minecraft:lava"
+                                        }
+                                    },
+                                    "radius": 10,
+                                    "shape": "cube",
+                                    "comparison": ">=",
+                                    "compare_to": 10
+                                },
+                                {
+                                    "inverted": true,
+                                    "type": "origins:on_block",
+                                    "block_condition": {
+                                        "type": "origins:movement_blocking"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": ">=",
+                    "compare_to": 6
+                }
+            ]
+        },
+        "type": "origins:launch",
+        "cooldown": 200,
+        "speed": 2,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+            "bar_index": 23,
+            "inverted": true
+        },
+        "key": {
+            "key": "key.origins.secondary_active"
+        }
+    },
+    "key1": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:set_resource",
+            "resource": "imps_dredge:airimp/elytra_flight_resource",
+            "value": 200
+        },
+        "cooldown": 200,
+        "key": {
+            "key": "key.origins.secondary_active"
+        }
+    },
+    "key2": {
+        "condition": {
+            "type": "origins:fall_flying"
+        },
+        "type": "origins:action_on_land",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:revoke_power",
+                    "power": "origins:elytra",
+                    "source": "origins:origins"
+                },
+                {
+                    "type": "origins:set_resource",
+                    "resource": "imps_dredge:airimp/elytra_flight_resource",
+                    "value": 0
+                }
+            ]
+        }
+    }
+}

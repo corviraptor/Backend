@@ -1,0 +1,75 @@
+{
+    "name": "dsfgsfsdf",
+    "description": "message that pops up when getting colder",
+    "hidden": true,
+    "type": "origins:multiple",
+    "cold": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:heatmeter/heatmeter_hud",
+                    "comparison": "<=",
+                    "compare_to": 300
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:heatmeter/heatmeter_hud",
+                    "comparison": ">",
+                    "compare_to": 150
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 200,
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "tellraw @s {\"text\":\"You feel cold. Seek a heat source or use an item.\",\"color\":\"red\",\"italic\":true}"
+        }
+    },
+    "cold_": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:heatmeter/heatmeter_hud",
+                    "comparison": "<=",
+                    "compare_to": 150
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:heatmeter/heatmeter_hud",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 100,
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "tellraw @s {\"text\":\"You feel very cold. Seek a heat source or use an item.\",\"color\":\"red\",\"italic\":true}"
+        }
+    },
+    "cold__": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:heatmeter/heatmeter_hud",
+                    "comparison": "==",
+                    "compare_to": 0
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 100,
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "tellraw @s {\"text\":\"You are freezing! Seek a heat source or use an item.\",\"color\":\"red\",\"italic\":true}"
+        }
+    }
+}

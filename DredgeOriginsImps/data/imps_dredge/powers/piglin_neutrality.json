@@ -1,0 +1,8 @@
+{
+    "name": "Piglin Neutrality",
+    "description": "Piglins are neutral to you. Brutes still attack on sight.",
+    "type": "extraorigins:mob_neutrality",
+    "entity_types": [
+        "minecraft:piglin"
+    ]
+}

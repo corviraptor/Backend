@@ -1,0 +1,7 @@
+{
+    "type": "origins:effect_immunity",
+    "effect": "supplementaries:overencumbered",
+    "hidden": true,
+    "name": "Sacks",
+    "description": "You are immune to the overencumbered effect"
+}

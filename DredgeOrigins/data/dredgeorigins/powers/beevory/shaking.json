@@ -1,0 +1,25 @@
+{
+    "type": "origins:multiple",
+    "hidden": "true",
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": {
+            "key": "key.origins.quaternary_active"
+        }
+    },
+    "shaking": {
+        "type": "origins:shaking",
+        "render_armor": false,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "inrain": {
+        "type": "origins:shaking",
+        "condition": {
+            "type": "origins:in_rain"
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "name": "Keepsake",
+    "description": "Having coral in your offhand makes you feel more confident in your strength- enough to deal increased damage.",
+    "type": "origins:modify_damage_dealt",
+    "bientity_condition": {
+        "inverted": true,
+        "type": "origins:actor_condition",
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": [
+                    {
+                        "tag": "minecraft:corals"
+                    },
+                    {
+                        "tag": "minecraft:coral_blocks"
+                    }
+                ]
+            }
+        }
+    },
+    "modifier": {
+        "operation": "multiply_total_multiplicative",
+        "value": 0.25,
+        "name": "coral_damage"
+    },
+    "self_action": {
+        "type": "origins:spawn_particles",
+        "particle": "minecraft:nautilus",
+        "count": 10
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "increase the decrease",
+    "description": "whos that saultry little binch in the courner",
+    "hidden": true,
+    "condition": {
+        "type": "origins:resource",
+        "resource": "imps_dredge:lavaimp/lavameter/lavameter_hud",
+        "comparison": "!=",
+        "compare_to": 0
+    },
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "imps_dredge:heatmeter/heatmeter_hud",
+        "change": 3,
+        "operation": "add"
+    }
+}

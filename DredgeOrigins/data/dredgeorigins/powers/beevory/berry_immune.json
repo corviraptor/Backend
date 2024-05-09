@@ -1,0 +1,21 @@
+{
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:name",
+                "name": "sweetBerryBush"
+            },
+            {
+                "type": "origins:name",
+                "name": "thorns"
+            }
+        ]
+    },
+    "modifier": {
+        "operation": "set_total",
+        "value": 0
+    },
+    "hidden": true
+}

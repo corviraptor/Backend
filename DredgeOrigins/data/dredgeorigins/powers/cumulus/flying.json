@@ -1,0 +1,63 @@
+{
+    "name": "Limited Flight",
+    "description": "You can fly unencumbered for a period of time. You need to rest one the ground before you can fly again, however.",
+    "type": "origins:multiple",
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": {
+            "key": "key.origins.secondary_active"
+        }
+    },
+    "deplete-resource": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "dredgeorigins:cumulus/flying_resource",
+            "change": -1
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:creative_flying"
+                },
+                {
+                    "type": "origins:gamemode",
+                    "gamemode": "survival"
+                }
+            ]
+        }
+    },
+    "regain-resource": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "dredgeorigins:cumulus/flying_resource",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:creative_flying",
+            "inverted": true
+        },
+        "interval": 40
+    },
+    "flying": {
+        "type": "origins:creative_flight",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "dredgeorigins:cumulus/flying_resource",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        }
+    }
+}

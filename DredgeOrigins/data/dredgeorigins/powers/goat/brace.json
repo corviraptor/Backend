@@ -1,0 +1,13 @@
+{
+  "name": "Brace",
+  "description": "While sneaking, you take reduced fall damage.",
+  "type": "origins:modify_damage_taken",
+  "damage_condition": {
+    "type": "origins:name",
+    "name": "fall"
+  },
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "value": "-1.25"
+  }
+}

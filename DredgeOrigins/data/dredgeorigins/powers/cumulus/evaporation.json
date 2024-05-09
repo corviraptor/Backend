@@ -1,0 +1,36 @@
+{
+  "name": "Evaporation",
+  "description": "You take increased damage in fire and lava, and gain weakness in hotter climates.",
+  "type": "origins:multiple",
+  "too_hot": {
+    "type": "origins:stacking_status_effect",
+    "min_stacks": -3,
+    "max_stacks": 1,
+    "duration_per_stack": 100,
+    "tick_rate": 20,
+    "effect": {
+      "effect": "minecraft:weakness",
+      "is_ambient": true,
+      "show_particles": true,
+      "show_icon": true
+    },
+    "condition": {
+      "type": "origins:biome",
+      "condition": {
+        "type": "origins:temperature",
+        "comparison": ">=",
+        "compare_to": 2
+      }
+    }
+  },
+  "fire_bad": {
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+      "type": "origins:fire"
+    },
+    "modifier": {
+      "operation": "multiply_base",
+      "value": 0.1
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+    "type": "origins:multiple",
+    "hidden": true,
+    "meow": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.cat.ambient"
+        },
+        "key": {
+            "key": "key.origins.ternary_active"
+        }
+    },
+    "purr": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.cat.purr"
+        },
+        "key": {
+            "key": "key.origins.quaternary_active"
+        }
+    }
+}

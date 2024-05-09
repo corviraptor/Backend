@@ -1,0 +1,36 @@
+{
+  "name": "Ink Cloud",
+  "description": "When badly injured, you'll release a cloud of ink to sneak away from your enemies.",
+  "type": "origins:action_when_damage_taken",
+  "condition": {
+    "type": "origins:health",
+    "comparison": "<",
+    "compare_to": 7
+  },
+  "cooldown": 400,
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:spawn_particles",
+        "particle": "minecraft:squid_ink",
+        "count": 25,
+        "force": true,
+        "spread": {
+          "x": 1.0,
+          "y": 2.0,
+          "z": 1.0
+        }
+      },
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:invisibility",
+          "duration": 400,
+          "amplifier": 0
+        }
+      }
+    ]
+  }
+
+}

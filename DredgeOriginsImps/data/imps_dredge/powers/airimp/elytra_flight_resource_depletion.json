@@ -1,0 +1,18 @@
+{
+    "description": "depletion",
+    "hidden": true,
+    "condition": {
+        "type": "origins:resource",
+        "resource": "imps_dredge:airimp/elytra_flight_resource",
+        "comparison": "!=",
+        "compare_to": 0
+    },
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "imps_dredge:airimp/elytra_flight_resource",
+        "change": -1,
+        "operation": "add"
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Lightning Borne",
+  "description": "Summon a bolt of lightning upon yourself",
+  "type": "origins:multiple",
+  "summon_lightning": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "permission_level": 4,
+      "command": "summon minecraft:lightning_bolt ~ ~ ~"
+    },
+    "cooldown": 600,
+    "hud_render": {
+      "should_render": true,
+      "bar_index": 2
+    }
+  },
+  "lightning_proof": {
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+      "type": "origins:name",
+      "name": "lightningBolt"
+    },
+    "modifier": {
+      "operation": "set_total",
+      "value": 0
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Lightning Prone",
+  "description": "You're a bit more likely to get hit by lightning in a thunderstorm.",
+  "type": "apugli:redirect_lightning",
+  "chance": 0.025
+}

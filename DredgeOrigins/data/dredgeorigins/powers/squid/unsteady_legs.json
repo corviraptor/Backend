@@ -1,0 +1,10 @@
+{
+  "name": "Unsteady Legs",
+  "description": "You're not very good at walking. Don't let yourself get too far from water.",
+  "type": "origins:attribute",
+  "modifier": {
+    "attribute": "generic.movement_speed",
+    "operation": "multiply_total",
+    "value": -0.4
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "type": "origins:multiple",
+  "name": "Conductive",
+  "description": "When hit by lightning, you become Charged. Your explosions pack more punch, and you take less fall damage.",
+  "grant_effect": {
+    "type": "apugli:action_when_lightning_struck",
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "effect": "dredgeclient:charged",
+        "amplifier": 0,
+        "duration": 9600
+      }
+    },
+    "cooldown": 20
+  },
+  "fall_damage_reduction": {
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:name",
+          "name": "fall.player"
+        },
+        {
+          "type": "origins:name",
+          "name": "fall"
+        }
+      ]
+    },
+    "modifier": {
+      "operation": "multiply_base_additive",
+      "value": -0.4
+    },
+    "condition": {
+      "type": "origins:status_effect",
+      "effect": "dredgeclient:charged"
+    }
+  }
+}

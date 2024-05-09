@@ -1,0 +1,383 @@
+{
+    "name": "Lithovore",
+    "description": "Your diet is mineral-based; you cannot eat regular food. Eat netherrack, quartz, gold nuggets, or Netherite scrap using the [Primary Action] key. ",
+    "loading_priority": 0,
+    "type": "origins:multiple",
+    "l1": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<",
+                    "compare_to": 20
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:netherrack"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:feed",
+                    "food": 1,
+                    "saturation": 0.6
+                },
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    }
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "/playsound minecraft:entity.player.burp master @s"
+                }
+            ]
+        },
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "l1_": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<",
+                    "compare_to": 20
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:gold_nugget"
+                                }
+                            },
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:quartz"
+                                }
+                            },
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:nether_brick"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:feed",
+                    "food": 2,
+                    "saturation": 1.2
+                },
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    }
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "/playsound minecraft:entity.player.burp master @s"
+                }
+            ]
+        },
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "l1__": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<",
+                    "compare_to": 20
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:raw_gold"
+                                }
+                            },
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:gold_ingot"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:feed",
+                    "food": 6,
+                    "saturation": 7.2
+                },
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    }
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "/playsound minecraft:entity.player.burp master @s"
+                }
+            ]
+        },
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "l1___": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<",
+                    "compare_to": 20
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:nether_gold_ore"
+                                }
+                            },
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:nether_quartz_ore"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:feed",
+                    "food": 3,
+                    "saturation": 1.8
+                },
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    }
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "/playsound minecraft:entity.player.burp master @s"
+                }
+            ]
+        },
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "l1____": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<",
+                    "compare_to": 20
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:ancient_debris"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:feed",
+                    "food": 10,
+                    "saturation": 14.4
+                },
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    }
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "/playsound minecraft:entity.player.burp master @s"
+                }
+            ]
+        },
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "l1_____": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<",
+                    "compare_to": 20
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:netherite_scrap"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:feed",
+                    "food": 13,
+                    "saturation": 21.2
+                },
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    }
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "/playsound minecraft:entity.player.burp master @s"
+                }
+            ]
+        },
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "l1______": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<",
+                    "compare_to": 20
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:netherite_ingot"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "/tellraw @s {\"text\":\"It's a little too valuable to eat.\",\"color\":\"dark_red\",\"bold\":true,\"italic\":true}"
+        },
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    }
+}

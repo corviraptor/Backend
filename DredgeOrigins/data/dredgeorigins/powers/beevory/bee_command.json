@@ -1,0 +1,38 @@
+{
+    "name": "Bee Command",
+    "description": "Nearby bees will attack opponents you hit",
+    "type": "origins:action_on_hit",
+    "bientity_action": {
+        "type": "apoli:and",
+        "actions": [
+            {
+                "type": "apoli:target_action",
+                "action": {
+                    "type": "apoli:execute_command",
+                    "command": "tag @s add angertarget"
+                }
+            },
+            {
+                "type": "apoli:actor_action",
+                "action": {
+                    "type": "apoli:execute_command",
+                    "command": "execute as @e[type=bee,distance=..20] run data modify entity @s AngryAt set from entity @p[tag=angertarget] UUID"
+                }
+            },
+            {
+                "type": "apoli:actor_action",
+                "action": {
+                    "type": "apoli:execute_command",
+                    "command": "execute as @e[type=bee,distance=..20] run data modify entity @s AngerTime set value 60"
+                }
+            },
+            {
+                "type": "apoli:target_action",
+                "action": {
+                    "type": "apoli:execute_command",
+                    "command": "tag @s remove angertarget"
+                }
+            }
+        ]
+    }
+}

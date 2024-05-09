@@ -1,0 +1,94 @@
+{
+    "name": "Pyroclastic Blast",
+    "description": "Upon pressing the [Secondary Action] key, release a charged fiery blast to set your foes on fire and do damage. You must have over 10 food and at least 1/3rd of your heat meter. If the lava meter is filled, it will deplete that first.",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:resource",
+                "resource": "imps_dredge:heatmeter/heatmeter_hud",
+                "comparison": ">=",
+                "compare_to": 300
+            },
+            {
+                "type": "origins:food_level",
+                "comparison": ">=",
+                "compare_to": 10
+            }
+        ]
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:area_of_effect",
+                "radius": 16,
+                "bientity_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:target_action",
+                            "action": {
+                                "type": "origins:set_on_fire",
+                                "duration": 5
+                            }
+                        },
+                        {
+                            "type": "origins:target_action",
+                            "action": {
+                                "type": "origins:damage",
+                                "amount": 10,
+                                "source": {
+                                    "name": "explosion",
+                                    "magic": true
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:lavaimp/lavameter/lavameter_hud",
+                    "comparison": ">",
+                    "compare_to": 0
+                },
+                "if_action": {
+                    "type": "origins:change_resource",
+                    "resource": "imps_dredge:lavaimp/lavameter/lavameter_hud",
+                    "change": -1200,
+                    "operation": "add"
+                },
+                "else_action": {
+                    "type": "origins:change_resource",
+                    "resource": "imps_dredge:heatmeter/heatmeter_hud",
+                    "change": -150,
+                    "operation": "add"
+                }
+            },
+            {
+                "type": "origins:exhaust",
+                "amount": 3
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.generic.explode",
+                "volume": 1,
+                "pitch": 1
+            }
+        ]
+    },
+    "cooldown": 600,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+        "bar_index": 1,
+        "inverted": true
+    },
+    "key": {
+        "key": "key.origins.secondary_active"
+    }
+}

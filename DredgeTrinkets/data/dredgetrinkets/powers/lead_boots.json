@@ -1,0 +1,63 @@
+{
+    "type": "origins:multiple",
+    "boots": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "feet",
+            "item_condition": {
+                "type": "origins:nbt",
+                "nbt": "{leadBoots: 1b}"
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effects": [
+                        {
+                            "effect": "minecraft:levitation",
+                            "amplifier": 128,
+                            "duration": 12,
+                            "show_particles": false,
+                            "show_icon": false
+
+                        },
+                        {
+                            "effect": "minecraft:resistance",
+                            "amplifier": 1,
+                            "duration": 12,
+                            "show_particles": false,
+                            "show_icon": false
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:grant_power",
+                    "power": "dredgetrinkets:sink",
+                    "source": "dredgetrinkets:lead_boots"
+                }
+            ]
+        },
+        "interval": 10
+    },
+    "no-sink": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "feet",
+            "item_condition": {
+                "type": "origins:nbt",
+                "nbt": "{leadBoots: 1b}"
+            },
+            "inverted": true
+        },
+        "entity_action": {
+            "type": "origins:revoke_power",
+            "power": "dredgetrinkets:sink",
+            "source": "dredgetrinkets:lead_boots"
+        },
+        "interval": 10
+    }
+}

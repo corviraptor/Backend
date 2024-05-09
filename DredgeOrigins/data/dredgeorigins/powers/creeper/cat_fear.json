@@ -1,0 +1,148 @@
+{
+  "name": "Ailurophobia",
+  "description": "You'll start shivering and feel weak around any cat-like entity",
+  "type": "origins:multiple",
+  "shiver": {
+      "type": "origins:shaking",
+      "condition": {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "apugli:entity_in_radius",
+            "condition": {
+              "type": "origins:entity_type",
+              "entity_type": "minecraft:cat"
+            },
+            "radius": 8.0,
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apugli:entity_in_radius",
+            "condition": {
+              "type": "origins:entity_type",
+              "entity_type": "minecraft:ocelot"
+            },
+            "radius": 8.0,
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apugli:entity_in_radius",
+            "condition": {
+              "type": "origins:and",
+              "conditions": [
+                {
+                  "type": "origins:entity_type",
+                  "entity_type": "minecraft:player"
+                },
+                {
+                  "type": "origins:origin",
+                  "origin": "origins:feline",
+                  "layer": "origins:origin"
+                }
+              ]
+            },
+            "radius": 8.0,
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "apugli:entity_in_radius",
+            "condition": {
+              "type": "origins:and",
+              "conditions": [
+                {
+                  "type": "origins:entity_type",
+                  "entity_type": "minecraft:player"
+                },
+                {
+                  "type": "origins:origin",
+                  "origin": "dredgeorigins:feline",
+                  "layer": "origins:origin"
+                }
+              ]
+            },
+            "radius": 8.0,
+            "comparison": ">=",
+            "compare_to": 1
+          }
+        ]
+      }
+  },
+  "feel_weak": {
+    "type": "origins:stacking_status_effect",
+    "min_stacks": -20,
+    "max_stacks": 361,
+    "duration_per_stack": 10,
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "apugli:entity_in_radius",
+          "condition": {
+            "type": "origins:entity_type",
+            "entity_type": "minecraft:cat"
+          },
+          "radius": 8.0,
+          "comparison": ">=",
+          "compare_to": 1
+        },
+        {
+          "type": "apugli:entity_in_radius",
+          "condition": {
+            "type": "origins:entity_type",
+            "entity_type": "minecraft:ocelot"
+          },
+          "radius": 8.0,
+          "comparison": ">=",
+          "compare_to": 1
+        },
+        {
+          "type": "apugli:entity_in_radius",
+          "condition": {
+            "type": "origins:and",
+            "conditions": [
+              {
+                "type": "origins:entity_type",
+                "entity_type": "minecraft:player"
+              },
+              {
+                "type": "origins:origin",
+                "origin": "origins:feline",
+                "layer": "origins:origin"
+              }
+            ]
+          },
+          "radius": 8.0,
+          "comparison": ">=",
+          "compare_to": 1
+        },
+        {
+          "type": "apugli:entity_in_radius",
+          "condition": {
+            "type": "origins:and",
+            "conditions": [
+              {
+                "type": "origins:entity_type",
+                "entity_type": "minecraft:player"
+              },
+              {
+                "type": "origins:origin",
+                "origin": "dredgeorigins:feline",
+                "layer": "origins:origin"
+              }
+            ]
+          },
+          "radius": 8.0,
+          "comparison": ">=",
+          "compare_to": 1
+        }
+      ]
+    },
+    "effect": {
+      "effect": "minecraft:weakness",
+      "show_particles": false
+    }
+  }
+}

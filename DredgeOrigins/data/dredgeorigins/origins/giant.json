@@ -1,0 +1,17 @@
+{
+  "powers": [
+    "dredgeorigins:giant/four_blocks_tall",
+    "dredgeorigins:giant/four_tall_jump",
+    "dredgeorigins:giant/twenty_hearts",
+    "dredgeorigins:giant/ground_slam",
+    "dredgeorigins:giant/strength",
+    "dredgeorigins:giant/giant_diet",
+    "dredgeorigins:giant/mount",
+    "dredgeorigins:giant/limbs"
+  ],
+  "icon": "minecraft:wooden_sword",
+  "impact": 3,
+  "order": 1,
+  "name": "Giant",
+  "description": "A special breed of massive humans! Your size greatly affects how you live your day to day life! "
+}

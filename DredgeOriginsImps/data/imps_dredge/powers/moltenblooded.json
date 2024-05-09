@@ -1,0 +1,57 @@
+{
+    "name": "Molten-Blooded",
+    "description": "You feel more agile and have greater movement capabilities in the Nether than in the Overworld. Conversely, cold biomes weaken you.",
+    "loading_priority": 0,
+    "type": "origins:multiple",
+    "agility": {
+        "condition": {
+            "type": "origins:dimension",
+            "dimension": "minecraft:the_nether"
+        },
+        "type": "origins:attribute",
+        "modifiers": [
+            {
+                "attribute": "generic.attack_speed",
+                "operation": "addition",
+                "value": 0.1,
+                "name": "attackspeed"
+            },
+            {
+                "attribute": "generic.movement_speed",
+                "operation": "multiply_base",
+                "value": 0.1
+            }
+        ],
+        "update_health": false
+    },
+    "nightvision": {
+        "condition": {
+            "type": "origins:dimension",
+            "dimension": "minecraft:the_nether"
+        },
+        "type": "origins:night_vision",
+        "strength": 0.25
+    },
+    "jump": {
+        "condition": {
+            "type": "origins:dimension",
+            "dimension": "minecraft:the_nether"
+        },
+        "type": "origins:modify_jump",
+        "modifier": {
+            "operation": "addition",
+            "value": 0.15
+        }
+    },
+    "breakspeed": {
+        "condition": {
+            "type": "origins:dimension",
+            "dimension": "minecraft:the_nether"
+        },
+        "type": "origins:modify_break_speed",
+        "modifier": {
+            "operation": "addition",
+            "value": 0.015
+        }
+    }
+}

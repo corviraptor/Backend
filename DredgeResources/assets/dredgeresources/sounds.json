@@ -1,0 +1,298 @@
+{
+  "fnaf2.ambient": {
+    "sounds": [
+      {
+        "name": "dredgeresources:fnaf2/ambient",
+        "stream": true
+      }
+    ]
+  },
+
+  "fnaf2.bb_haha": {
+    "sounds": [
+      {
+        "name": "dredgeresources:fnaf2/bb_haha"
+      }
+    ]
+  },
+  "fnaf2.bb_hello": {
+    "sounds": [
+      {
+        "name": "dredgeresources:fnaf2/bb_hello"
+      }
+    ]
+  },
+  "fnaf2.bb_hi": {
+    "sounds": [
+      {
+        "name": "dredgeresources:fnaf2/bb_hi"
+      }
+    ]
+  },
+  "fnaf2.bb": {
+    "sounds": [
+      {
+        "name": "dredgeresources:fnaf2/bb_haha"
+      },
+      {
+        "name": "dredgeresources:fnaf2/bb_hello"
+      },
+      {
+        "name": "dredgeresources:fnaf2/bb_hi"
+      }
+    ]
+  },
+
+  "fnaf2.fan": {
+    "sounds": [
+      {
+        "name": "dredgeresources:fnaf2/fan",
+        "stream": true
+      }
+    ]
+  },
+
+  "fnaf2.hallway_warning": {
+    "sounds": [
+      {
+        "name": "dredgeresources:fnaf2/hallway_warning"
+      }
+    ]
+  },
+
+  "fnaf2.jumpscare": {
+    "sounds": [
+      {
+        "name": "dredgeresources:fnaf2/jumpscare",
+        "stream": true
+      }
+    ]
+  },
+
+  "fnaf2.light_buzz": {
+    "sounds": [
+      {
+        "name": "dredgeresources:fnaf2/light_buzz"
+      }
+    ]
+  },
+
+  "fnaf2.mangle": {
+    "sounds": [
+      {
+        "name": "dredgeresources:fnaf2/mangle",
+        "stream": true
+      }
+    ]
+  },
+
+  "fnaf2.night1": {
+    "sounds": [
+      {
+        "name": "dredgeresources:fnaf2/night1",
+        "stream": true
+      }
+    ]
+  },
+  "fnaf2.night2": {
+    "sounds": [
+      {
+        "name": "dredgeresources:fnaf2/night2",
+        "stream": true
+      }
+    ]
+  },
+  "fnaf2.night3": {
+    "sounds": [
+      {
+        "name": "dredgeresources:fnaf2/night3",
+        "stream": true
+      }
+    ]
+  },
+  "fnaf2.night4": {
+    "sounds": [
+      {
+        "name": "dredgeresources:fnaf2/night4",
+        "stream": true
+      }
+    ]
+  },
+  "fnaf2.night5": {
+    "sounds": [
+      {
+        "name": "dredgeresources:fnaf2/night5",
+        "stream": true
+      }
+    ]
+  },
+  "fnaf2.night6": {
+    "sounds": [
+      {
+        "name": "dredgeresources:fnaf2/night6",
+        "stream": true
+      }
+    ]
+  },
+  "fnaf2.phone_guy": {
+    "sounds": [
+      {
+        "name": "dredgeresources:fnaf2/night1",
+        "stream": true
+      },
+      {
+        "name": "dredgeresources:fnaf2/night2",
+        "stream": true
+      },
+      {
+        "name": "dredgeresources:fnaf2/night3",
+        "stream": true
+      },
+      {
+        "name": "dredgeresources:fnaf2/night4",
+        "stream": true
+      },
+      {
+        "name": "dredgeresources:fnaf2/night5",
+        "stream": true
+      },
+      {
+        "name": "dredgeresources:fnaf2/night6",
+        "stream": true
+      }
+    ]
+  },
+
+  "fnaf2.puppet_box": {
+    "sounds": [
+      {
+        "name": "dredgeresources:fnaf2/puppet_box"
+      }
+    ]
+  },
+
+  "fnaf2.six_am": {
+    "sounds": [
+      {
+        "name": "dredgeresources:fnaf2/six_am"
+      }
+    ]
+  },
+
+  "fnaf2.windup": {
+    "sounds": [
+      {
+        "name": "dredgeresources:fnaf2/windup"
+      }
+    ]
+  },
+  
+  "clocktower.chimes1": {
+    "sounds": [
+        {
+            "name": "dredgeresources:clocktower/chimes1",
+            "stream": true
+        }
+    ]
+  },
+  "clocktower.chimes2": {
+    "sounds": [
+        {
+            "name": "dredgeresources:clocktower/chimes2",
+            "stream": true
+        }
+    ]
+  },
+  "clocktower.chimes3": {
+    "sounds": [
+        {
+            "name": "dredgeresources:clocktower/chimes3",
+            "stream": true
+        }
+    ]
+  },
+  "clocktower.chimes4": {
+    "sounds": [
+        {
+            "name": "dredgeresources:clocktower/chimes4",
+            "stream": true
+        }
+    ]
+  },
+  "clocktower.chimes5": {
+    "sounds": [
+        {
+            "name": "dredgeresources:clocktower/chimes5",
+            "stream": true
+        }
+    ]
+  },
+  "clocktower.chimes6": {
+    "sounds": [
+        {
+            "name": "dredgeresources:clocktower/chimes6",
+            "stream": true
+        }
+    ]
+  },
+  "clocktower.chimes7": {
+    "sounds": [
+        {
+            "name": "dredgeresources:clocktower/chimes7",
+            "stream": true
+        }
+    ]
+  },
+  "clocktower.chimes8": {
+    "sounds": [
+        {
+            "name": "dredgeresources:clocktower/chimes8",
+            "stream": true
+        }
+    ]
+  },
+  "clocktower.chimes9": {
+    "sounds": [
+        {
+            "name": "dredgeresources:clocktower/chimes9",
+            "stream": true
+        }
+    ]
+  },
+  "clocktower.chimes10": {
+    "sounds": [
+        {
+            "name": "dredgeresources:clocktower/chimes10",
+            "stream": true
+        }
+    ]
+  },
+  "clocktower.chimes11": {
+    "sounds": [
+        {
+            "name": "dredgeresources:clocktower/chimes11",
+            "stream": true
+        }
+    ]
+  },
+  "clocktower.chimes12": {
+    "sounds": [
+        {
+            "name": "dredgeresources:clocktower/chimes12",
+            "stream": true
+        }
+    ]
+  },
+  "entity.wither.spawn": {
+    "sounds": [
+    	{
+    		"name": "dredgeresources:misc/amogi",
+    		"weight": 1
+    	},
+    	{
+    		"name": "minecraft:mob/wither/spawn",
+    		"weight": 9
+    	}
+    ]
+  }
+}

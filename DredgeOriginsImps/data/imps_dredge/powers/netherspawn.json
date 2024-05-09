@@ -1,0 +1,8 @@
+{
+    "name": "No Place Like Home",
+    "description": "You spawn in the Nether.",
+    "type": "origins:modify_player_spawn",
+    "dimension": "minecraft:the_nether",
+    "spawn_strategy": "default",
+    "dimension_distance_multiplier": 1
+}

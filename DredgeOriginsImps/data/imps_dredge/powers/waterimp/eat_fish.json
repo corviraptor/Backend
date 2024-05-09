@@ -1,0 +1,34 @@
+{
+    "name": "Nether Cuisine, with Fish",
+    "description": "The long periods of time you spend underwater has expanded your diet to fish creatures in addition to Nether Cuisine.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:food"
+            },
+            {
+                "inverted": true,
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:meat"
+                    },
+                    {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "imps_dredge:impfood"
+                        }
+                    },
+                    {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "imps_dredge:fishfood"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

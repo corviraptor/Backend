@@ -1,0 +1,31 @@
+{
+  "name": "Sharp Horns",
+  "description": "You deal increased damage when only holding a goat horn in your main hand.",
+  "type": "origins:modify_damage_dealt",
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": {
+            "item": "minecraft:goat_horn"
+          }
+        }
+      },
+      {
+        "type": "origins:equipped_item",
+        "equipment_slot": "offhand",
+        "item_condition": {
+          "type": "origins:empty"
+        }
+      }
+    ]
+  },
+  "modifier": {
+    "operation": "addition",
+    "value": 6.5
+  }
+}

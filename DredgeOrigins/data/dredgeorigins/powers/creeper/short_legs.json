@@ -1,0 +1,10 @@
+{
+  "type": "origins:attribute",
+  "name": "Short Legs",
+  "description": "Your legs are short. I'll take a little longer to get around.",
+  "modifier": {
+    "attribute": "minecraft:generic.movement_speed",
+    "value": -0.15,
+    "operation": "multiply_base"
+  }
+}

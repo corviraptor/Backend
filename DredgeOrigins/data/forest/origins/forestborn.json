@@ -1,0 +1,26 @@
+{
+  "powers": [
+    "forest:wood_walk",
+    "forest:wood_phasing",
+    "forest:fly",
+    "forest:poison_dart",
+    "forest:crafting_table",
+    "forest:fast_on_grass",
+    "forest:need_soil",
+    "forest:slow_on_other",
+    "forest:less_health",
+    "forest:more_damage_iron",
+    "forest:more_damage_gold",
+    "forest:more_damage_diamond",
+    "forest:more_damage_netherite",
+    "forest:fast_on_dirt",
+    "origins:carnivore",
+    "dredgeorigins:phantom/no_suffocate"
+  ],
+  "icon": "minecraft:oak_log",
+  "order": 10,
+  "impact": 3,
+  "name": "Forestborn",
+  "description": "A being of the forest, enamoured with the mysteries of nature.",
+  "loading_priority": 10
+}

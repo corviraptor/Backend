@@ -1,0 +1,25 @@
+{
+    "name": "Lava Wading",
+    "description": "You can wade through lava.",
+    "type": "origins:multiple",
+    "l0": {
+        "condition": {
+            "type": "origins:fluid_height",
+            "fluid": "lava",
+            "comparison": ">=",
+            "compare_to": 1
+        },
+        "type": "origins:lava_vision",
+        "s": 0,
+        "v": 15
+    },
+    "l1": {
+        "condition": {
+            "type": "origins:fluid_height",
+            "fluid": "lava",
+            "comparison": ">=",
+            "compare_to": 0.1
+        },
+        "type": "origins:swimming"
+    }
+}

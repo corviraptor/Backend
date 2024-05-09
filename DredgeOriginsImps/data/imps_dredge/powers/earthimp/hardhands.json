@@ -1,0 +1,15 @@
+{
+    "name": "Hard Hands",
+    "description": "You have the ability to dig through netherrack with your bare hands.",
+    "type": "origins:modify_harvest",
+    "block_condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:block",
+                "block": "minecraft:netherrack"
+            }
+        ]
+    },
+    "allow": true
+}

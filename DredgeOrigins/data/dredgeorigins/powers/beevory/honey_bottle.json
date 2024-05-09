@@ -1,0 +1,26 @@
+{
+    "name": "Collect Honey",
+    "description": "Use an empty bottle to collect honey from yourself while sneaking.",
+    "type": "origins:active_self",
+    "key": {
+        "key": "key.use"
+    },
+    "entity_action": {
+        "type": "origins:replace_inventory",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:glass_bottle"
+            }
+        },
+        "slot": "weapon.mainhand",
+        "stack": {
+            "item": "minecraft:honey_bottle"
+        }
+    },
+    "cooldown": 10,
+    "condition": {
+        "type": "origins:sneaking"
+    }
+}
+

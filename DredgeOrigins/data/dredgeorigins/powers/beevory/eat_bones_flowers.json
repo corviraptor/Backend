@@ -1,0 +1,30 @@
+{
+    "type": "apugli:edible_item",
+    "item_condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:bone"
+                }
+            },
+            {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "minecraft:flowers"
+                }
+            }
+        ]
+    },
+    "food_component": {
+        "hunger": 0,
+        "saturation": 0,
+        "always_edible": true
+    },
+    "use_action": "eat",
+    "hidden": true,
+    "condition": {
+        "type": "origins:sneaking"
+    }
+}

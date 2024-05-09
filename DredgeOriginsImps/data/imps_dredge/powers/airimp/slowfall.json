@@ -1,0 +1,7 @@
+{
+    "description": "slowfall",
+    "hidden": true,
+    "type": "origins:modify_falling",
+    "velocity": 0.04,
+    "take_fall_damage": true
+}

@@ -1,0 +1,62 @@
+{
+    "name": "Cave Vision",
+    "description": "You have better eyesight in the nether and when venturing underground. However, be careful; bright light is too much!",
+    "type": "origins:multiple",
+    "l0": {
+        "condition": {
+            "inverted": true,
+            "type": "origins:brightness",
+            "comparison": "<=",
+            "compare_to": 7
+        },
+        "type": "origins:night_vision",
+        "strength": 0.5
+    },
+    "l1": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:exposed_to_sky"
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:daytime"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "originsumbrellas:umbrella"
+                                }
+                            }
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "originsumbrellas:umbrella"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "type": "origins:shader",
+        "shader": "minecraft:shaders/post/blobs2.json",
+        "toggleable": false
+    }
+}

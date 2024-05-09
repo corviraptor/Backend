@@ -1,0 +1,116 @@
+{
+    "description": "When the",
+    "hidden": true,
+    "type": "origins:multiple",
+    "cold": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:heatmeter/heatmeter_hud",
+                    "comparison": "<=",
+                    "compare_to": 300
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:heatmeter/heatmeter_hud",
+                    "comparison": ">",
+                    "compare_to": 150
+                }
+            ]
+        },
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
+            {
+                "attribute": "generic.attack_speed",
+                "operation": "addition",
+                "value": -0.1
+            },
+            {
+                "attribute": "generic.movement_speed",
+                "operation": "addition",
+                "value": -0.025
+            }
+        ],
+        "tick_rate": 20,
+        "update_health": false
+    },
+    "cold_": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:heatmeter/heatmeter_hud",
+                    "comparison": "<=",
+                    "compare_to": 150
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:heatmeter/heatmeter_hud",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        },
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
+            {
+                "attribute": "generic.attack_speed",
+                "operation": "addition",
+                "value": -0.15
+            },
+            {
+                "attribute": "generic.movement_speed",
+                "operation": "addition",
+                "value": -0.035
+            }
+        ],
+        "tick_rate": 20,
+        "update_health": false
+    },
+    "cold__": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "imps_dredge:heatmeter/heatmeter_hud",
+                    "comparison": "==",
+                    "compare_to": 0
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:exhaust",
+                    "amount": 9
+                },
+                {
+                    "type": "origins:apply_effect",
+                    "effects": [
+                        {
+                            "effect": "minecraft:weakness",
+                            "duration": 40,
+                            "amplifier": 1,
+                            "show_particles": false,
+                            "show_icon": true
+                        },
+                        {
+                            "effect": "minecraft:slowness",
+                            "duration": 40,
+                            "amplifier": 2,
+                            "show_particles": false,
+                            "show_icon": true
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

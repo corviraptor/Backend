@@ -1,0 +1,32 @@
+{
+    "powers": [
+        "coppergolem:abilities/copper_regen",
+        "coppergolem:oxidation",
+        "coppergolem:wax",
+        "coppergolem:lightning_rod",
+        "dredgeorigins:kibby/toggle_orange",
+        "coppergolem:neutral/antenna",
+        "coppergolem:abilities/ore-test",
+        "coppergolem:abilities/radar-toggle",
+        "coppergolem:abilities/radar-overlay",
+        "coppergolem:neutral/golem_size",
+        "coppergolem:buffs/no_stomach",
+        "coppergolem:buffs/plating",
+        "coppergolem:abilities/tinker",
+        "coppergolem:buffs/copper_crafting_blocks",
+        "coppergolem:buffs/copper_crafting_tools",
+        "coppergolem:debuffs/water_vulnerability",
+        "coppergolem:debuffs/sink",
+        "coppergolem:debuffs/health",
+        "coppergolem:neutral/tooltips",
+        "dredgeorigins:kibby/meow"
+    ],
+    "icon": {
+        "item": "minecraft:copper_ingot"
+    },
+    "order": 20,
+    "impact": 2,
+    "name": "Kibby",
+    "description": "It is her.",
+    "unchoosable": true
+}

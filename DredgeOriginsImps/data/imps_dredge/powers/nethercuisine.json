@@ -1,0 +1,28 @@
+{
+    "name": "Nether Cuisine",
+    "description": "You can only eat food resembling that of or originating from the Nether.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:food"
+            },
+            {
+                "inverted": true,
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:meat"
+                    },
+                    {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "imps_dredge:impfood"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

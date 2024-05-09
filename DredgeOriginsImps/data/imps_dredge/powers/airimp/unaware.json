@@ -1,0 +1,57 @@
+{
+    "name": "Unaware",
+    "description": "You don't know what being poisoned is. In fact, you think it's kind of a skill issue. You also don't know what armor points are, and ignore them when attacking mobs.",
+    "type": "origins:multiple",
+    "key0": {
+        "type": "origins:effect_immunity",
+        "effects": [
+            "minecraft:poison"
+        ]
+    },
+    "key1": {
+        "type": "origins:action_on_hit",
+        "bientity_action": {
+            "type": "origins:damage",
+            "amount": 2,
+            "source": {
+                "name": "generic.player",
+                "bypasses_armor": true
+            }
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:attribute",
+                        "attribute": "minecraft:generic.armor",
+                        "comparison": "!=",
+                        "compare_to": 0
+                    }
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:player"
+                    }
+                }
+            ]
+        },
+        "damage_condition": {
+            "type": "origins:attacker",
+            "entity_condition": {
+                "type": "origins:entity_type",
+                "entity_type": "minecraft:player"
+            }
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false,
+            "sprite_location": "origins:textures/gui/resource_bar.png",
+            "bar_index": 2
+        }
+    }
+}

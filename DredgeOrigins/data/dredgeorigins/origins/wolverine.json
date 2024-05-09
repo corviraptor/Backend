@@ -1,0 +1,15 @@
+{
+  "powers": [
+    "dredgeorigins:wolverine/hungry",
+    "dredgeorigins:wolverine/mining_speed",
+    "dredgeorigins:wolverine/poison_immunity",
+    "dredgeorigins:wolverine/tough",
+    "dredgeorigins:wolverine/slow_mover",
+    "dredgeorigins:wolverine/walk_on_snow"
+  ],
+  "icon": "minecraft:wooden_pickaxe",
+  "order": 0,
+  "impact": 1,
+  "name": "Wolverine",
+  "description": "Wolverines are secluded folk, rarely seen above ground when not seen hunting. Really good at burrowing, they can mine faster than most."
+}

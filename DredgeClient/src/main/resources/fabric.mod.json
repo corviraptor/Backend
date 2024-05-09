@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "dredgeclient",
+	"version": "${version}",
+	"name": "Dredge SMP Client",
+	"description": "NOTICE: This mod is designed for DredgeSMP specifically. I make no guarantee that this mod will function outside of that context, encourage you to NOT use it outside of Dredge. Please do not distribute it either.",
+	"authors": [
+		"DredgeSMP Developers"
+	],
+	"icon": "icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.dredgesmp.dredgeclient.DredgeClient"
+		]
+	},
+	"mixins": [
+		"dredgeclient.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.2",
+		"minecraft": "~1.19.2",
+		"java": ">=17",
+		"fabric-api": "*",
+		"apugli": ">=2.6.5",
+		"moborigins": "1.10.0",
+		"origins": "1.7.1",
+		"adaptedorigins": "1.19-2.3.0-FABRIC"
+	}
+}

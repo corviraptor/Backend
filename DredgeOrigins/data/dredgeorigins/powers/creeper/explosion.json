@@ -1,0 +1,48 @@
+{
+  "type": "origins:active_self",
+  "name": "Explode!",
+  "description": "You can explode enemies around you in a pinch. Be careful though, you'll take 4 hearts of damage.",
+  "hud_render": {
+    "should_render": true
+  },
+  "cooldown": 600,
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:damage",
+        "amount": 8,
+        "source": {
+          "name": "explosion.player",
+          "bypasses_armor": true,
+          "unblockable": true
+        }
+      },
+      {
+        "type": "origins:if_else",
+        "condition": {
+          "type": "apugli:status_effect_tag",
+          "tag": "apugli:charged_effects"
+        },
+        "if_action": {
+          "type": "origins:explode",
+          "power": 6,
+          "destruction_type": "none",
+          "damage_self": false,
+          "create_fire": false
+        },
+        "else_action": {
+          "type": "origins:explode",
+          "power": 3,
+          "destruction_type": "none",
+          "damage_self": false,
+          "create_fire": false
+        }
+      },
+      {
+        "type": "origins:clear_effect",
+        "effect": "dredgeclient:charged"
+      }
+    ]
+  }
+}

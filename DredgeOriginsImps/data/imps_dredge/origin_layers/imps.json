@@ -1,0 +1,35 @@
+{
+    "order": 2,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "imps_dredge:imp",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "imps_dredge:elementalimps/airimp",
+                "imps_dredge:elementalimps/earthimp",
+                "imps_dredge:elementalimps/lavaimp",
+                "imps_dredge:elementalimps/waterimp"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "imps_dredge:imp",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "imps_dredge:elementalimps/airimp",
+                "imps_dredge:elementalimps/earthimp",
+                "imps_dredge:elementalimps/lavaimp",
+                "imps_dredge:elementalimps/waterimp"
+            ]
+        }
+    ],
+    "enabled": true,
+    "gui_title": {
+        "choose_origin": "Choose your element."
+    }
+}

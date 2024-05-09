@@ -1,0 +1,18 @@
+{
+  "powers": [
+    "dredgeorigins:creeper/explosion",
+    "dredgeorigins:creeper/conductive",
+    "dredgeorigins:creeper/lightning_prone",
+    "dredgeorigins:creeper/short_legs",
+    "dredgeorigins:creeper/cat_fear",
+    "dredgeorigins:creeper/creepers_ignore",
+    "dredgeorigins:creeper/charged_swirl"
+  ],
+  "icon": {
+    "item": "minecraft:gunpowder"
+  },
+  "order": 6,
+  "impact": 1,
+  "name": "Creeper",
+  "description": "An explosive personality. Isn't a big fan of cats."
+}

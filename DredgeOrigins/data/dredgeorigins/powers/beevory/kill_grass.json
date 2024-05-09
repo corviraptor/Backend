@@ -1,0 +1,35 @@
+{
+  "type": "origins:multiple",
+  "toggle": {
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "key": {
+      "key": "key.origins.quinary_active"
+    }
+  },
+  "kill_grass": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "setblock ~ ~-1 ~ dirt"
+    },
+    "interval": 1,
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:on_block",
+          "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:grass_block"
+          }
+        },
+        {
+          "type": "origins:power_active",
+          "power": "*:*_toggle"
+        }
+      ]
+    }
+  },
+  "hidden": true
+}

@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "net.dredgesmp.dredgetweaks.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"AlwaysDropXPMixin",
+		"AntiEndermanPickUpGriefMixin",
+		"AntiEndermanPlaceGriefMixin",
+		"AntiWitherGriefMixin",
+		"AntiWitherSkullGriefMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

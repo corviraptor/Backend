@@ -1,0 +1,57 @@
+
+Parrying Dagger:
+CMD:555003
+Give: /give @p carrot_on_a_stick{display:{Name:'{"text":"Parrying Dagger","color":"gold","bold":true}',Lore:['{"text":"A dagger ill suited for direct combat, but"}','{"text":"when used in the offhand, lets you attempt a parry."}','{"text":"When parrying, gain resistance for a short time, and"}','{"text":"if hit in that window, a large burst of strength!"}']},Unbreakable:1b,CustomModelData:555003,parry:1b,Enchantments:[{}]} 1
+
+Thief's Wit:
+CMD: 555004
+Give: /give @p farmersdelight:iron_knife{display:{Name:'{"text":"Thief\'s Wit","color":"dark_gray","bold":true}',Lore:['{"text":"A dagger suited for little else than murder."}','{"text":"While held, you are invisible, but very slow. "}','{"text":"Very good for assassinations,"}','{"text":"Not very good for direct confrontations."}']},Unbreakable:0b,CustomModelData:555004,stealth:1b,Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"farmersdelight:backstabbing",lvl:4s}]} 1
+
+Arbalest of the Scavenger:
+CMD: 555005
+Give: /give @p crossbow{display:{Name:'{"text":"Arbalest of the Scavenger","color":"light_purple","bold":true}',Lore:['{"text":"A crossbow with a special latch to tip arrows"}','{"text":"with potion effects while you have a quiver in"}','{"text":"your inventory. Crouch while it\'s loaded to cycle"}','{"text":"through a few potion effects!"}']},CustomModelData:555005,scavenge:1b,Enchantments:[{id:"minecraft:quick_charge",lvl:3s}]} 1
+
+
+Climbing Pick:
+CMD:555009
+Give: /give @p carrot_on_a_stick{display:{Name:'{"text":"Climbing Pick","color":"blue","bold":true}',Lore:['{"text":"No rope required!"}','{"text":"Use on a block right in front of you to fling"}','{"text":"yourself straight up. Use in rapid succession to"}','{"text":"get a chain, but if you miss the chain window it"}','{"text":"goes on cooldown"}']},CustomModelData:555009,climbPick:1b} 1
+
+Alchemy Robes:
+CMD: 555010
+Give: /give @p leather_chestplate{display:{Name:'{"text":"Alchemy Robes","color":"light_purple","bold":true}',Lore:['{"text":"A set of robes with many vials and tubes"}','{"text":"in the pockets. When you\'re hit, there\'s a"}','{"text":"small chance you\'ll gain a random potion effect"}'],color:52992},Unbreakable:1b,CustomModelData:555010,alchemyRobes:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:6,Operation:0,UUID:[I;-2137732409,-43825819,-1814675196,39968304],Slot:"chest"}]} 1
+
+Phalanx Shield:
+CMD:555011
+Give: /give @p shield{display:{Name:'{"text":"Phalanx Shield","color":"dark_gray","bold":true}',Lore:['{"text":"A shield that promotes a defensive formation."}','{"text":"Block while crouching, and you\'ll give"}','{"text":"defensive buffs to everyone else around you"}','{"text":"also holding a Phalanx Shield, but not yourself."}']},Unbreakable:1b,CustomModelData:555011,phalanx:1b,Enchantments:[{}]} 1
+
+Glass Blade:
+CMD: 555012
+Give: /give @p iron_sword{display:{Name:'{"text":"Glass Blade","color":"aqua","bold":true}',Lore:['{"text":"The sharpest edge you\'ve ever seen, but"}','{"text":"also the most fragile. Interact while holding it"}','{"text":"to temporarily sharpen it. But be careful, the sharper"}','{"text":"the edge, the more likely it is to break"}']},Unbreakable:1b,CustomModelData:555012,glassSword:1b,Enchantments:[{}],AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:7,Operation:0,UUID:[I;-1145157610,1021331977,-1909222760,-915465423],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.4,Operation:0,UUID:[I;-1503413276,1480740737,-1909561131,-1176296430],Slot:"mainhand"}]} 1
+
+Shards of the Blade:
+CMD: 555013
+Give: /give @p prismarine_crystals{display:{Name:'{"text":"Shards of the Blade","color":"dark_aqua","bold":true}',Lore:['{"text":"It\'s unusable like this. "}','{"text":"Perhaps it can be fixed?"}']},CustomModelData:555013,brokenGlassSword:1b,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:-1,Operation:0,UUID:[I;-2021409770,768492633,-1610433680,1947832016],Slot:"mainhand"}]} 1
+
+Prime Alloy:
+Give: /give @p firework_star{display:{Name:'{"text":"Prime Alloy","color":"light_purple","bold":true}',Lore:['{"text":"An alloy made from many materials,"}','{"text":"taking the best features from all"}','{"text":"of its ingredients. It can be used"}','{"text":"to craft masterwork items."}']},CustomModelData:555014,primeAlloy:1b,Enchantments:[{}],Explosion:{Type:0}} 1
+
+24 Karat Gold:
+Give: /give @p raw_gold{display:{Name:'{"text":"24 Karat Gold","color":"dark_red","bold":true}',Lore:['{"text":"Nearly perfectly pure gold. Only the finest quality."}','{"text":"Made in the Refinery."}']},refinedGold:1b,Enchantments:[{}]} 1
+
+purified quartz:
+Give: /give @p quartz{display:{Name:'{"text":"Purified Quartz","color":"dark_red","bold":true}',Lore:['{"text":"Quartz cleansed of all impurities. "}','{"text":"Made in the Refinery"}']},refinedQuartz:1b,Enchantments:[{}]} 1
+
+ghast leather:
+Give: /give @p leather{display:{Name:'{"text":"Ghast-Treated Leather","color":"dark_red","bold":true}',Lore:['{"text":"Leather cured using ghast tears and the heat of the nether."}','{"text":"Made in the Refinery"}']},refinedLeather:1b,Enchantments:[{}]} 1
+
+ashen iron:
+Give: /give @p raw_iron{display:{Name:'{"text":"Ashen Iron","color":"dark_red","bold":true}',Lore:['{"text":"Iron infused with many natural minerals of the nether."}','{"text":"Made in the Refinery"}']},refinedIron:1b,Enchantments:[{}]} 1
+
+Warped Mahogany Chips:
+Give: /give @p cyan_dye{display:{Name:'{"text":"Warped Mahogany Chips","color":"dark_red","bold":true}',Lore:['{"text":"Wood chips from only the finest of warped wood."}','{"text":"Made in the Refinery"}']},refinedWarpedWood:1b,Enchantments:[{}]} 1
+
+Soul Sand Flint:
+Give: /give @p flint{display:{Name:'{"text":"Soul Sand Flint","color":"dark_red"}',Lore:['{"text":"The rare flint gathered from soul sand, with a very fine edge"}','{"text":"Made in the Refinery"}']},refinedFlint:1b,Enchantments:[{}]} 1
+
+Netherite Bracings:
+Give: /give @p netherite_scrap{display:{Name:'{"text":"Netherite Bracings","color":"dark_red","bold":true}',Lore:['{"text":"Tool bracings made from the most durable metal of the nether"}','{"text":"Made in the Refinery"}']},refinedNetherite:1b,Enchantments:[{}]} 1

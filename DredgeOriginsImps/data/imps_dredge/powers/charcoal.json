@@ -1,0 +1,27 @@
+{
+    "name": "Fiery Touch",
+    "description": "Turn flammable logs to charcoal with your touch. Requires 4 logs.",
+    "condition": {
+        "type": "origins:origin",
+        "origin": "imps_dredge:imp",
+        "layer": "origins:origin"
+    },
+    "type": "origins:recipe",
+    "recipe": {
+        "id": "imps_dredge:woodtocharcoal",
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+            "xx",
+            "xx"
+        ],
+        "key": {
+            "x": {
+                "tag": "minecraft:logs_that_burn"
+            }
+        },
+        "result": {
+            "item": "minecraft:charcoal",
+            "count": 1
+        }
+    }
+}

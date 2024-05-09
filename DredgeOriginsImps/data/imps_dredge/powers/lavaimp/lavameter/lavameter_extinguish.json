@@ -1,0 +1,15 @@
+{
+    "name": "lavameter go down.",
+    "hidden": true,
+    "type": "origins:multiple",
+    "l0": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "imps_dredge:lavaimp/lavameter/lavameter_hud",
+            "change": -4,
+            "operation": "add"
+        }
+    }
+}
