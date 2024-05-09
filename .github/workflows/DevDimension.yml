@@ -2,6 +2,7 @@ on:
   push:
     paths:
       - DredgeDevDimension/**
+  workflow_dispatch:
 
 jobs:
   Build-Datapack:
