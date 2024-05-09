@@ -1,0 +1,20 @@
+on:
+  pull_request:
+    types:
+      - closed
+    paths:
+      - DredgeDevDimension/**
+
+jobs:
+  zip-files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: vimtor/action-zip@v1.2
+        with:
+          files: DredgeDevDimension/data/ DredgeDevDimension/pack.mcmeta
+          dest: DredgeDevDimension.zip
+      - uses: actions/upload-artifact@v1.1
+        with:
+          name: DredgeDevDimension
+          path: ${{ github.workspace }}/DredgeDevDimension.zip
