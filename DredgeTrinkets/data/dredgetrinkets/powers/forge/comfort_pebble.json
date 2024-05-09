@@ -12,7 +12,7 @@
         "type": "origins:action_over_time",
         "entity_action": {
             "type": "origins:change_resource",
-            "resource": "dredgetrinkets:comfort_pebble_resource",
+            "resource": "dredgetrinkets:forge/comfort_pebble_resource",
             "operation": "set",
             "change": 0
         },
@@ -26,7 +26,7 @@
         "type": "origins:action_over_time",
         "entity_action": {
             "type": "origins:change_resource",
-            "resource": "dredgetrinkets:comfort_pebble_resource",
+            "resource": "dredgetrinkets:forge/comfort_pebble_resource",
             "operation": "add",
             "change": 1
         },
@@ -59,7 +59,7 @@
         },
         "condition": {
             "type": "origins:resource",
-            "resource": "dredgetrinkets:comfort_pebble_resource",
+            "resource": "dredgetrinkets:forge/comfort_pebble_resource",
             "comparison": "==",
             "compare_to": 6
         },

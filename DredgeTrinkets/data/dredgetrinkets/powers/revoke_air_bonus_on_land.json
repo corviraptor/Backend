@@ -1,0 +1,12 @@
+{
+    "type": "origins:action_on_land",
+    "entity_action": {
+        "type": "origins:revoke_power",
+        "power": "dredgetrinkets:air_bonus_damage",
+        "source": "dredgetrinkets:trinkets"
+    },
+    "condition": {
+        "type": "origins:power",
+        "power": "dredgetrinkets:air_bonus_damage"
+    }
+}

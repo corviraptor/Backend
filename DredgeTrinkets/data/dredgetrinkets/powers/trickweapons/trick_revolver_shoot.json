@@ -1,0 +1,58 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.firework_rocket.blast",
+                "volume": 1,
+                "pitch": 0.8
+            },
+            {
+                "type": "origins:change_resource",
+                "resource": "dredgetrinkets:trickweapons/trick_weapon_ammo",
+                "change": -1,
+                "operation": "add"
+            },
+            {
+                "type": "origins:raycast",
+                "distance": 20,
+                "shape_type": "collider",
+                "bientity_action": {
+                "type": "origins:damage",
+                    "amount": 5,
+                    "source": {
+                        "name": "arrow"
+                    }
+                },
+                "command_along_ray": "particle minecraft:crit",
+                "command_step": 0.2
+            }            
+        ]
+    },
+    "key": {
+        "key": "key.use",
+        "continuous": false
+    },
+    "cooldown": 12,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:nbt",
+                    "nbt": "{trickRevolver:1b}"
+                }
+            },
+            {
+                "type": "origins:resource",
+                "resource": "dredgetrinkets:trickweapons/trick_weapon_ammo",
+                "comparison": ">=",
+                "compare_to": 1
+            }
+        ]
+    }
+}

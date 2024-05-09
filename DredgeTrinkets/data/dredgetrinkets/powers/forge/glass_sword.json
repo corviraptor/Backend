@@ -9,7 +9,7 @@
         },
         "max_action": {
             "type": "origins:change_resource",
-            "resource": "dredgetrinkets:glass_sword_glass-resource",
+            "resource": "dredgetrinkets:forge/glass_sword_glass-resource",
             "operation": "set",
             "change": 0
         },
@@ -24,7 +24,7 @@
         "type": "origins:action_over_time",
         "entity_action": {
             "type": "origins:change_resource",
-            "resource": "dredgetrinkets:glass_sword_glass-resource",
+            "resource": "dredgetrinkets:forge/glass_sword_glass-resource",
             "operation": "set",
             "change": 0
         },
@@ -49,7 +49,7 @@
         "tick_rate": 5,
         "condition": {
             "type": "origins:resource",
-            "resource": "dredgetrinkets:glass_sword_glass-resource",
+            "resource": "dredgetrinkets:forge/glass_sword_glass-resource",
             "comparison": "==",
             "compare_to": 1
         }
@@ -71,7 +71,7 @@
         "tick_rate": 5,
         "condition": {
             "type": "origins:resource",
-            "resource": "dredgetrinkets:glass_sword_glass-resource",
+            "resource": "dredgetrinkets:forge/glass_sword_glass-resource",
             "comparison": "==",
             "compare_to": 2
         }
@@ -93,7 +93,7 @@
         "tick_rate": 5,
         "condition": {
             "type": "origins:resource",
-            "resource": "dredgetrinkets:glass_sword_glass-resource",
+            "resource": "dredgetrinkets:forge/glass_sword_glass-resource",
             "comparison": "==",
             "compare_to": 3
         }
@@ -114,7 +114,7 @@
                 {
                     "condition": {
                         "type": "origins:resource",
-                        "resource": "dredgetrinkets:glass_sword_glass-resource",
+                        "resource": "dredgetrinkets:forge/glass_sword_glass-resource",
                         "comparison": "==",
                         "compare_to": 1
                     },
@@ -148,7 +148,7 @@
                 {
                     "condition": {
                         "type": "origins:resource",
-                        "resource": "dredgetrinkets:glass_sword_glass-resource",
+                        "resource": "dredgetrinkets:forge/glass_sword_glass-resource",
                         "comparison": "==",
                         "compare_to": 2
                     },
@@ -182,7 +182,7 @@
                 {
                     "condition": {
                         "type": "origins:resource",
-                        "resource": "dredgetrinkets:glass_sword_glass-resource",
+                        "resource": "dredgetrinkets:forge/glass_sword_glass-resource",
                         "comparison": "==",
                         "compare_to": 3
                     },
@@ -226,7 +226,7 @@
             "actions": [
                 {
                     "type": "origins:change_resource",
-                    "resource": "dredgetrinkets:glass_sword_glass-resource",
+                    "resource": "dredgetrinkets:forge/glass_sword_glass-resource",
                     "change": 1
                 },
                 {
@@ -235,7 +235,7 @@
                         {
                             "condition": {
                                 "type": "origins:resource",
-                                "resource": "dredgetrinkets:glass_sword_glass-resource",
+                                "resource": "dredgetrinkets:forge/glass_sword_glass-resource",
                                 "comparison": "==",
                                 "compare_to": 1
                             },
@@ -248,7 +248,7 @@
                         {
                             "condition": {
                                 "type": "origins:resource",
-                                "resource": "dredgetrinkets:glass_sword_glass-resource",
+                                "resource": "dredgetrinkets:forge/glass_sword_glass-resource",
                                 "comparison": "==",
                                 "compare_to": 2
                             },
@@ -261,7 +261,7 @@
                         {
                             "condition": {
                                 "type": "origins:resource",
-                                "resource": "dredgetrinkets:glass_sword_glass-resource",
+                                "resource": "dredgetrinkets:forge/glass_sword_glass-resource",
                                 "comparison": "==",
                                 "compare_to": 3
                             },

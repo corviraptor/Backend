@@ -1,0 +1,28 @@
+{
+    "type": "origins:action_on_hit",
+    "bientity_action": {
+        "type": "origins:actor_action",
+        "action": {
+            "type": "origins:change_resource",
+            "resource": "dredgetrinkets:trickweapons/trick_weapon_ammo",
+            "change": 3
+        }
+    },
+    "bientity_condition": {
+        "type": "origins:actor_condition",
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:nbt",
+                "nbt": "{trickShotgun:1b}"
+            }
+        }
+    },
+    "damage_condition": {
+        "type": "origins:amount",
+        "comparison": ">=",
+        "compare_to": 8
+    },
+    "cooldown": 10
+}

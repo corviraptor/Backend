@@ -32,7 +32,7 @@
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "dredgetrinkets:gravity_feather_resource",
+                    "resource": "dredgetrinkets:forge/gravity_feather_resource",
                     "comparison": "==",
                     "compare_to": 60
                 }
@@ -60,7 +60,7 @@
                 },
                 {
                     "type": "origins:change_resource",
-                    "resource": "dredgetrinkets:gravity_feather_resource",
+                    "resource": "dredgetrinkets:forge/gravity_feather_resource",
                     "operation": "set",
                     "change": 0
                 }
@@ -71,7 +71,7 @@
         "type": "origins:action_over_time",
         "entity_action": {
             "type": "origins:change_resource",
-            "resource": "dredgetrinkets:gravity_feather_resource",
+            "resource": "dredgetrinkets:forge/gravity_feather_resource",
             "operation": "add",
             "change": 1
         },
