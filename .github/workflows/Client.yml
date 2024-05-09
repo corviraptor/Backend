@@ -1,31 +1,30 @@
-# Automatically build the project and run any configured tests for every push
-# and submitted pull request. This can help catch issues that only occur on
-# certain platforms or Java versions, and provides a first line of defence
-# against bad commits.
-
 on:
   push:
-   paths:
-      - DredgeClient/**
+    paths:
+      DredgeClient/**
   workflow_dispatch:
 
 jobs:
   Build-Jar:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - name: checkout repository
         uses: actions/checkout@v3
+      - name: validate gradle wrapper
+        uses: gradle/wrapper-validation-action@v1
       - name: setup jdk 17
         uses: actions/setup-java@v3
         with:
           java-version: 17
           distribution: 'microsoft'
       - name: make gradle wrapper executable
-        run: chmod +x DredgeClient/gradlew
+        working-directory: ./DredgeClient
+        run: chmod +x ./gradlew
       - name: build
-        run: ./DredgeClient/gradlew build
+        working-directory: ./DredgeClient
+        run: ./gradlew build
       - name: capture build artifacts
         uses: actions/upload-artifact@v4.3.3
         with:
           name: Artifacts
-          path: DredgeClient/build/libs/
+          path: build/libs/
