@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:stone"
+    },
+    "title": "",
+    "description": "",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "Test1": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "dealt": 9999,
+          "taken": 9999,
+          "blocked": true,
+          "source_entity": {
+            "type": "minecraft:villager"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "Test1"
+    ]
+  ],
+  "rewards": {
+    "function": "dredgeforge:cruciblecheck"
+  }
+}
