@@ -3,8 +3,10 @@
 # certain platforms or Java versions, and provides a first line of defence
 # against bad commits.
 
-name: build
-on: [pull_request, push]
+on:
+  push:
+   paths:
+      - DredgeClient/**
 
 jobs:
   Build-Jar:
@@ -32,7 +34,7 @@ jobs:
         run: ./DredgeClient/gradlew build
       - name: capture build artifacts
         if: ${{ runner.os == 'Linux' && matrix.java == '17' }} # Only upload artifacts built from latest java on one OS
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4.3.3
         with:
           name: Artifacts
           path: DredgeClient/build/libs/
