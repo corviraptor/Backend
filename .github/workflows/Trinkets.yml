@@ -2,6 +2,7 @@ on:
   push:
     paths:
       - DredgeTrinkets/**
+  workflow_dispatch:
 
 jobs:
   Build-Datapack:

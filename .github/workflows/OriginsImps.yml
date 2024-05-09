@@ -2,6 +2,7 @@ on:
   push:
     paths:
       - DredgeOriginsImps/**
+  workflow_dispatch:
 
 jobs:
   Build-Datapack:

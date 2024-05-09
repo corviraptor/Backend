@@ -2,6 +2,7 @@ on:
   push:
     paths:
       - DredgeQuests/**
+  workflow_dispatch:
 
 jobs:
   Build-Datapack:

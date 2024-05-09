@@ -2,6 +2,7 @@ on:
   push:
     paths:
       - DredgeResources/**
+  workflow_dispatch:
 
 jobs:
   Build-Resourcepack:

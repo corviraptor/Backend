@@ -2,6 +2,7 @@ on:
   push:
     paths:
       - DredgeForgeSimple/**
+  workflow_dispatch:
 
 jobs:
   Build-Datapack:

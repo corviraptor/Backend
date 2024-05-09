@@ -2,6 +2,7 @@ on:
   push:
     paths:
       - DredgeTagsAndRecipes/**
+  workflow_dispatch:
 
 jobs:
   Build-Datapack:
