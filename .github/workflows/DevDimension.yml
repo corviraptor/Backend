@@ -12,7 +12,7 @@ jobs:
         with:
           files: DredgeDevDimension/data/ DredgeDevDimension/pack.mcmeta
           dest: DredgeDevDimension.zip
-      - uses: actions/upload-artifact@v1.1
+      - uses: actions/upload-artifact@v4.3.3
         with:
           name: DredgeDevDimension
           path: ${{ github.workspace }}/DredgeDevDimension.zip
