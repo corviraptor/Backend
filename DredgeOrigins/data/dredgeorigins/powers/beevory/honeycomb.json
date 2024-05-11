@@ -1,0 +1,17 @@
+{
+    "type": "origins:action_on_being_used",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:shears"
+        }
+    },
+    "item_action": {
+        "type": "origins:damage"
+    },
+    "result_stack": {
+        "item": "minecraft:honeycomb",
+        "amount": 3
+    },
+    "hidden": true
+}
