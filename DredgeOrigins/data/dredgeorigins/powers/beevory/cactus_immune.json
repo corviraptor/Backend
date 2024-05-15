@@ -1,11 +1,8 @@
 {
     "type": "origins:modify_damage_taken",
     "damage_condition": {
-        "type": "origins:or",
-        "condition": {
-            "type": "origins:name",
-            "name": "cactus"
-        }
+        "type": "origins:name",
+        "name": "cactus"
     },
     "modifier": {
         "operation": "set_total",
