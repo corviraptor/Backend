@@ -1,4 +1,5 @@
 {
+    "name": "dummy test power",
     "type": "origins:multiple",
     "noeffect": {
         "type": "origins:effect_immunity",
