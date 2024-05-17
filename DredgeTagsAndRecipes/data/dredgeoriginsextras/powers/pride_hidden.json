@@ -1,5 +1,11 @@
 {
-    "type": "origins:effect_immunity",
-    "effects": [],
-    "inverted": true
+    "type": "origins:multiple",
+    "noeffect": {
+        "type": "origins:effect_immunity",
+        "effects": [],
+        "inverted": true
+    },
+    "notouch": {
+        "type": "origins:prevent_entity_collision"
+    }
 }
