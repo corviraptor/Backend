@@ -72,11 +72,14 @@
         }
     },
     "more-exhaustion": {
-        "type": "origins:modify_exhaustion",
-        "modifier": {
-            "name": "Increased exhaustion",
-            "operation": "multiply_base",
-            "value": 2.0
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "condition": {
+            "type": "apoli:creative_flying"
+        },
+        "entity_action": {
+            "type": "origins:exhaust",
+            "amount": 0.15
         }
     }
 }
