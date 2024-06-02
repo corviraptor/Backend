@@ -73,13 +73,13 @@
     },
     "more-exhaustion": {
         "type": "origins:action_over_time",
-        "interval": 20,
+        "interval": 8,
         "condition": {
             "type": "apoli:creative_flying"
         },
         "entity_action": {
             "type": "origins:exhaust",
-            "amount": 0.15
+            "amount": 0.2
         }
     }
 }

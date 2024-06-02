@@ -33,6 +33,21 @@
     },
     "cooldown": 10,
     "condition": {
-        "type": "origins:sneaking"
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:sneaking"
+            },
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:glass_bottle"
+                    }
+                }
+            }
+        ]
     }
 }
