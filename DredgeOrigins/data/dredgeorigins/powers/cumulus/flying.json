@@ -59,5 +59,24 @@
                 }
             ]
         }
+    },
+    "no-mining-debuff": {
+        "type": "origins:modify_break_speed",
+        "condition": {
+            "type": "origins:creative_flying"
+        },
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 5,
+            "name": "counteract vanilla mining in air debuff"
+        }
+    },
+    "more-exhaustion": {
+        "type": "origins:modify_exhaustion",
+        "modifier": {
+            "name": "Increased exhaustion",
+            "operation": "multiply_base",
+            "value": 2.0
+        }
     }
 }
