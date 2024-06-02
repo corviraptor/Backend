@@ -8,7 +8,8 @@
             "effect": "minecraft:regeneration",
             "duration": 200,
             "amplifier": 0,
-            "show_particles": false
+            "show_particles": false,
+            "show_icon": false
         }
     },
     "interval": 40,
@@ -18,7 +19,7 @@
             "type": "origins:in_tag",
             "tag": "minecraft:flowers"
         },
-        "radius": "3",
+        "radius": 3,
         "shape": "cube",
         "comparison": ">=",
         "compare_to": 3

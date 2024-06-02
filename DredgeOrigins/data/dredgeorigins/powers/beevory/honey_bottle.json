@@ -6,21 +6,33 @@
         "key": "key.use"
     },
     "entity_action": {
-        "type": "origins:replace_inventory",
-        "item_condition": {
-            "type": "origins:ingredient",
-            "ingredient": {
-                "item": "minecraft:glass_bottle"
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:modify_inventory",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:glass_bottle"
+                    }
+                },
+                "slot": "weapon.mainhand",
+                "item_action": {
+                    "type": "origins:consume"
+                }
+            },
+            {
+                "type": "origins:give",
+                "stack": {
+                    "item": "minecraft:honey_bottle",
+                    "amount": 1
+                },
+                "preferred_slot": "mainhand"
             }
-        },
-        "slot": "weapon.mainhand",
-        "stack": {
-            "item": "minecraft:honey_bottle"
-        }
+        ]
     },
     "cooldown": 10,
     "condition": {
         "type": "origins:sneaking"
     }
 }
-
