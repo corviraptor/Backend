@@ -1,0 +1,54 @@
+{
+    "type": "origins:multiple",
+    "hidden": true,
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "min_action": {
+            "type": "origins:execute_command",
+            "command": "playsound dredgeresources:misc.groan_tube_down master @a"
+
+        },
+        "max_action": {
+            "type": "origins:execute_command",
+            "command": "playsound dredgeresources:misc.groan_tube_up master @a"
+        }
+    },
+    "flip": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.use"
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:nbt",
+                "nbt": "{groanTube: 1b}"
+            }
+        },
+        "entity_action": {
+            "type": "apoli:if_else",
+            "condition": {
+                "type": "origins:resource",
+                "compare_to": 0,
+                "comparison": "==",
+                "resource": "dredgeoriginsextras:groan_tube_resource"
+            },
+            "if_action": {
+                "type": "origins:change_resource",
+                "change": 1,
+                "operation": "set",
+                "resource": "dredgeoriginsextras:groan_tube_resource"
+            },
+            "else_action": {
+                "type": "origins:change_resource",
+                "change": 0,
+                "operation": "set",
+                "resource": "dredgeoriginsextras:groan_tube_resource"
+            }
+        },
+        "cooldown": 20
+    }
+}

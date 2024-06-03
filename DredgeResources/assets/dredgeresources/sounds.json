@@ -186,7 +186,7 @@
       }
     ]
   },
-  
+
   "clocktower.chimes1": {
     "sounds": [
         {
@@ -283,16 +283,54 @@
         }
     ]
   },
-  "entity.wither.spawn": {
+
+  "misc.amogi": {
     "sounds": [
-    	{
-    		"name": "dredgeresources:misc/amogi",
-    		"weight": 1
-    	},
-    	{
-    		"name": "minecraft:mob/wither/spawn",
-    		"weight": 9
-    	}
+        {
+            "name": "dredgeresources:misc/amogi"
+        }
+    ]
+  },
+  "misc.discord_ping": {
+    "sounds": [
+        {
+            "name": "dredgeresources:misc/discord_ping"
+        }
+    ]
+  },
+  "misc.groan_tube_down": {
+    "sounds": [
+        {
+            "name": "dredgeresources:misc/groan_tube_down"
+        }
+    ]
+  },
+  "misc.groan_tube_up": {
+    "sounds": [
+        {
+            "name": "dredgeresources:misc/groan_tube_up"
+        }
+    ]
+  },
+  "misc.sitcom_laugh": {
+    "sounds": [
+        {
+            "name": "dredgeresources:misc/sitcom_laugh"
+        }
+    ]
+  },
+  "misc.sitcom_ooh_neg": {
+    "sounds": [
+        {
+            "name": "dredgeresources:misc/sitcom_ooh_neg"
+        }
+    ]
+  },
+  "misc.sitcom_ooh_pos": {
+    "sounds": [
+        {
+            "name": "dredgeresources:misc/sitcom_ooh_pos"
+        }
     ]
   }
 }
