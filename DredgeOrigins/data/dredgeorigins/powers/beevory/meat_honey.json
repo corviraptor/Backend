@@ -1,0 +1,47 @@
+{
+    "name": "Nectacarnivore",
+    "type": "origins:prevent_item_use",
+    "description": "You can only eat meat, cheese, and honey based foods.",
+    "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "origins:meat"
+                        }
+                    },
+                    {
+                        "type": "origins:meat"
+                    },
+                    {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "dredgeorigins:honey"
+                        }
+                    },
+                    {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "dredgeorigins:cheese"
+                        }
+                    }
+                ],
+                "inverted": true
+            },
+            {
+                "type": "origins:food"
+            },
+            {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "origins:ignore_diet"
+                },
+                "inverted": true
+            }
+        ]
+    }
+}
