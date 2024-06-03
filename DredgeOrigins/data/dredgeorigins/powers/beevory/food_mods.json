@@ -3,6 +3,7 @@
     "name": "Nectacarnivore",
     "description": "You can only eat meat, cheese, and honey based foods.",
     "diet": {
+        "name": "Nectacarnivore",
         "type": "origins:prevent_item_use",
         "item_condition": {
             "type": "origins:and",
