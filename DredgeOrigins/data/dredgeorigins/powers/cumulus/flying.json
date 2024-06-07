@@ -75,11 +75,30 @@
         "type": "origins:action_over_time",
         "interval": 8,
         "condition": {
-            "type": "apoli:creative_flying"
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "apoli:creative_flying"
+                },
+                {
+                    "type": "origins:gamemode",
+                    "gamemode": "survival"
+                }
+            ]
         },
         "entity_action": {
-            "type": "origins:exhaust",
-            "amount": 0.2
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:sprinting"
+            },
+            "if_action": {
+                "type": "origins:exhaust",
+                "amount": 1.5
+            },
+            "else_action": {
+                "type": "origins:exhaust",
+                "amount": 1
+            }
         }
     }
 }
