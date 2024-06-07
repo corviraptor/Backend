@@ -150,6 +150,9 @@
         "beachparty:icecream_melon",
         "beachparty:icecream_chocolate",
         "beachparty:icecream_sweetberries",
-        "farmersdelight:melon_popsicle"
+        "farmersdelight:melon_popsicle",
+        "minecraft:bone",
+        "farmersdelight:cake_slice",
+        "farmersdelight:apple_cider"
     ]
 }
