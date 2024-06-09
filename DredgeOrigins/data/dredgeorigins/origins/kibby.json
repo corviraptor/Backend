@@ -5,17 +5,12 @@
         "coppergolem:abilities/radar-overlay",
         "coppergolem:neutral/antenna",
         "coppergolem:neutral/golem_size",
-
         "dredgeorigins:dev/cant_hurt",
         "dredgeorigins:dev/cant_die",
         "dredgeorigins:dev/flying",
-
         "dredgeorigins:kibby/meow",
         "dredgeorigins:kibby/dyeable_base",
-        "dredgeorigins:kibby/undye",
-        "moborigins:dyeable"
-
-
+        "dredgeorigins:kibby/dyeable"
     ],
     "icon": {
         "item": "minecraft:copper_ingot"
