@@ -8,16 +8,15 @@
             },
             {
                 "type": "origins:power",
-                "power": "dredgeoriginsextras:pride_hidden"
+                "power": "dredgeoriginsextras:hidden_player"
             }
         ]
     },
     "bientity_condition": {
         "type": "origins:actor_condition",
         "condition": {
-            "type": "origins:origin",
-            "origin": "dredgeorigins:kibby",
-            "layer": "origins:origin"
+            "type": "origins:power",
+            "power": "dredgeoriginsextras:see_hidden_player"
         },
         "inverted": true
     }
