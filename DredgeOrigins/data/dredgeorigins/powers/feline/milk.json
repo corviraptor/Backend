@@ -27,12 +27,6 @@
                 "ingredient": {
                     "item": "farmersdelight:milk_bottle"
                 }
-            },
-            {
-                "type": "origins:ingredient",
-                "ingredient": {
-                    "item": "culinaire:milk_bottle"
-                }
             }
         ]
     }
