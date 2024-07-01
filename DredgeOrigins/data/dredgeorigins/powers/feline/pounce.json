@@ -32,8 +32,21 @@
         "key": "key.jump"
     },
     "condition": {
-        "type": "origins:on_block",
-        "inverted": true
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:on_block",
+                "inverted": true
+            },
+            {
+                "type": "origins:gamemode",
+                "gamemode": "survival"
+            },
+            {
+                "type": "origins:riding",
+                "inverted": true
+            }
+        ]
     },
     "name": "Pounce",
     "description": "Spring into the air and leap forwards in an arc.",

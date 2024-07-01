@@ -1,5 +1,5 @@
 {
-    "name": "Arivory",
+    "name": "Aristaeus",
     "description": "The God Of Bees.",
     "powers": [
         "origins:water_vulnerability",
@@ -16,8 +16,6 @@
         "dredgeorigins:beevory/meat_honey",
         "dredgeorigins:beevory/shaking",
         "dredgeorigins:beevory/stinger",
-        "dredgeorigins:cumulus/flying_resource",
-        "dredgeorigins:cumulus/flying",
         "dredgeorigins:dev/berry_immune",
         "dredgeorigins:dev/cactus_immune",
         "dredgeorigins:dev/poison_immune",
