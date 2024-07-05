@@ -93,55 +93,83 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "archeology:ender_dragon_shard"
+                    "name": "minecraft:angler_pottery_sherd"
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "archeology:creeper_shard"
+                    "name": "minecraft:archer_pottery_sherd"
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "archeology:shovel_shard"
+                    "name": "minecraft:arms_up_pottery_sherd"
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "archeology:temple_shard"
+                    "name": "minecraft:blade_pottery_sherd"
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "archeology:hoe_shard"
+                    "name": "minecraft:brewer_pottery_sherd"
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "archeology:propagule_shard"
+                    "name": "minecraft:burn_pottery_sherd"
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "archeology:slime_shard"
+                    "name": "minecraft:danger_pottery_sherd"
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "archeology:diamond_shard"
+                    "name": "minecraft:explorer_pottery_sherd"
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "archeology:sun_shard"
+                    "name": "minecraft:friend_pottery_sherd"
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "archeology:sword_shard"
+                    "name": "minecraft:heart_pottery_sherd"
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "archeology:axe_shard"
+                    "name": "minecraft:heartbreak_pottery_sherd"
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "archeology:emerald_shard"
+                    "name": "minecraft:howl_pottery_sherd"
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "archeology:snowflake_shard"
+                    "name": "minecraft:miner_pottery_sherd"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:mourner_pottery_sherd"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:plenty_pottery_sherd"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:prize_pottery_sherd"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:sheaf_pottery_sherd"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:shelter_pottery_sherd"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:skull_pottery_sherd"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:snort_pottery_sherd"
                 }
             ]
         }

@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "#minecraft:sculk_replaceable",
-    "#archeology:excavation_blocks",
     "minecraft:gravel",
     "#c:ores",
     "minecraft:pointed_dripstone",
