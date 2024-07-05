@@ -1,8 +1,4 @@
 {
-  "effect.dredgeclient.charged": "Charged",
-  "gamerule.alwaysDropXP": "Always drop XP",
-  "gamerule.disableEndermanGrief": "Disable Enderman Grief",
-  "gamerule.disableWitherGrief": "Disable Wither Grief",
   "itemGroup.brewinandchewin.main": "Brewin' and Chewin'",
   "tooltip.milk_bottle": "Clears 1 Effect",
   "entity.xercapaint.canvas": "Painting Canvas",
