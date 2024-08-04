@@ -40,12 +40,15 @@
                     "resource": "dredgeoriginsextras:sit_is-sitting"
                 },
                 {
-                    "type": "origins:power_active",
-                    "power": "dredgeoriginsextras:crawl_crawl",
+                    "type": "origins:moving",
                     "inverted": true
+                },
+                {
+                    "type": "apugli:grounded"
                 }
             ]
         }
+
     },
     "stand": {
         "type": "origins:active_self",
