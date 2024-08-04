@@ -1,0 +1,8 @@
+{
+    "owners": [
+        "pridemoths:moth"
+    ],
+    "width_increment": 0.25,
+    "height_increment": 0.25,
+    "animation": "floating"
+}

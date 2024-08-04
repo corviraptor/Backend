@@ -1,6 +1,9 @@
 {
     "replace": false,
     "values": [
-        {"id":"pridemoths:moth","required":false}
+        {"id":"pridemoths:moth","required":false},
+        {"id":"#hybrid-aquatic:critter","required":false},
+        {"id":"#hybrid-aquatic:small_prey","required":false},
+        {"id":"#hybrid-aquatic:shrimp","required":false}
     ]
 }
