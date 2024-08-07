@@ -1,6 +1,7 @@
 {
     "powers": [
         "dredgeoriginsextras:hide_player",
-        "dredgeoriginsextras:groan_tube"
+        "dredgeoriginsextras:groan_tube",
+        "dredgeoriginsextras:sit"
     ]
   }
