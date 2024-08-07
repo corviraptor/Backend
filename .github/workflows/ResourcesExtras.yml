@@ -1,7 +1,7 @@
 on:
   push:
     paths:
-      - DredgeResourcesClient/**
+      - DredgeResourcesExtras/**
   workflow_dispatch:
 
 jobs:
@@ -11,5 +11,5 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/upload-artifact@v4.3.3
         with:
-          name: DredgeResourcesClient
-          path: DredgeResourcesClient/**
+          name: DredgeResourcesExtras
+          path: DredgeResourcesExtras/**

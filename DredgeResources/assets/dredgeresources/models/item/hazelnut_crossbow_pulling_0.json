@@ -1,0 +1,6 @@
+{
+    "parent": "item/crossbow",
+    "textures": {
+        "layer0": "dredgeresources:item/hazelnut_crossbow_pulling_0"
+    }
+}
