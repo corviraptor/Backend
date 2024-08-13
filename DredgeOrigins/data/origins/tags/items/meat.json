@@ -41,6 +41,8 @@
     "farmersdelight:cod_slice",
     "farmersdelight:salmon_slice",
     "#minecraft:fishes",
+    "#c:raw_fishes",
+    "#c:cooked_fishes",
     "farmersdelight:cooked_cod_slice",
     "farmersdelight:cooked_salmon_slice",
     "farmersdelight:fish_stew",
@@ -80,6 +82,7 @@
     "candlelight:chicken",
     "candlelight:lasagne",
     "candlelight:roastbeef_carrots",
-    "candlelight:beef_wellington"
+    "candlelight:beef_wellington",
+    "minecraft:honey_bottle"
   ]
 }

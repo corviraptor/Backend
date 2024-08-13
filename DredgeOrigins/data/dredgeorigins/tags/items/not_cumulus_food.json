@@ -13,6 +13,8 @@
     "minecraft:mutton",
     "minecraft:cooked_mutton",
     "#minecraft:fishes",
+    "#c:raw_fishes",
+    "#c:cooked_fishes",
     "farmersdelight:minced_beef",
     "farmersdelight:bacon",
     "farmersdelight:mutton_chops",
