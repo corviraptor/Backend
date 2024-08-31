@@ -1,0 +1,1 @@
+give @s minecraft:netherite_axe{ComboBlade_Axe:1b, display:{Name:"{\"text\":\"Combo Blade [Axe Mode]\",\"color\":\"#ff0064\",\"bold\":true}"},Unbreakable:true} 1 
