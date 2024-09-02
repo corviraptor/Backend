@@ -1,0 +1,17 @@
+{
+    
+    "type": "origins:inventory",
+    "container_type": "hopper",
+    "key": {
+        "key": "key.pickItem"
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+        {
+            "type": "origins:predicate",
+            "predicate": "dredgecombat:comboblade/holding_combo_blade"
+        }
+        ]
+    }
+}

@@ -1,0 +1,5 @@
+{
+    "function": "apoli:add_power",
+    "power": "dredgecombat:comboblade/sheathe",
+    "slot": "mainhand"
+}

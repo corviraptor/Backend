@@ -1,0 +1,6 @@
+{
+    "name": "Loadout",
+    "description": "Use your Pick Block key while holding your Combo Blade to open your Combo Blade Loadout.",
+    "function": "apoli:add_power",
+    "power": "dredgecombat:comboblade/comboblade_inventory"
+}
