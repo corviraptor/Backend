@@ -1,0 +1,1 @@
+power grant @s dredgecombat:comboblade/comboblade_inventory

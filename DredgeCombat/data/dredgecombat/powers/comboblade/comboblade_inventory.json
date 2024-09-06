@@ -1,6 +1,6 @@
 {
-    
     "type": "origins:inventory",
+    "title": "Combo Blade Loadout",
     "container_type": "hopper",
     "key": {
         "key": "key.pickItem"
