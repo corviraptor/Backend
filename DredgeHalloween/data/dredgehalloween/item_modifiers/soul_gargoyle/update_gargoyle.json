@@ -1,0 +1,5 @@
+{
+    "function": "apoli:add_power",
+    "power": "dredgecombat:soul_gargoyle/update_gargoyle",
+    "slot": "mainhand"
+}

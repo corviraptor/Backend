@@ -1,0 +1,21 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "replace": "true",
+    "lore": [
+        {"text":"Souls Collected: ", "color":"#756B5E", "italic":false, "extra":[{"score":{"name":"*","objective":"GargoyleSouls"}}]},
+        {"text":" "},
+        {"text":"Holiday Restriction: Halloween / Full Moon","color":"#FF4040","italic":false},
+        {"text":" "},
+        {"text":"Alt-Fire: Update Souls Count","color":"#99CCFF","italic":false},
+        {"text":" "},
+        {"text":"The Soul Gargoyle grants access to Merasmissions during the Scream Fortress event each year.","color":"gray","italic":false},
+        {"text":"You can level up the gargoyle by collecting souls. Souls can be found by killing enemies, completing Merasmissions and finding Soul Gargoyles.","color":"gray","italic":false},
+        {"text":"Levels up at 666, 1337, 2000 and then every 2000 Souls.","color":"gray","italic":false},
+        {"text":"Provides access to Halloween transmutes where you can transmute 3 items for an untradable and unmarketable Halloween item from years past.","color":"gray","italic":false},
+        {"text":"A bonus is given for every 10 transmutes.","color":"gray","italic":false},
+        {"text":" "},
+        {"text":"( Not Tradable, Marketable, or Usable in Crafting )","color":"gray","italic":false},
+        {"text":" "}
+    ]
+}

@@ -1,0 +1,4 @@
+{
+    "function": "minecraft:set_name",
+    "name": [{"text":"Soul Gargoyle","color":"#FFD700","bold":true, "italic":false}]
+}
