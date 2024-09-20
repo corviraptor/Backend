@@ -1,0 +1,3 @@
+item replace entity @s armor.head with minecraft:armor_stand{EntityTag:{ArmorItems:[{},{},{},{id:"minecraft:armor_stand",Count:1,tag:{CustomModelData:222000, Damage:0}}], Invisible:1b, Health:1, cardinal_components:{"apoli:powers":{Powers:[{Type:"dredgehalloween:soul_gargoyle/break_gargoyle", Data:0L, Sources:["apoli:command"]}]}}}, CustomModelData:222000}
+
+data merge entity @s {Invisible:0b,Health:1,Fire:100}

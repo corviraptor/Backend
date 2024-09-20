@@ -1,6 +1,6 @@
 {
-    "name": "Update Gargoyle Souls Count",
-    "description": "Updates Gargoyle Souls Count",
+    "name": "Update Gargoyle",
+    "description": "Alt Fire: Updates Gargoyle",
     "type": "origins:active_self",
     "entity_action": {
         "type": "origins:execute_command",
