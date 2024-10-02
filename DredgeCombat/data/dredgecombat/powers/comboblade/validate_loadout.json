@@ -1,0 +1,50 @@
+{
+    "type": "origins:action_on_callback",
+
+    "entity_action_gained": {
+        "type": "origins:and",
+        "actions": [
+        {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:inventory",
+                        "inventory_types": ["power"],
+                        "power": "dredgecombat:comboblade/loadout",
+                        "item_condition": {
+                            "type": "origins:nbt",
+                            "nbt": "{Combo_Axe_Prototype:1b}"
+                        },
+                        "comparison": "==",
+                        "compare_to": 1
+                    },
+                    {
+                        "type": "origins:inventory",
+                        "inventory_types": ["power"],
+                        "power": "dredgecombat:comboblade/loadout",
+                        "item_condition": {
+                            "type": "origins:nbt",
+                            "nbt": "{Combo_Sword_Prototype:1b}"
+                        },
+                        "comparison": "==",
+                        "compare_to": 1
+                    }
+                ]
+            },
+            "if_action": {
+                "type": "origins:execute_command",
+                "command": "scoreboard players set @s ValidComboBladeLoadout 1"
+            },
+            "else_action": {
+                "type": "origins:execute_command",
+                "command": "scoreboard players set @s ValidComboBladeLoadout 0"
+            }
+        },
+        {
+            "type": "origins:execute_command",
+            "command": "power revoke @s dredgecombat:comboblade/validate_loadout"
+        }]
+    }
+}

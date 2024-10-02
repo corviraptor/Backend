@@ -1,0 +1,10 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{Combo_Axe:1b}"
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{Combo_Axe_Prototype:0b}"
+  }
+]

@@ -1,13 +1,29 @@
+# this guys gonna hold our combo blade for us since we can't `item replace` from 
+# an origins power inventory, and we can't `data modify` or `data merge` the player
 summon minecraft:husk ~ ~400 ~ {NoAI:1b,CustomName:"\"comboSwitchTemp\""}
 
-data modify entity @e[limit=1, type=minecraft:husk, name="comboSwitchTemp"] HandItems[0] set from entity @s cardinal_components.apoli:powers.Powers[{Type:"dredgecombat:comboblade/comboblade_inventory"}].Data.Items[{id:"minecraft:netherite_axe"}]
+# if anyone has any suggestions to split this into two lines instead of one obscenely long line let me know
+data modify entity @e[limit=1, type=minecraft:husk, name="comboSwitchTemp"] HandItems[0] set from entity @s cardinal_components.apoli:powers.Powers[{Type:"dredgecombat:comboblade/loadout"}].Data.Items[{tag:{Combo_Axe_Prototype:1b}}]
 
+# the switcheroo
 item replace entity @s weapon.mainhand from entity @e[name=comboSwitchTemp,limit=1] weapon.mainhand
 
+# getting rid of the guy by dunking him into the void
 tp @e[name=comboSwitchTemp,limit=1] ~ -300 ~
 
-#data get entity @s cardinal_components.apoli:powers.Powers[{Type:"dredgecombat:comboblade/comboblade_inventory"}].Data.Items[{id:"minecraft:netherite_axe"}]
-#minecraft:netherite_axe{ComboBlade_Axe:1b, display:{Name:"{\"text\":\"Combo Blade [Axe Mode]\",\"color\":\"#ff0064\",\"bold\":true}"},Unbreakable:true} 1
+# this next section could be made to operate on the husk instead of the player such that
+# the code for making a new combo blade (new_comboblade.mcfunction) can share this code 
+# without it having to replace the player's weapon.mainhand slot. 
+#
+# in theory if the two places where combo blades are constructed in the code get out of
+# sync because someone (probably me) forgets to change the duplicated code in
+# new_comboblade.mcfunction, all the player would have to do is draw the comboblade to fix
+# that, but i still don't like the code duplication. 
 
+# marking this as a real comboblade instead of a prototype
+item modify entity @s weapon.mainhand dredgecombat:comboblade/axe_from_prototype
+
+# constructing the combo blade via item modifiers
 item modify entity @s weapon.mainhand dredgecombat:comboblade/draw
 item modify entity @s weapon.mainhand dredgecombat:comboblade/begin_draw
+item modify entity @s weapon.mainhand dredgecombat:comboblade/axe_in_mainhand

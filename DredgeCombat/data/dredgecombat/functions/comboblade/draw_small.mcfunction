@@ -1,0 +1,1 @@
+function dredgecombat:comboblade/construct_sword

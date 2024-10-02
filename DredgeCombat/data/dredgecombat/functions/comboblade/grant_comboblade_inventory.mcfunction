@@ -1,1 +1,1 @@
-power grant @s dredgecombat:comboblade/comboblade_inventory
+power grant @s dredgecombat:comboblade/loadout

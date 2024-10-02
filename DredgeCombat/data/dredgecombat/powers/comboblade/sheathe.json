@@ -1,6 +1,6 @@
 {
     "name": "Sheathe",
-    "description": "Sneak + Alt Fire to return the Combo Blade Sword to its scabbard and to activate the Slashes on your enemies!",
+    "description": "Sneak + Alt Fire to return the Combo Blade Sword to its scabbard and to activate Slashes on your enemies!",
     "type": "origins:active_self",
     "entity_action": { 
         "type": "origins:execute_command",

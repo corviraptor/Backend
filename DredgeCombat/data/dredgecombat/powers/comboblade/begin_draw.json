@@ -1,6 +1,6 @@
 {
     "name": "Quickdraw",
-    "description": "Sneak + Alt Fire to draw the Sword from the Combo Blade, dealing damage that scales with Combo Blade Charge!",
+    "description": "Sneak + Alt Fire to draw the Sword from the Combo Blade. Becomes an attack with higher Style levels!",
     "type": "origins:active_self",
     "entity_action": { 
         "type": "origins:execute_command",
@@ -23,6 +23,7 @@
                 "key": "key.sneak",
                 "continuous": true
             }
-        }]
+        }
+        ]
     }
 }

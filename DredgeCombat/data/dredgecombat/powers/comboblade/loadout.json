@@ -1,7 +1,9 @@
 {
     "type": "origins:inventory",
-    "title": "Combo Blade Loadout",
-    "container_type": "hopper",
+    "name": "Combo Blade Loadout",
+    "title": "Loadout",
+    "description": "Use your Pick Block key to open the Combo Blade Loadout.",
+    "container_type": "dropper",
     "key": {
         "key": "key.pickItem"
     },
