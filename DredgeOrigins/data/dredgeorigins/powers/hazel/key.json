@@ -1,0 +1,8 @@
+{
+    "hidden": true,
+    "type": "origins:starting_equipment",
+    "stack": {
+        "item": "suppsquared:heavy_key",
+        "tag": "{hazelKey: 1b}"
+    }
+}

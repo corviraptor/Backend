@@ -1,0 +1,85 @@
+{
+    "name": "Night Vision",
+    "description": "Toggleable night vision. It puts extra strain on your battery.",
+    "type": "origins:multiple",
+    "shader": {
+        "type": "origins:shader",
+        "shader": "minecraft:shaders/post/pencil.json",
+        "toggleable": false,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "dredgeorigins:hazel/power_saving_mode",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "dredgeorigins:hazel/night_vision_toggle"
+                }
+            ]
+        }
+    },
+    "vision": {
+        "type": "origins:night_vision",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "dredgeorigins:hazel/power_saving_mode",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "dredgeorigins:hazel/night_vision_toggle"
+                }
+            ]
+        }
+    },
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": "key.origins.quaternary_active"
+    },
+    "power-strain": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:resource",
+                "resource": "dredgeorigins:hazel/dynamo_power",
+                "compare_to": 0,
+                "comparison": ">"
+            },
+            "if_action": {
+                "type": "origins:change_resource",
+                "resource": "dredgeorigins:hazel/dynamo_power",
+                "change": -5,
+                "operation": "add"
+            },
+            "else_action": {
+                "type": "origins:change_resource",
+                "resource": "dredgeorigins:hazel/battery_power",
+                "change": -10,
+                "operation": "add"
+            }
+        },
+        "interval": 100,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "dredgeorigins:hazel/power_saving_mode",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "dredgeorigins:hazel/night_vision_toggle"
+                }
+            ]
+        }
+    }
+}

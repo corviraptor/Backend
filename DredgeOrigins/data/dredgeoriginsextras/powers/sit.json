@@ -44,7 +44,6 @@
                 }
             ]
         }
-
     },
     "stand": {
         "type": "origins:active_self",
@@ -135,6 +134,27 @@
             "operation": "set"
         },
         "entity_action_respawned": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "dredgeoriginsextras:sit_is-freecamming",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "dredgeoriginsextras:sit_is-sitting",
+                    "change": 0,
+                    "operation": "set"
+                }
+            ]
+        }
+    },
+    "manually-reset-states": {
+        "type": "origins:active_self",
+        "key": "key.saveToolbarActivator",
+        "entity_action": {
             "type": "origins:and",
             "actions": [
                 {
