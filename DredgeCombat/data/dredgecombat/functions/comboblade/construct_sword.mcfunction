@@ -11,19 +11,5 @@ item replace entity @s weapon.mainhand from entity @e[name=comboSwitchTemp,limit
 # getting rid of the guy by dunking him into the void
 tp @e[name=comboSwitchTemp,limit=1] ~ -300 ~
 
-# this next section could be made to operate on the husk instead of the player such that
-# the code for making a new combo blade (new_comboblade.mcfunction) can share this code 
-# without it having to replace the player's weapon.mainhand slot. 
-#
-# in theory if the two places where combo blades are constructed in the code get out of
-# sync because someone (probably me) forgets to change the duplicated code in
-# new_comboblade.mcfunction, all the player would have to do is draw the comboblade to fix
-# that, but i still don't like the code duplication especially since it's duplicated again
-# for the axe and sword phases. 
-
-# marking this as a real comboblade instead of a prototype
-item modify entity @s weapon.mainhand dredgecombat:comboblade/sword_from_prototype
-
-# constructing the combo blade via item modifiers
-item modify entity @s weapon.mainhand dredgecombat:comboblade/sheathe
-item modify entity @s weapon.mainhand dredgecombat:comboblade/sword_in_mainhand
+# give this combo blade functionality
+item modify entity @s weapon.mainhand dredgecombat:comboblade/combo_sword

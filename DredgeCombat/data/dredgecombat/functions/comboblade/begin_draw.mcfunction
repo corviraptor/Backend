@@ -1,4 +1,6 @@
 power grant @s dredgecombat:comboblade/validate_loadout
-execute if score @s ValidComboBladeLoadout = one Constants run function dredgecombat:comboblade/begin_draw_big
-# execute if score @s ValidComboBladeLoadout != one Constants run function dredgecombat:comboblade/draw_small
-execute as @s if score @s ValidComboBladeLoadout = zero Constants run tellraw @s { "text": "Your Combo Blade loadout is invalid!", "color": "#FF0000" }
+# guard statement
+execute unless score @s ValidComboBladeLoadout = one Constants run return 0
+
+function dredgecombat:comboblade/begin_draw_big
+# execute if score @s ComboMeter < some_arbitrary_value Constants run function dredgecombat:comboblade/draw_small

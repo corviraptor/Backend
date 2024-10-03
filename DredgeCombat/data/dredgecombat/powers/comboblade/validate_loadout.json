@@ -5,11 +5,10 @@
         "type": "origins:and",
         "actions": [
         {
-            "type": "origins:if_else",
-            "condition": {
-                "type": "origins:and",
-                "conditions": [
-                    {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
                         "type": "origins:inventory",
                         "inventory_types": ["power"],
                         "power": "dredgecombat:comboblade/loadout",
@@ -17,10 +16,16 @@
                             "type": "origins:nbt",
                             "nbt": "{Combo_Axe_Prototype:1b}"
                         },
-                        "comparison": "==",
+                        "comparison": "!=",
                         "compare_to": 1
                     },
-                    {
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "function dredgecombat:comboblade/results/err/combo_axe_invalid"
+                    }
+                },
+                {
+                    "condition": {
                         "type": "origins:inventory",
                         "inventory_types": ["power"],
                         "power": "dredgecombat:comboblade/loadout",
@@ -28,19 +33,25 @@
                             "type": "origins:nbt",
                             "nbt": "{Combo_Sword_Prototype:1b}"
                         },
-                        "comparison": "==",
+                        "comparison": "!=",
                         "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "function dredgecombat:comboblade/results/err/combo_sword_invalid"
                     }
-                ]
-            },
-            "if_action": {
-                "type": "origins:execute_command",
-                "command": "scoreboard players set @s ValidComboBladeLoadout 1"
-            },
-            "else_action": {
-                "type": "origins:execute_command",
-                "command": "scoreboard players set @s ValidComboBladeLoadout 0"
-            }
+                },
+                {
+                    "condition": {
+                        "type": "origins:constant",
+                        "value": true
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "function dredgecombat:comboblade/results/ok/loadout_validated"
+                    }
+                }
+            ]
         },
         {
             "type": "origins:execute_command",

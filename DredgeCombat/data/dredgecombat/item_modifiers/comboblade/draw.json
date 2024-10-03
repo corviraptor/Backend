@@ -1,6 +1,0 @@
-{
-    "function": "apoli:add_power",
-    "power": "dredgecombat:comboblade/draw",
-    "hidden": true,
-    "slot": "mainhand"
-}

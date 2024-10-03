@@ -1,6 +1,0 @@
-{
-    "function": "apoli:add_power",
-    "power": "dredgecombat:comboblade/sword_in_mainhand",
-    "hidden": true,
-    "slot": "mainhand"
-}

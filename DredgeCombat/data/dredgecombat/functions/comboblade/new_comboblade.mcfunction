@@ -3,5 +3,4 @@ item replace block ~ ~1 ~ container.10 with minecraft:netherite_sword{Combo_Swor
 
 
 item replace block ~ ~1 ~ container.0 with minecraft:netherite_axe{Combo_Axe:1b, display:{Name:"{\"text\":\"Combo Blade †\",\"color\":\"#ff0064\",\"bold\":true}"},Unbreakable:true,CustomModelData:985100} 1
-item modify block ~ ~1 ~ container.0 dredgecombat:comboblade/draw
-item modify block ~ ~1 ~ container.0 dredgecombat:comboblade/begin_draw
+item modify block ~ ~1 ~ container.0 dredgecombat:comboblade/combo_axe

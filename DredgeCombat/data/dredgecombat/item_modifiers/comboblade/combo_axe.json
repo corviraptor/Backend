@@ -1,0 +1,27 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{Combo_Axe:1b}"
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{Combo_Axe_Prototype:0b}"
+  },
+  {
+      "function": "apoli:add_power",
+      "power": "dredgecombat:comboblade/axe_in_mainhand",
+      "hidden": true,
+      "slot": "mainhand"
+  },
+  {
+      "function": "apoli:add_power",
+      "power": "dredgecombat:comboblade/draw",
+      "hidden": true,
+      "slot": "mainhand"
+  },
+  {
+      "function": "apoli:add_power",
+      "power": "dredgecombat:comboblade/begin_draw",
+      "slot": "mainhand"
+  }
+]
