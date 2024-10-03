@@ -1,0 +1,9 @@
+{
+    "parent": "medievalweapons:item/netherite_long_sword",
+    "textures": {
+        "layer0": "dredgeresources:item/labyrinthos.png"
+    },
+    "overrides": [
+        { "predicate": { "medievalweapons:gui": 1.0 }, "model": "dredgeresources:item/labyrinthos_gui" }
+    ]
+}
