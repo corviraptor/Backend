@@ -1,24 +1,12 @@
 {
   "powers": [
-      "dredgetrinkets:forge/thiefs_wit",
-      "dredgetrinkets:forge/glass_sword",
       "dredgetrinkets:forge/comfort_pebble",
       "dredgetrinkets:forge/lead_boots",
       "dredgetrinkets:forge/gravity_feather",
       "dredgetrinkets:forge/buoy",
       "dredgetrinkets:forge/home_run_bat",
       "dredgetrinkets:forge/sunk_cost_finery",
-      "dredgetrinkets:forge/phalanx_shield",
-      "dredgetrinkets:trickweapons/trick_weapon_ammo",
-      "dredgetrinkets:trickweapons/trick_weapon_reload",
-      "dredgetrinkets:trickweapons/trick_shotgun_fire",
-      "dredgetrinkets:trickweapons/trick_shotgun_hit",
-      "dredgetrinkets:trickweapons/trick_revolver_shoot",
-      "dredgetrinkets:trickweapons/trick_revolver_dodge",
-      "dredgetrinkets:trickweapons/trick_scythe_blast_up",
-      "dredgetrinkets:trickweapons/trick_scythe_air_dash",
-      "dredgetrinkets:revoke_air_bonus_on_land",
-      "dredgetrinkets:trickweapons/trick_shotgun_lunge"
+      "dredgetrinkets:forge/phalanx_shield"
   ]
 }
 
