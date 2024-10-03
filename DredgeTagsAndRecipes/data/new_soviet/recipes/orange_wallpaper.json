@@ -6,7 +6,7 @@
       "item": "minecraft:orange_dye"
     },
     "O": {
-      "item": "#minecraft:planks"
+      "tag": "minecraft:planks"
     },
     "P": {
       "item": "minecraft:paper"

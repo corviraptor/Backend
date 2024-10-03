@@ -6,7 +6,7 @@
       "item": "minecraft:green_dye"
     },
     "O": {
-      "item": "#minecraft:planks"
+      "tag": "minecraft:planks"
     },
     "P": {
       "item": "minecraft:paper"

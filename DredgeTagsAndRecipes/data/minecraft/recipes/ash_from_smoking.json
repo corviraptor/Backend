@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smoking",
+    "cookingtime": 20,
+    "experience": 0,
+    "ingredient": {
+        "tag": "minecraft:wool"
+    },
+    "result": "supplementaries:ash"
+}
