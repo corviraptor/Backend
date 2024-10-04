@@ -1,1 +1,0 @@
-power grant @s dredgecombat:comboblade/loadout

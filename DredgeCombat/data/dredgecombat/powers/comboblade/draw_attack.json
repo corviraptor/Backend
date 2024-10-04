@@ -31,7 +31,7 @@
             "actions": [
             {
                 "type": "origins:execute_command",
-                "command": "function dredgecombat:comboblade/end_draw"
+                "command": "function dredgecombat:comboblade/end_draw_attack"
             },
             {
                 "type":"origins:area_of_effect",
@@ -49,7 +49,5 @@
             "type": "origins:execute_command",
             "command": "tellraw @s { \"text\": \"Predicate Failed!!\", \"color\": \"#FF0000\" }"
         }
-        
     }
-    
 }

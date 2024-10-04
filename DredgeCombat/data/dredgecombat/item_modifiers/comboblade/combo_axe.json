@@ -15,13 +15,18 @@
   },
   {
       "function": "apoli:add_power",
-      "power": "dredgecombat:comboblade/draw",
+      "power": "dredgecombat:comboblade/draw_attack",
       "hidden": true,
       "slot": "mainhand"
   },
   {
       "function": "apoli:add_power",
       "power": "dredgecombat:comboblade/begin_draw",
+      "slot": "mainhand"
+  },
+  {
+      "function": "apoli:add_power",
+      "power": "dredgecombat:comboblade/draw_attack_time",
       "slot": "mainhand"
   }
 ]

@@ -1,1 +1,1 @@
-function dredgecombat:comboblade/end_draw_big
+function dredgecombat:comboblade/end_draw_attack
