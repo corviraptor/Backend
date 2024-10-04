@@ -1,0 +1,14 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{CustomModelData:981001}"
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{Combo_Sword_Prototype:1b}"
+  },
+  {
+    "function": "minecraft:set_name",
+    "name": [{"text":"HF Blade ⸸","color":"#9aaaaa", "italic":false, "bold":true}]
+  }
+]

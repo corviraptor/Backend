@@ -11,7 +11,7 @@
                     "condition": {
                         "type": "origins:inventory",
                         "inventory_types": ["power"],
-                        "power": "dredgecombat:comboblade/loadout",
+                        "power": "dredgecombat:comboblade/loadout_inventory",
                         "item_condition": {
                             "type": "origins:nbt",
                             "nbt": "{Combo_Axe_Prototype:1b}"

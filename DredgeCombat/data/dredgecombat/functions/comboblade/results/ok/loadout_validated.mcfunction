@@ -1,1 +1,0 @@
-scoreboard players set @s ValidComboBladeLoadout 1

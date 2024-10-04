@@ -1,0 +1,22 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "replace": "false",
+    "lore": [
+        [
+          {"text":"⚔ Combo Blade ", "color":"#922644", "italic":false},
+          {"text":"(🪓 Axe & 🗡 Sword)", "color":"dark_gray", "italic":false}
+        ],
+        {"text":" "},
+        {"text":"High Frequency (HF) Blades are named for their ability","color":"gray","italic":false},
+        {"text":"to resonate at extremely high frequencies. This","color":"gray","italic":false},
+        {"text":"oscillation will disrupt most molecular bonds, allowing","color":"gray","italic":false},
+        {"text":"the blade to cut through materials that would be very","color":"gray","italic":false},
+        {"text":"difficult to cut using currently existing technology.","color":"gray","italic":false},
+        {"text":" "},
+        {"text":"( Not Tradable, Marketable, or Usable in Crafting )","color":"dark_gray","italic":false},
+        {"text":" "}
+    ]
+  }
+]

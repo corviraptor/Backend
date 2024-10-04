@@ -8,25 +8,24 @@
     "tag": "{Combo_Axe_Prototype:0b}"
   },
   {
-      "function": "apoli:add_power",
-      "power": "dredgecombat:comboblade/axe_in_mainhand",
-      "hidden": true,
-      "slot": "mainhand"
+    "function": "apoli:add_power",
+    "power": "dredgecombat:comboblade/axe_in_mainhand",
+    "hidden": true,
+    "slot": "mainhand"
   },
   {
-      "function": "apoli:add_power",
-      "power": "dredgecombat:comboblade/draw_attack",
-      "hidden": true,
-      "slot": "mainhand"
+    "function": "apoli:add_power",
+    "power": "dredgecombat:comboblade/draw_attack",
+    "hidden": true,
+    "slot": "mainhand"
   },
   {
-      "function": "apoli:add_power",
-      "power": "dredgecombat:comboblade/begin_draw",
-      "slot": "mainhand"
+    "function": "apoli:add_power",
+    "power": "dredgecombat:comboblade/begin_draw",
+    "slot": "mainhand"
   },
   {
-      "function": "apoli:add_power",
-      "power": "dredgecombat:comboblade/draw_attack_time",
-      "slot": "mainhand"
+    "function": "minecraft:reference",
+    "name": "dredgecombat:comboblade/comboblade"
   }
 ]

@@ -1,7 +1,7 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{AbilityToken:{SliceUp:1b, SwordToken:1b}}"
+    "tag": "{AbilityToken:{SliceUp:1b, Swords:1b, Glaives:1b}}"
   },
   {
     "function": "minecraft:set_nbt",
@@ -9,14 +9,14 @@
   },
   {
     "function": "minecraft:set_name",
-    "name": [{"text":"⚔ Upwards Slash ↓➁","color":"#FF0064", "italic":false, "bold":true}]
+    "name": [{"text":"🗡 Upwards Slash ↓➁","color":"#FF0064", "italic":false, "bold":true}]
   },
   {
     "function": "minecraft:set_lore",
     "entity": "this",
     "replace": "true",
     "lore": [
-        {"text":"⚔ Swords", "color":"gold", "italic":false},
+        {"text":"🗡 Swords", "color":"gold", "italic":false},
         [
           {"text":"↓➁ Back Special ", "color":"yellow", "italic":false}, 
           {"text":"[", "color":"dark_gray", "italic":true, "extra":[

@@ -8,8 +8,8 @@ Custom Model Data Prefix: `9810##`
 
 | Model              | Data #   |
 | ------------------ | -------- |
-| Combo Blade Axe    | `981000` |
-| Combo Blade Sword  | `981001` |
+| HF Blade (Axe)     | `981000` |
+| HF Blade (Sword)   | `981001` |
 | Freimesser (Axe)   | `981098` |
 | Freimesser (Sword) | `981099` |
 

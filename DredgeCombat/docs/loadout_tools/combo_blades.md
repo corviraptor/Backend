@@ -4,6 +4,12 @@ Combo Blades have the ability to change between Axe and Sword Phases. `Sneak + A
 
 Combo Blades aren't actually restricted to Axe and Sword Tool Types, it's just easier than calling the phases "Phase 1" and "Phase 2". (This part might turn out to be too annoying to implement, it might actually stay as just swords and axes)
 
+## Combo Axe
+
+Combos with the Combo Axe revolve around mixing attacks from other weapons. After reaching Rank A on your Combo Meter, your Draw ability becomes a powerful attack which becomes even more powerful for each successive rank!
+
+Switching away from the Combo Blade or attempting to use another Combo Blade ability during a Draw Attack will cancel the attack.
+
 ## Combo Sword
 
 The Combo Sword will stack "Slices" on enemies that have been hit by its attacks. When sheathed with a high Combo Meter, your enemies will be damaged for every Slice they have.
@@ -16,12 +22,13 @@ Combo blades may have modules corresponding to either Phase's Tool Type in their
 
 ## CPM Integration
 
-| Event                   | CPM Animation Name             | Recommended Animation Types |
-| ----------------------- | ------------------------------ | --------------------------- |
-| Draw Attack Start       | `comboblade.draw_attack_start` | Gesture, Pose               |
-| Draw Attack End         | `comboblade.draw_attack_end`   | Gesture                     |
-| Sheathe Attack          | `comboblade.sheathe_attack`    | Gesture                     |
-| Draw                    | `comboblade.draw`              | Gesture                     |
-| Sheathe                 | `comboblade.sheathe`           | Gesture                     |
-| Combo Axe In Mainhand   | `comboblade.axe.in_mainhand`   | Toggle Layer                |
-| Combo Sword In Mainhand | `comboblade.sword.in_mainhand` | Toggle Layer                |
+| Event                   | CPM Animation Name                    | Recommended Animation Types |
+| ----------------------- | ------------------------------------- | --------------------------- |
+| Draw Attack Start       | `comboblade.draw_attack.anticipation` | Gesture, Pose               |
+| Draw Attack End         | `comboblade.draw_attack.release`      | Gesture                     |
+| Sheathe Attack          | `comboblade.sheathe_attack`           | Gesture                     |
+| Draw                    | `comboblade.draw`                     | Gesture                     |
+| Sheathe                 | `comboblade.sheathe`                  | Gesture                     |
+| Combo Axe In Mainhand   | `comboblade.axe.in_mainhand`          | Toggle Layer                |
+| Combo Sword In Mainhand | `comboblade.sword.in_mainhand`        | Toggle Layer                |
+| Combo Meter Value       | `comboblade.combo_meter`              | Value Layer                 |

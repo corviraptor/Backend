@@ -17,5 +17,9 @@
     "function": "apoli:add_power",
     "power": "dredgecombat:comboblade/sheathe",
     "slot": "mainhand"
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "dredgecombat:comboblade/comboblade"
   }
 ]

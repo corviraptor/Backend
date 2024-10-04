@@ -1,0 +1,12 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{ComboBlade:1b}"
+  },
+  {
+    "function": "apoli:add_power",
+    "power": "dredgecombat:comboblade/in_mainhand",
+    "hidden": true,
+    "slot": "mainhand"
+  }
+]

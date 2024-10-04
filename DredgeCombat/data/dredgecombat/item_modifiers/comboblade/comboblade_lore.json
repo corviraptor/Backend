@@ -1,0 +1,12 @@
+[
+  {
+    "_comment": "TODO:",
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "replace": "false",
+    "lore": [
+        {"text":"( Not Tradable, Marketable, or Usable in Crafting )","color":"dark_gray","italic":false},
+        {"text":" "}
+    ]
+  }
+]
