@@ -1,2 +1,2 @@
-resource set @s dredgecombat:comboblade/loadout_valid 1
+scoreboard players set @s ValidLoadout 1
 return 1

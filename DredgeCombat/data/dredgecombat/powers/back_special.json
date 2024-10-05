@@ -1,0 +1,12 @@
+{
+    "type": "origins:active_self",
+    "key": "key.use",
+    "condition": {
+        "type": "apugli:key_pressed",
+        "key": "key.back"
+    },
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "function dredgecombat:on_back_special"
+    }
+}

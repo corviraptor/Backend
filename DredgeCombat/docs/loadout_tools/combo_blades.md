@@ -2,7 +2,7 @@
 
 Combo Blades have the ability to change between Axe and Sword Phases. `Sneak + Alt Fire` will draw the Sword if the Combo Blade is currently in Axe Phase, or will sheathe the Sword if it is in Sword Phase, becoming the Combo Axe. If your Combo Meter is high enough, Drawing or Sheathing the Combo Blade will become a powerful ability!
 
-Combo Blades aren't actually restricted to Axe and Sword Tool Types, it's just easier than calling the phases "Phase 1" and "Phase 2". (This part might turn out to be too annoying to implement, it might actually stay as just swords and axes)
+Combo Blades aren't actually restricted to Axe and Sword [Tool Types](./tool_type.md), it's just easier than calling the phases "Phase 1" and "Phase 2". (This part might turn out to be too annoying to implement, it might actually stay as just swords and axes)
 
 ## Combo Axe
 

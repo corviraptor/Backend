@@ -1,11 +1,7 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{Combo_Sword:1b}"
-  },
-  {
-    "function": "minecraft:set_nbt",
-    "tag": "{Combo_Sword_Prototype:0b}"
+    "tag": "{Combo_Sword:1b, Combo_Sword_Prototype:0b}"
   },
   {
     "function": "apoli:add_power",

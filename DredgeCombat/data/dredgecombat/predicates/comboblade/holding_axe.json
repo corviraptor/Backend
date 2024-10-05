@@ -1,12 +1,20 @@
 {
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "equipment": {
-      "mainhand": {
-        "nbt": "{Combo_Axe:1b}"
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "nbt": "{Combo_Axe:1b}"
+          }
+        }
       }
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "dredgecombat:holding_item"
     }
-  }
+  ]
 }
-  

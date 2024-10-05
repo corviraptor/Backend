@@ -23,5 +23,6 @@ scoreboard players set RankD ComboMeter 01
 # boolean flags, these probably dont need to be their own scoreboards but i'm too lazy to
 # figure that out right now
 scoreboard objectives add AbilityActive dummy
+scoreboard objectives add ValidLoadout dummy
 
 tellraw @a { "text": "Loaded DredgeCombat!", "color": "#FF0064" }

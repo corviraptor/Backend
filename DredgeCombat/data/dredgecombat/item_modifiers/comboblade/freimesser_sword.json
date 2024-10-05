@@ -1,0 +1,14 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{CustomModelData:981099}"
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{Combo_Sword_Prototype:1b}"
+  },
+  {
+    "function": "minecraft:set_name",
+    "name": [{"text":"FREIMESSER ⸸","color":"#FF0064", "italic":false, "bold":true}]
+  }
+]

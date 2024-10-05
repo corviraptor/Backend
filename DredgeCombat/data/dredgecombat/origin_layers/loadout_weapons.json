@@ -1,0 +1,7 @@
+{
+    "origins": [
+        "dredgecombat:loadout_weapons"
+    ],
+    "auto_choose": true,
+    "hidden": true
+}

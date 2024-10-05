@@ -1,5 +1,4 @@
-execute store result valid_loadout Variables function dredgecombat:comboblade/validate_loadout/main
+power grant @s dredgecombat:comboblade/validate_loadout
 
-execute store result valid_loadout Variables data get entity corviraptor cardinal_components."apoli:powers".Powers[{Type:"dredgecombat:comboblade/loadout_inventory"}].Data.Items[{tag:{Combo_Sword_Prototype:1b}}]
-
-execute if score valid_loadout Variables >
+execute if score @s ValidLoadout = zero Constants run return 0
+return 1

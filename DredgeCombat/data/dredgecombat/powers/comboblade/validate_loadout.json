@@ -11,7 +11,7 @@
                     "condition": {
                         "type": "origins:inventory",
                         "inventory_types": ["power"],
-                        "power": "dredgecombat:comboblade/loadout_inventory",
+                        "power": "dredgecombat:comboblade/loadout",
                         "item_condition": {
                             "type": "origins:nbt",
                             "nbt": "{Combo_Axe_Prototype:1b}"
@@ -21,7 +21,7 @@
                     },
                     "action": {
                         "type": "origins:execute_command",
-                        "command": "function dredgecombat:comboblade/results/err/combo_axe_invalid"
+                        "command": "function dredgecombat:comboblade/validate_loadout/combo_axe_invalid"
                     }
                 },
                 {
@@ -38,7 +38,7 @@
                     },
                     "action": {
                         "type": "origins:execute_command",
-                        "command": "function dredgecombat:comboblade/results/err/combo_sword_invalid"
+                        "command": "function dredgecombat:comboblade/validate_loadout/combo_sword_invalid"
                     }
                 },
                 {
@@ -48,7 +48,7 @@
                     },
                     "action": {
                         "type": "origins:execute_command",
-                        "command": "function dredgecombat:comboblade/results/ok/loadout_validated"
+                        "command": "function dredgecombat:comboblade/validate_loadout/loadout_validated"
                     }
                 }
             ]

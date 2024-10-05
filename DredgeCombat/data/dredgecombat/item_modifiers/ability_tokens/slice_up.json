@@ -1,7 +1,7 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{AbilityToken:{SliceUp:1b, Swords:1b, Glaives:1b}}"
+    "tag": "{AbilityToken:{slice_up:1b, swords:1b, glaives:1b}}"
   },
   {
     "function": "minecraft:set_nbt",

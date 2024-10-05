@@ -7,3 +7,14 @@ DredgeCombat is a datapack intended for DredgeSMP. As of this writing, this data
 This datapack currently uses a separate resource pack than DredgeResources, as resource packs live in a separate directory from datapacks and I don't want to deal with source control on right now. The DredgeCombat resource pack will most likely be merged with DredgeResources when DredgeCombat is merged into the main repository.
 
 Right now, much the documentation here represents design goals rather than implemented features. A lot of features here will likely be scrapped.
+
+## Index
+
+User Guides:
+
+* [CPM Integration](./cpm_integration.md)
+
+Developer Information:
+
+* [Custom Item Textures](./custom_item_textures/custom_item_textures.md)
+  * [Examples](./custom_item_textures/examples.md)

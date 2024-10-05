@@ -10,5 +10,9 @@
   {
     "function": "minecraft:set_name",
     "name": [{"text":"HF Blade †","color":"#6b7777", "italic":false, "bold":true}]
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "dredgecombat:comboblade/hf_blade_lore"
   }
 ]

@@ -1,27 +1,19 @@
 {
-    "type": "origins:multiple",
-    "inventory": {
-        "type": "origins:inventory",
-        "name": "Combo Blade Loadout",
-        "title": "Combo Blade Loadout",
-        "description": "Use your Pick Block key to open the Combo Blade Loadout.",
-        "container_type": "dropper",
-        "key": {
-            "key": "key.pickItem"
-        },
-        "condition": {
-            "type": "origins:and",
-            "conditions": [
-            {
-                "type": "origins:predicate",
-                "predicate": "dredgecombat:comboblade/holding_combo_blade"
-            }
-            ]
-        }
+    "type": "origins:inventory",
+    "name": "Combo Blade Loadout",
+    "title": "Combo Blade Loadout",
+    "description": "Use your Pick Block key to open the Combo Blade Loadout.",
+    "container_type": "dropper",
+    "key": {
+        "key": "key.pickItem"
     },
-    "valid": {
-        "type": "origins:resource",
-        "min": 0,
-        "max": 1
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+        {
+            "type": "origins:predicate",
+            "predicate": "dredgecombat:comboblade/holding_combo_blade"
+        }
+        ]
     }
 }
