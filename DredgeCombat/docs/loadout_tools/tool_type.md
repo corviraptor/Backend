@@ -13,7 +13,7 @@ Only surpassed by the spear in terms of utility on the battlefield, the Axe deal
 
 As effective against armor as it is stone. A weapon to reach for when conventional weaponry isn't brutal enough for your taste. Temporarily weakens armor with critical strikes, weakening targets even more the stronger their armor is.
 
-### Hoes/Scythes/Glaives
+### Hoes/Scythes/Glaives (unimplemented)
 
 A favorite for farmers drafted into warfare. Combines the slashing and sweeping attacks of swords with the end-heavy power and reach of a polearm. Can turn a numbers disadvantage in your favor, but doesn't deal the same damage as an Axe would and lacks the agility of a sword. It still tills dirt.
 
