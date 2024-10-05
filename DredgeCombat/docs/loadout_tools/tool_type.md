@@ -31,4 +31,4 @@ I'm not doing this.
 
 ### ⚔ Combo Blades
 
-[Combo Blades](./combo_blades.md) are dynamic weapons that switch between two Tool Types. Brutal and stylish in the same breath. Gives you a Combo Meter.
+[Combo Blades](./comboblades.md) are dynamic weapons that switch between two Tool Types. Brutal and stylish in the same breath. Gives you a Combo Meter.

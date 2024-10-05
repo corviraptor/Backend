@@ -3,14 +3,14 @@
     "entity_action_lost": {
         "type": "origins:if_else",
         "condition": {
-            "type": "origins:scoreboard",
-            "objective": "ComboBladeDrawTime",
+            "type": "origins:resource",
+            "resource": "dredgecombat:comboblade/draw/timer",
             "compare_to": 0,
             "comparison": "!="
         },
         "if_action": {
             "type": "origins:execute_command",
-            "command": "function dredgecombat:comboblade/cancel_draw_attack",
+            "command": "function dredgecombat:comboblade/draw/cancel_attack",
             "condition": ""
         }
     }

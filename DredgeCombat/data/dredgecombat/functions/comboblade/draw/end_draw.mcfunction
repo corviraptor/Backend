@@ -1,0 +1,1 @@
+function dredgecombat:comboblade/draw/end_attack

@@ -5,7 +5,11 @@
   },
   {
     "function": "minecraft:set_nbt",
-    "tag": "{Combo_Axe_Prototype:1b}"
+    "tag": "{Combo_Axe:0b, Combo_Axe_Prototype:1b, Prototype:1b}"
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "dredgecombat:prototype"
   },
   {
     "function": "minecraft:set_name",

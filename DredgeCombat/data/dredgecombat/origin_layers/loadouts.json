@@ -1,6 +1,6 @@
 {
     "origins": [
-        "dredgecombat:comboblade"
+        "dredgecombat:loadouts"
     ],
     "auto_choose": true,
     "hidden": true

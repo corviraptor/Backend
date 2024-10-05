@@ -12,7 +12,7 @@
         "conditions": [
         {
             "type": "origins:predicate",
-            "predicate": "dredgecombat:comboblade/holding_combo_blade"
+            "predicate": "dredgecombat:comboblade/holding_comboblade"
         }
         ]
     }

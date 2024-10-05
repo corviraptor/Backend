@@ -1,6 +1,6 @@
 {
     "origins": [
-        "dredgecombat:loadout_weapons"
+        "dredgecombat:abilities"
     ],
     "auto_choose": true,
     "hidden": true

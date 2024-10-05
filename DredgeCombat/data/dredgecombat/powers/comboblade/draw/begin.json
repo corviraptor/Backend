@@ -1,10 +1,10 @@
 {
-    "name": "Sheathe",
-    "description": "Sneak + Alt Fire to return the Combo Blade Sword to its scabbard and to activate Slashes on your enemies!",
+    "name": "Quickdraw",
+    "description": "Sneak + Alt Fire to draw the Sword from the Combo Blade. Becomes an attack with higher Style levels!",
     "type": "origins:active_self",
     "entity_action": { 
         "type": "origins:execute_command",
-        "command": "function dredgecombat:comboblade/sheathe"
+        "command": "function dredgecombat:comboblade/draw/begin"
     },
     "key": {
         "key": "key.use"
@@ -14,7 +14,7 @@
         "conditions": [
         {
             "type": "origins:predicate",
-            "predicate": "dredgecombat:comboblade/holding_sword"
+            "predicate": "dredgecombat:comboblade/holding_axe"
         },
         {
             "type": "apugli:key_pressed",
@@ -22,6 +22,7 @@
                 "key": "key.sneak",
                 "continuous": true
             }
-        }]
+        }
+        ]
     }
 }

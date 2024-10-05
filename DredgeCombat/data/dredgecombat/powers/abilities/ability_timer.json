@@ -1,0 +1,54 @@
+{
+    "type": "origins:multiple",
+
+    "time": {
+        "type": "origins:resource",
+        "hud_render": {
+            "should_render": true
+        },
+        "min": 0,
+        "max": 500
+    },
+
+    "tick": {
+        "type":"origins:action_over_time",
+
+    "hidden": true,
+
+    "entity_action": {
+        "type": "origins:modify_resource",
+        "resource": "dredgecombat:comboblade/draw/timer",
+        "modifier": {
+            "operation": "addition",
+            "value": -1
+        }
+    },
+    
+    "condition": {
+        "type":"origins:resource",
+        "resource": "dredgecombat:comboblade/draw/timer",
+        "compare_to": 1,
+        "comparison": "<"
+    },
+
+    "interval": 2,
+
+    "falling_action": {
+        "type": "origins:if_else",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "dredgecombat:comboblade/draw/timer",
+            "compare_to": 0,
+            "comparison": "=="
+        },
+        "if_action": {
+            "type":"origins:execute_command",
+            "command": "dredgecombat:abilities/on_finish_ability"
+        },
+        "else_action": {
+            "type":"origins:execute_command",
+            "command": "dredgecombat:abilities/on_cancel_ability"
+        }
+    }
+    }
+}

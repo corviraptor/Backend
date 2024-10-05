@@ -24,9 +24,9 @@ Combo blades may have modules corresponding to either Phase's Tool Type in their
 
 | Event                   | CPM Animation Name                    | Recommended Animation Types |
 | ----------------------- | ------------------------------------- | --------------------------- |
-| Draw Attack Start       | `comboblade.draw_attack.anticipation` | Gesture, Pose               |
-| Draw Attack End         | `comboblade.draw_attack.release`      | Gesture                     |
-| Sheathe Attack          | `comboblade.sheathe_attack`           | Gesture                     |
+| Draw Attack Start       | `comboblade.draw.attack.anticipation` | Gesture, Pose               |
+| Draw Attack End         | `comboblade.draw.attack.release`      | Gesture                     |
+| Sheathe Attack          | `comboblade.sheathe.attack`           | Gesture                     |
 | Draw                    | `comboblade.draw`                     | Gesture                     |
 | Sheathe                 | `comboblade.sheathe`                  | Gesture                     |
 | Combo Axe In Mainhand   | `comboblade.axe.in_mainhand`          | Toggle Layer                |
