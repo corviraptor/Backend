@@ -1,0 +1,61 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "hit-chance": {
+        "type": "apugli:redirect_lightning",
+        "chance": 0.66
+    },
+    "battery-interact": {
+        "type": "apugli:action_when_lightning_struck",
+        "entity_action": {
+            "type": "origins:choice",
+            "actions": [
+                {
+                    "element": {
+                        "type": "origins:nothing"
+                    },
+                    "weight": 98
+                },
+                {
+                    "element": {
+                        "type": "origins:change_resource",
+                        "resource": "dredgeorigins:hazel/battery_power",
+                        "change": 0,
+                        "operation": "set"
+                    },
+                    "weight": 1
+                },
+                {
+                    "element": {
+                        "type": "origins:change_resource",
+                        "resource": "dredgeorigins:hazel/battery_power",
+                        "change": 100,
+                        "operation": "set"
+                    },
+                    "weight": 1
+                }
+            ]
+        },
+        "hud_render": {
+            "should_render": false
+        },
+        "bientity_condition": {
+            "type": "origins:constant",
+            "value": true
+        }
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:exposed_to_sky"
+            },
+            {
+                "type": "origins:in_rain"
+            },
+            {
+                "type": "apugli:thundering"
+            }
+        ]
+    }
+}

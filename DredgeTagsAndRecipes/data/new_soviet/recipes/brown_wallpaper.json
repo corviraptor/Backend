@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "F": {
+      "item": "minecraft:brown_dye"
+    },
+    "O": {
+      "tag": "minecraft:planks"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "S": {
+      "item": "minecraft:brown_dye"
+    }
+  },
+  "pattern": [
+    "POP",
+    "FOS",
+    "POP"
+  ],
+  "result": {
+    "count": 3,
+    "item": "new_soviet:brown_wallpaper"
+  },
+  "show_notification": true
+}

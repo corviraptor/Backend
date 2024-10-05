@@ -1,0 +1,21 @@
+{
+    "name": "Heelys",
+    "description": "Wee!!!",
+    "type": "origins:multiple",
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": "key.origins.secondary_active"
+    },
+    "heelys": {
+        "type": "origins:modify_slipperiness",
+        "modifier": {
+            "value": 0.75,
+            "operation": "multiply_total"
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "dredgeorigins:hazel/heelys_toggle"
+        }
+    }
+}

@@ -1,0 +1,323 @@
+{
+    "name": "Wind Up Dynamo",
+    "description": "You are powered by a windup key. Players can right click you with your key to wind you up, or you can stand by an active turntable.",
+    "type": "origins:multiple",
+    "power": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 100,
+        "start_value": 100,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 1
+        }
+    },
+    "drain": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:power_active",
+                "power": "dredgeorigins:hazel/power_saving_mode"
+            },
+            "if_action": {
+                "type": "origins:change_resource",
+                "resource": "dredgeorigins:hazel/dynamo_power",
+                "change": -1,
+                "operation": "add"
+            },
+            "else_action": {
+                "type": "origins:change_resource",
+                "resource": "dredgeorigins:hazel/dynamo_power",
+                "change": -2,
+                "operation": "add"
+            }
+        },
+        "interval": 3000
+    },
+    "wind-player": {
+        "type": "origins:action_on_being_used",
+        "bientity_action": {
+            "type": "origins:target_action",
+            "action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "dredgeorigins:hazel/dynamo_power",
+                        "change": 1,
+                        "operation": "add"
+                    },
+                    {
+                        "type": "origins:if_else_list",
+                        "actions": [
+                            {
+                                "action": {
+                                    "type": "origins:play_sound",
+                                    "sound": "supplementaries:block.crank",
+                                    "pitch": 1.2
+                                },
+                                "condition": {
+                                    "type": "origins:resource",
+                                    "compare_to": 100,
+                                    "comparison": "==",
+                                    "resource": "dredgeorigins:hazel/dynamo_power"
+                                }
+                            },
+                            {
+                                "action": {
+                                    "type": "origins:play_sound",
+                                    "sound": "supplementaries:block.crank"
+                                },
+                                "condition": {
+                                    "type": "origins:resource",
+                                    "compare_to": 75,
+                                    "comparison": "==",
+                                    "resource": "dredgeorigins:hazel/dynamo_power"
+                                }
+                            },
+                            {
+                                "action": {
+                                    "type": "origins:play_sound",
+                                    "sound": "supplementaries:block.crank",
+                                    "pitch": 0.8
+                                },
+                                "condition": {
+                                    "type": "origins:resource",
+                                    "compare_to": 50,
+                                    "comparison": "==",
+                                    "resource": "dredgeorigins:hazel/dynamo_power"
+                                }
+                            },
+                            {
+                                "action": {
+                                    "type": "origins:play_sound",
+                                    "sound": "supplementaries:block.crank",
+                                    "pitch": 0.6
+                                },
+                                "condition": {
+                                    "type": "origins:resource",
+                                    "compare_to": 25,
+                                    "comparison": "==",
+                                    "resource": "dredgeorigins:hazel/dynamo_power"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "item_condition": {
+            "type": "origins:nbt",
+            "nbt": "{hazelKey: 1b}"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "bientity_condition": {
+            "type": "origins:target_condition",
+            "condition": {
+                "type": "origins:resource",
+                "resource": "dredgeorigins:hazel/dynamo_power",
+                "compare_to": 100,
+                "comparison": "<"
+            }
+        }
+    },
+    "wind-turntable": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "dredgeorigins:hazel/dynamo_power",
+                    "change": 1,
+                    "operation": "add"
+                },
+                {
+                    "type": "origins:if_else_list",
+                    "actions": [
+                        {
+                            "action": {
+                                "type": "origins:play_sound",
+                                "sound": "supplementaries:block.crank",
+                                "pitch": 0.95
+                            },
+                            "condition": {
+                                "type": "origins:resource",
+                                "compare_to": 100,
+                                "comparison": "==",
+                                "resource": "dredgeorigins:hazel/dynamo_power"
+                            }
+                        },
+                        {
+                            "action": {
+                                "type": "origins:play_sound",
+                                "sound": "supplementaries:block.crank",
+                                "pitch": 0.91
+                            },
+                            "condition": {
+                                "type": "origins:resource",
+                                "compare_to": 90,
+                                "comparison": "==",
+                                "resource": "dredgeorigins:hazel/dynamo_power"
+                            }
+                        },
+                        {
+                            "action": {
+                                "type": "origins:play_sound",
+                                "sound": "supplementaries:block.crank",
+                                "pitch": 0.87
+                            },
+                            "condition": {
+                                "type": "origins:resource",
+                                "compare_to": 80,
+                                "comparison": "==",
+                                "resource": "dredgeorigins:hazel/dynamo_power"
+                            }
+                        },
+                        {
+                            "action": {
+                                "type": "origins:play_sound",
+                                "sound": "supplementaries:block.crank",
+                                "pitch": 0.83
+                            },
+                            "condition": {
+                                "type": "origins:resource",
+                                "compare_to": 70,
+                                "comparison": "==",
+                                "resource": "dredgeorigins:hazel/dynamo_power"
+                            }
+                        },
+                        {
+                            "action": {
+                                "type": "origins:play_sound",
+                                "sound": "supplementaries:block.crank",
+                                "pitch": 0.79
+                            },
+                            "condition": {
+                                "type": "origins:resource",
+                                "compare_to": 60,
+                                "comparison": "==",
+                                "resource": "dredgeorigins:hazel/dynamo_power"
+                            }
+                        },
+                        {
+                            "action": {
+                                "type": "origins:play_sound",
+                                "sound": "supplementaries:block.crank",
+                                "pitch": 0.75
+                            },
+                            "condition": {
+                                "type": "origins:resource",
+                                "compare_to": 50,
+                                "comparison": "==",
+                                "resource": "dredgeorigins:hazel/dynamo_power"
+                            }
+                        },
+                        {
+                            "action": {
+                                "type": "origins:play_sound",
+                                "sound": "supplementaries:block.crank",
+                                "pitch": 0.71
+                            },
+                            "condition": {
+                                "type": "origins:resource",
+                                "compare_to": 40,
+                                "comparison": "==",
+                                "resource": "dredgeorigins:hazel/dynamo_power"
+                            }
+                        },
+                        {
+                            "action": {
+                                "type": "origins:play_sound",
+                                "sound": "supplementaries:block.crank",
+                                "pitch": 0.67
+                            },
+                            "condition": {
+                                "type": "origins:resource",
+                                "compare_to": 30,
+                                "comparison": "==",
+                                "resource": "dredgeorigins:hazel/dynamo_power"
+                            }
+                        },
+                        {
+                            "action": {
+                                "type": "origins:play_sound",
+                                "sound": "supplementaries:block.crank",
+                                "pitch": 0.63
+                            },
+                            "condition": {
+                                "type": "origins:resource",
+                                "compare_to": 20,
+                                "comparison": "==",
+                                "resource": "dredgeorigins:hazel/dynamo_power"
+                            }
+                        },
+                        {
+                            "action": {
+                                "type": "origins:play_sound",
+                                "sound": "supplementaries:block.crank",
+                                "pitch": 0.59
+                            },
+                            "condition": {
+                                "type": "origins:resource",
+                                "compare_to": 10,
+                                "comparison": "==",
+                                "resource": "dredgeorigins:hazel/dynamo_power"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "key": {
+            "key": "key.use",
+            "continuous": true
+        },
+        "cooldown": 1,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:nbt",
+                        "nbt": "{hazelKey: 1b}"
+                    }
+                },
+                {
+                    "type": "origins:block_in_radius",
+                    "radius": 1,
+                    "block_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:block_state",
+                                "property": "power",
+                                "compare_to": 1,
+                                "comparison": ">="
+                            },
+                            {
+                                "type": "origins:block",
+                                "block": "supplementaries:turn_table"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "dredgeorigins:hazel/dynamo_power",
+                    "compare_to": 100,
+                    "comparison": "<"
+                }
+            ]
+        },
+        "hud_render": {
+            "should_render": false
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        {"id":"new_soviet:caged_post_lamp", "required": false},
+        {"id":"new_soviet:lamp_post_base", "required": false},
+        {"id":"new_soviet:modern_post_lamp", "required": false},
+        {"id":"new_soviet:vintage_post_lamp", "required": false}
+   ]
+}

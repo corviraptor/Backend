@@ -1,0 +1,6 @@
+{
+    "replace": false,
+    "values": [
+        {"id":"bakery:strawberry", "required": false}
+    ]
+}

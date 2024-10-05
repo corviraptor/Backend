@@ -1,0 +1,68 @@
+{
+    "name": "Air Raid Siren",
+    "description": "Why not?",
+    "type": "origins:active_self",
+    "key": "key.origins.ternary_active",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:power_active",
+                "power": "dredgeorigins:hazel/power_saving_mode",
+                "inverted": true
+            },
+            {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:resource",
+                        "compare_to": 25,
+                        "comparison": ">=",
+                        "resource": "dredgeorigins:hazel/dynamo_power"
+                    },
+                    {
+                        "type": "origins:resource",
+                        "compare_to": 30,
+                        "comparison": ">=",
+                        "resource": "dredgeorigins:hazel/battery_power"
+                    }
+                ]
+            }
+        ]
+    },
+    "hud_render": {
+        "should_render": false
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:play_sound",
+                "sound": "new_soviet:siren_sound",
+                "volume": 2
+            },
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:resource",
+                    "compare_to": 0,
+                    "comparison": ">",
+                    "resource": "dredgeorigins:hazel/dynamo_power"
+                },
+                "if_action": {
+                    "type": "origins:change_resource",
+                    "change": -25,
+                    "operation": "add",
+                    "resource": "dredgeorigins:hazel/dynamo_power"
+                },
+                "else_action": {
+                    "type": "origins:change_resource",
+                    "change": -25,
+                    "operation": "add",
+                    "resource": "dredgeorigins:hazel/battery_power"
+                }
+            }
+        ]
+    },
+    "cooldown": 200
+}

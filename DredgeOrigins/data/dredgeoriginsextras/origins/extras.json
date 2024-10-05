@@ -2,6 +2,7 @@
     "powers": [
         "dredgeoriginsextras:hide_player",
         "dredgeoriginsextras:groan_tube",
-        "dredgeoriginsextras:sit"
+        "dredgeoriginsextras:sit",
+        "dredgeoriginsextras:laser_pointer"
     ]
   }

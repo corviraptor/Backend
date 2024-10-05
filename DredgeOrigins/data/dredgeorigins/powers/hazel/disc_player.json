@@ -1,0 +1,381 @@
+{
+    "name": "Record Player",
+    "description": "A built-in turntable allows you to play any music disc. (Crouch and use)",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:power_active",
+                "power": "dredgeorigins:hazel/power_saving_mode",
+                "inverted": true
+            },
+            {
+                "type": "origins:sneaking"
+            },
+            {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:equipped_item",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "minecraft:music_discs"
+                            }
+                        },
+                        "equipment_slot": "mainhand"
+                    },
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "mainhand",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "item": "vinurl:custom_record"
+                            }
+                        },
+                        "inverted": true
+                    }
+                ]
+            }
+        ]
+    },
+    "type": "origins:active_self",
+    "key": "key.use",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:resource",
+                    "compare_to": 0,
+                    "comparison": ">",
+                    "resource": "dredgeorigins:hazel/dynamo_power"
+                },
+                "if_action": {
+                    "type": "origins:change_resource",
+                    "change": -25,
+                    "operation": "add",
+                    "resource": "dredgeorigins:hazel/dynamo_power"
+                },
+                "else_action": {
+                    "type": "origins:change_resource",
+                    "change": -25,
+                    "operation": "add",
+                    "resource": "dredgeorigins:hazel/battery_power"
+                }
+            },
+            {
+                "type": "origins:if_else_list",
+                "actions": [
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:music_disc_13"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:music_disc.13"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:music_disc_cat"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:music_disc.cat"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:music_disc_blocks"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:music_disc.blocks"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:music_disc_chirp"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:music_disc.chirp"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:music_disc_far"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:music_disc.far"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:music_disc_mall"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:music_disc.mall"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:music_disc_mellohi"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:music_disc.mellohi"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:music_disc_stal"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:music_disc.stal"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:music_disc_strad"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:music_disc.strad"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:music_disc_ward"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:music_disc.ward"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:music_disc_11"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:music_disc.11"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:music_disc_wait"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:music_disc.wait"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:music_disc_otherside"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:music_disc.otherside"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:music_disc_relic"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:music_disc.relic"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:music_disc_5"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:music_disc.5"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:music_disc_pigstep"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:music_disc.pigstep"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "beachparty:overgrown_disc"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:play_sound",
+                            "sound": "beachparty:radio_beachparty"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "new_soviet:music_disc_ussr_anthem"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:play_sound",
+                            "sound": "new_soviet:ussr_anthem"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "supplementaries:pancake"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:play_sound",
+                            "sound": "supplementaries:music.pancake"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "cooldown": 1
+}

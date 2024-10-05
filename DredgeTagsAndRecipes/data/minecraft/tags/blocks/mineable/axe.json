@@ -1,6 +1,18 @@
 {
     "replace": false,
     "values": [
-        {"id":"corndelight:corn_crop", "required": false}
+        {"id":"corndelight:corn_crop", "required": false},
+        {"id":"new_soviet:beige_green_wallpaper", "required": false},
+        {"id":"new_soviet:brown_green_wallpaper", "required": false},
+        {"id":"new_soviet:dark_blue_wallpaper", "required": false},
+        {"id":"new_soviet:dark_brown_wallpaper", "required": false},
+        {"id":"new_soviet:dark_green_wallpaper", "required": false},
+        {"id":"new_soviet:light_beige_wallpaper", "required": false},
+        {"id":"new_soviet:light_blue_wallpaper", "required": false},
+        {"id":"new_soviet:orange_wallpaper", "required": false},
+        {"id":"new_soviet:pink_green_wallpaper", "required": false},
+        {"id":"new_soviet:red_green_wallpaper", "required": false},
+        {"id":"new_soviet:yellow_green_wallpaper", "required": false},
+        {"id":"new_soviet:yellow_wallpaper", "required": false}
    ]
 }

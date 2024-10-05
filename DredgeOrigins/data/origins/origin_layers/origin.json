@@ -2,7 +2,7 @@
     "replace": false,
     "origins": [
         "dredgeorigins:calamari",
-        "dredgeorigins:beevory",
+        "dredgeorigins:ari",
         "dredgeorigins:dev",
         "dredgeorigins:kibby",
         "dredgeorigins:feline",
@@ -14,6 +14,8 @@
         "dredgeorigins:wolverine",
         "dredgeorigins:phantom",
         "dredgeorigins:cumulus",
-        "dredgeorigins:giant"
+        "dredgeorigins:giant",
+        "dredgeorigins:hazel",
+        "dredgeorigins:avery"
     ]
 }

@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#Q#",
+        "QTQ",
+        "#Q#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:amethyst_shard"
+        },
+        "Q": {
+            "item": "minecraft:quartz"
+        },
+        "T": {
+            "item": "consistency_plus:lime_tinted_glass"
+        }
+    },
+    "result": {
+        "item": "architects_palette:ekanite_rod",
+        "count": 1
+    }
+}

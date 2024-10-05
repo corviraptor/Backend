@@ -1,0 +1,78 @@
+{
+    "name": "Backup Battery",
+    "description": "You have a solar charged backup battery in case the dynamo runs out of power. Be careful, it takes a long time to charge.",
+    "type": "origins:multiple",
+    "power": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 100,
+        "start_value": 100,
+        "hud_render": {
+            "condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:resource",
+                        "resource": "dredgeorigins:hazel/dynamo_power",
+                        "compare_to": 0,
+                        "comparison": "=="
+                    },
+                    {
+                        "type": "origins:power_active",
+                        "power": "dredgeorigins:hazel/battery_hud-toggle"
+                    }
+                ]
+            },
+            "sprite_location": "origins:textures/gui/resource_bar.png",
+            "should_render": true,
+            "bar_index": 2
+        }
+    },
+    "hud-toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": "key.origins.quinary_active"
+    },
+    "drain": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:power_active",
+                "power": "dredgeorigins:hazel/power_saving_mode"
+            },
+            "if_action": {
+                "type": "origins:change_resource",
+                "resource": "dredgeorigins:hazel/battery_power",
+                "change": -2,
+                "operation": "add"
+            },
+            "else_action": {
+                "type": "origins:change_resource",
+                "resource": "dredgeorigins:hazel/battery_power",
+                "change": -3,
+                "operation": "add"
+            }
+        },
+        "interval": 1200,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "dredgeorigins:hazel/dynamo_power",
+            "compare_to": 0,
+            "comparison": "=="
+        }
+    },
+    "charge": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "change": 1,
+            "operation": "add",
+            "resource": "dredgeorigins:hazel/battery_power"
+        },
+        "interval": 3000,
+        "condition": {
+            "type": "origins:exposed_to_sun"
+        }
+    }
+}

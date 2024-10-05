@@ -35,6 +35,10 @@
                     "shape": "cube",
                     "comparison": ">=",
                     "compare_to": 1
+                },
+                {
+                    "type": "origins:gamemode",
+                    "gamemode": "survival"
                 }
             ]
         },

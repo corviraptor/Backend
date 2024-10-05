@@ -1,0 +1,48 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "hurt": {
+        "type": "origins:damage_over_time",
+        "interval": 40,
+        "onset_delay": 5,
+        "damage": 2,
+        "protection_effectiveness": 0.0,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "dredgeorigins:hazel/dynamo_power",
+                    "compare_to": 0,
+                    "comparison": "=="
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "dredgeorigins:hazel/battery_power",
+                    "compare_to": 0,
+                    "comparison": "=="
+                }
+            ]
+        }
+    },
+    "no-regen": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "dredgeorigins:hazel/dynamo_power",
+                    "compare_to": 0,
+                    "comparison": "=="
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "dredgeorigins:hazel/battery_power",
+                    "compare_to": 0,
+                    "comparison": "=="
+                }
+            ]
+        },
+        "type": "origins:disable_regen"
+    }
+}
