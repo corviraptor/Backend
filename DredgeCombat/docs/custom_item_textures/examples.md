@@ -5,7 +5,7 @@ Here's some samples I've accumulated for working with custom item textures. This
 ## Simple Item Texture
 
 CIT Properties File:
-`../DredgeCombat/assets/minecraft/citresewn/cit/ability_token/example.properties`
+`../DredgeCombat/assets/minecraft/citresewn/cit/move_token/example.properties`
 
 ```toml
 nbt.CustomModelData=985001
@@ -16,25 +16,25 @@ items=minecraft:recovery_compass
 ## Layered Item Texture
 
 Model File:
-`resourcepacks/DredgeCombat/assets/dredgecombat/models/item/ability_token/upslash.json`
+`resourcepacks/DredgeCombat/assets/dredgecombat/models/item/move_token/upslash.json`
 
 ```json
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "dredgecombat:item/ability_token/bg_sword",
-        "layer1": "dredgecombat:item/ability_token/frame_special",
-        "layer2": "dredgecombat:item/ability_token/icon_upslash"
+        "layer0": "dredgecombat:item/move_token/bg_sword",
+        "layer1": "dredgecombat:item/move_token/frame_special",
+        "layer2": "dredgecombat:item/move_token/icon_upslash"
     }
 }
 ```
 
 CIT Properties File:
-`../DredgeCombat/assets/minecraft/citresewn/cit/ability_token/upslash.properties`
+`../DredgeCombat/assets/minecraft/citresewn/cit/move_token/upslash.properties`
 
 ```toml
 nbt.CustomModelData=985001
-model=dredgecombat:item/ability_token/upslash.json
+model=dredgecombat:item/move_token/upslash.json
 items=minecraft:recovery_compass
 ```
 

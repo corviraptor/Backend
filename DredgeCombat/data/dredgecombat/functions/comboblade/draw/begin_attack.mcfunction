@@ -4,7 +4,7 @@ execute unless score comboblade_drawing Variables = ZERO Constants run return 0 
 
 resource set @s dredgecombat:abilities/timer_time 5
 
-scoreboard players set corviraptor AbilityActive 1
+scoreboard players set corviraptor MoveInUse 1
 
 
 playsound block.note_block.bell block @s ~ ~ ~ 3 1.9

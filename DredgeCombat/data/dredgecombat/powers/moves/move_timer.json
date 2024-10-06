@@ -20,7 +20,7 @@
         "resource": "dredgecombat:comboblade/draw/timer",
         "modifier": {
             "operation": "addition",
-            "value": -1
+            "value": -2
         }
     },
     
@@ -42,12 +42,12 @@
             "comparison": "=="
         },
         "if_action": {
-            "type":"origins:execute_command",
-            "command": "dredgecombat:abilities/on_finish_ability"
+            "type":"origins:emit_game_event",
+            "event": "minecraft:block_open"
         },
         "else_action": {
-            "type":"origins:execute_command",
-            "command": "dredgecombat:abilities/on_cancel_ability"
+            "type":"origins:emit_game_event",
+            "event": "minecraft:dispense_fail"
         }
     }
     }

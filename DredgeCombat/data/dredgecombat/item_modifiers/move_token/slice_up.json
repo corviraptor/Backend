@@ -1,7 +1,7 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{slice_up:1b, sword_token:1b}"
+    "tag": "{Slice_Up:1b, Sword_Token:1b, Back_Special:1b}"
   },
   {
     "function": "minecraft:set_nbt",

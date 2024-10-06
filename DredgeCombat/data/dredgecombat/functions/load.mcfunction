@@ -18,8 +18,8 @@ scoreboard players set RANK_D ComboMeter 01
 scoreboard objectives add Variables dummy
 
 # Boolean values
-scoreboard objectives add AbilityInUse dummy
-scoreboard objectives add ActiveAbility dummy
+scoreboard objectives add MoveInUse dummy
+scoreboard objectives add ActiveMove dummy
 scoreboard objectives add ValidLoadout dummy
 
 tellraw @a { "text": "Loaded DredgeCombat!", "color": "#FF0064" }

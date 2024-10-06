@@ -8,7 +8,7 @@ There are a few requirements for the datapack to be able to trigger these animat
 * The animation must be set as a "Command Activated Animation".
 * The animation will probably not work correctly if you use the wrong type (pose, gesture, toggle layer, or value layer).
 
-Animations like this are usually named something along the lines of `tool_type.ability_name`. Sequenced animations may be named `tool_type.ability_name.anticipation` and `tool_type.ability_name.release`, or may simply be numbered for longer combinations such as `tool_type.ability_name.3`.
+Animations like this are usually named something along the lines of `tool_type.move_name`. Sequenced animations may be named `tool_type.move_name.anticipation` and `tool_type.move_name.release`, or may simply be numbered for longer combinations such as `tool_type.move_name.3`.
 
 ## In Mainhand Toggle Layers
 

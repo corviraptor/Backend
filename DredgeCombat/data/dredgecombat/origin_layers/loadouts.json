@@ -1,6 +1,6 @@
 {
     "origins": [
-        "dredgecombat:loadouts"
+        "dredgecombat:loadout_user"
     ],
     "auto_choose": true,
     "hidden": true

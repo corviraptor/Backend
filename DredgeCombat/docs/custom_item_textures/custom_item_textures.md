@@ -27,7 +27,7 @@ Custom Model Data Prefix: `9810##`
 | Freimesser (Axe)   | `981098` |
 | Freimesser (Sword) | `981099` |
 
-### Ability Tokens
+### Move Tokens
 
 Custom Model Data Prefix: `9850##`
 

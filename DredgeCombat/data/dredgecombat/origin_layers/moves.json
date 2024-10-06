@@ -1,6 +1,6 @@
 {
     "origins": [
-        "dredgecombat:abilities"
+        "dredgecombat:move_executor"
     ],
     "auto_choose": true,
     "hidden": true
