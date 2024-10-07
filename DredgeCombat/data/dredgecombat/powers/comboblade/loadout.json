@@ -3,7 +3,7 @@
     "name": "Combo Blade Loadout",
     "title": "Combo Blade Loadout",
     "description": "Use your Pick Block key to open the Combo Blade Loadout.",
-    "container_type": "dropper",
+    "container_type": "chest",
     "key": {
         "key": "key.pickItem"
     },
