@@ -2,46 +2,21 @@
 
 Here's some samples I've accumulated for working with custom item textures. This is by no means an exhaustive list of the things you can do, but it should be helpful considering CIT Resewn doesn't have any documentation for the version we're using.
 
-## Simple Item Texture
+## CIT Simple Item Texture
 
 CIT Properties File:
-`../DredgeCombat/assets/minecraft/citresewn/cit/move_token/example.properties`
+`~/assets/minecraft/citresewn/cit/item/example.properties`
 
 ```toml
 nbt.CustomModelData=985001
 texture=dredgecombat:item/example.png
-items=minecraft:recovery_compass
-```
-
-## Layered Item Texture
-
-Model File:
-`resourcepacks/DredgeCombat/assets/dredgecombat/models/item/move_token/upslash.json`
-
-```json
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "dredgecombat:item/move_token/bg_sword",
-        "layer1": "dredgecombat:item/move_token/frame_special",
-        "layer2": "dredgecombat:item/move_token/icon_upslash"
-    }
-}
-```
-
-CIT Properties File:
-`../DredgeCombat/assets/minecraft/citresewn/cit/move_token/upslash.properties`
-
-```toml
-nbt.CustomModelData=985001
-model=dredgecombat:item/move_token/upslash.json
-items=minecraft:recovery_compass
+items=minecraft:stick
 ```
 
 ## 3D Model
 
 CIT Properties File:
-`../DredgeCombat/assets/minecraft/citresewn/cit/comboblades`
+`~/assets/minecraft/citresewn/cit/item/comboblade/freimesser_axe.properties`
 
 ```toml
 nbt.CustomModelData=981098
@@ -50,6 +25,7 @@ items=minecraft:netherite_axe
 ```
 
 Model File:
+`~/assets/dredgecombat/models/item/comboblade/freimesser.json`
 
 ``` json
 {
@@ -67,6 +43,70 @@ Model File:
 },
 ```
 
-... where `"dredgecombat:item/comboblade/freimesser"` points to `../DredgeCombat/assets/dredgecombat/textures/item/comboblade/freimesser.png`
+... where `"dredgecombat:item/comboblade/freimesser"` points to `~/assets/dredgecombat/textures/item/comboblade/freimesser.png`
 
 Because this model has emissive parts, there is a texture `freimesser_e.png` in the same directory as `freimesser.png` that acts as the emissive map. This won't work for players without Continuity.
+
+## Paletted Permutations & Layered Textures
+
+Paletted Permutations Atlas:
+`~/assets/minecraft/atlases/blocks.json` (the file is important, Minecraft won't load everything in this directory so you have to put it in an Atlas loaded by the game for your intended purpose like `blocks.json` for blocks and items)
+
+```json
+{
+    "sources": [
+        {
+            "type": "paletted_permutations",
+            "textures": [
+                "dredgecombat:item/move_token/background",
+                "dredgecombat:item/move_token/frame_back_special"
+            ],
+            "palette_key": "dredgecombat:colormap/color_palettes/trim/trim_palette",
+            "permutations": {
+                "quartz": "dredgecombat:colormap/color_palettes/trim/quartz",
+                "iron": "dredgecombat:colormap/color_palettes/trim/iron",
+                "gold": "dredgecombat:colormap/color_palettes/trim/gold",
+                "diamond": "dredgecombat:colormap/color_palettes/trim/diamond",
+                "netherite": "dredgecombat:colormap/color_palettes/trim/netherite",
+                "redstone": "dredgecombat:colormap/color_palettes/trim/redstone",
+                "copper": "dredgecombat:colormap/color_palettes/trim/copper",
+                "emerald": "dredgecombat:colormap/color_palettes/trim/emerald",
+                "lapis": "dredgecombat:colormap/color_palettes/trim/lapis",
+                "amethyst": "dredgecombat:colormap/color_palettes/trim/amethyst",
+                "iron_darker": "dredgecombat:colormap/color_palettes/trim/iron_darker",
+                "gold_darker": "dredgecombat:colormap/color_palettes/trim/gold_darker",
+                "diamond_darker": "dredgecombat:colormap/color_palettes/trim/diamond_darker",
+                "netherite_darker": "dredgecombat:colormap/color_palettes/trim/netherite_darker",
+                "brass": "dredgecombat:colormap/color_palettes/trim/brass"
+            }
+        }
+    ]
+}
+```
+
+This generates a paletted version of each listed texture in memory for every listed permutation. The permutations are named the same as the original texture, but suffixed with the permutation name after an underscore, such as `dredgecombat:item/move_token/background_amethyst`. The texture needs to use the same colors as the `palette_key`; any pixels with colors not in the `palette_key` will be transferred as is.
+
+Model File:
+`~/assets/dredgecombat/models/item/move_token/upslash.json`
+
+```json
+{
+ "parent": "item/generated",
+ "textures": {
+  "layer0": "dredgecombat:item/move_token/background_amethyst",
+  "layer1": "dredgecombat:item/move_token/frame_back_special_brass",
+  "layer2": "dredgecombat:item/move_token/icon_upslash"
+ }
+}
+```
+
+Adding layered textures is as simple as adding more layers to the `textures` object in the model file, just remember to increment the number in the name for each layer.
+
+CIT Properties File:
+`~/assets/minecraft/citresewn/cit/item/move_token/upslash.properties`
+
+```toml
+nbt.CustomModelData=985001
+model=dredgecombat:item/move_token/upslash.json
+items=minecraft:recovery_compass
+```

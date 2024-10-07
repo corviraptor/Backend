@@ -10,10 +10,10 @@
     "condition": {
         "type": "origins:and",
         "conditions": [
-        {
-            "type": "origins:predicate",
-            "predicate": "dredgecombat:comboblade/holding_comboblade"
-        }
+            {
+                "type": "origins:predicate",
+                "predicate": "dredgecombat:comboblade/holding_comboblade"
+            }
         ]
     }
 }

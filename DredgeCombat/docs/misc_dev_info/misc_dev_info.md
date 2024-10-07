@@ -8,6 +8,10 @@ Remember that premature optimization can really hurt the project's maintainablit
 
 [Misode's Github Pages Website](https://misode.github.io/) provides a lot of JSON generators that can be set to use previous versions, including 1.20.1! Just go up to the top right of the page and change the "1.21.1" to "1.20—1.20.1" or whatever version range includes 1.20.1. This is a great resource to get a feeling for what's different from the Wiki, and provides a lot of feedback for you to learn from. Also, while JSON is human readable and editable, it was originally intended to be generated instead of written manually which is why the syntax is so fussy and difficult to refactor.
 
+## NBT
+
+[Origins NBT information & examples](https://gist.github.com/MisionThi/08b2e8931c72ba20d8832869874edc9a)
+
 ## Item Modifiers
 
 [Generator](https://misode.github.io/item-modifier/)

@@ -1,7 +1,7 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{Slice_Up:1b, Sword_Token:1b, Back_Special:1b}"
+    "tag": "{MoveToken:{Type:\"SliceUp\", ToolTypes:[\"Sword\"], Slot:BackSpecial}}"
   },
   {
     "function": "minecraft:set_nbt",
@@ -30,5 +30,5 @@
         {"text":"( Not Tradable, Marketable, or Usable in Crafting )","color":"dark_gray","italic":false},
         {"text":" "}
     ]
-}
+  }
 ]

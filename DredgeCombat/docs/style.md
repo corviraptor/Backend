@@ -2,11 +2,11 @@
 
 ## Constants
 
-Constants are declared under the `scoreboard objectives add` command of their scoreboard, typically in `load.mcfunction`. The names ("players") of all constants on scoreboards should be in `SCREAMING_SNAKE_CASE`. Constants may be declared on the `Constants` scoreboard if they aren't specific (`ONE`, `ZERO`, `PI`, `TAU`, etc.), but if they are used for comparison with variable scoreboard values they should be declared on the relevant scoreboard (`RANK_A` would be declared on the `ComboMeter` scoreboard).
+Constants are declared under the `scoreboard objectives add` command of their scoreboard, typically in `load.mcfunction`. The names ("players") of all constants on scoreboards should be in `SCREAMING_SNAKE_CASE`, and be prefixed with `#`, which makes them not appear on the scoreboard. Constants may be declared on the `Constants` scoreboard if they aren't specific (`ONE`, `ZERO`, `PI`, `TAU`, etc.), but if they are used for comparison with variable scoreboard values they should be declared on the relevant scoreboard (`RANK_A` would be declared on the `ComboMeter` scoreboard).
 
 ## Custom NBT Tags
 
-The style for these isn't consistent in Minecraft or Origins anyways, but most of these in DredgeCombat are `Title_Case`.
+The style for these isn't consistent in Minecraft or Origins anyways, but most of the NBT tag identifiers in DredgeCombat are `PascalCase`. NBT values that are strings should be in `snake_case`.
 
 ## File Names & Namespaces
 
@@ -28,4 +28,4 @@ Also, sometimes it can be easier to distinguish if there are similarly named sis
 
 ## Combo Blades
 
-In code, `comboblade` is a single word. I don't entirely understand why it looks so wrong to me as two words in `snake_case`.
+In code, `comboblade` is a single word. I don't entirely understand why it looks so wrong to me as two words in code.
