@@ -1,0 +1,24 @@
+{
+    "name": "Mostly Waterproof",
+    "description": "You can breath underwater as long as you are at full health",
+    "type": "origins:action_over_time",
+    "interval": 5,
+    "entity_action": {
+        "type": "origins:gain_air",
+        "value": 20
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:submerged_in",
+                "fluid": "minecraft:water"
+            },
+            {
+                "type": "origins:health",
+                "compare_to": 20,
+                "comparison": ">="
+            }
+        ]
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "owners": [
+        "minecraft:wolf"
+    ],
+    "width_increment": 0.4,
+    "height_increment": 0.4,
+    "animation": "land"
+}

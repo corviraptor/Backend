@@ -1,0 +1,26 @@
+{
+    "name": "Hazel Caraway",
+    "description": "Much more than just a soldier.",
+    "powers": [
+        "dredgeorigins:hazel/dynamo",
+        "dredgeorigins:hazel/battery",
+        "dredgeorigins:hazel/power_out",
+        "dredgeorigins:hazel/power_saving",
+        "dredgeorigins:hazel/night_vision",
+        "dredgeorigins:hazel/heelys",
+        "dredgeorigins:hazel/key",
+        "dredgeorigins:hazel/klaxon",
+        "dredgeorigins:hazel/breath_underwater",
+        "dredgeorigins:hazel/disc_player",
+        "dredgeorigins:hazel/easy_bake",
+        "dredgeorigins:hazel/base_armor",
+        "dredgeorigins:hazel/lightning"
+
+    ],
+    "icon": {
+        "item": "minecraft:player_head",
+        "tag": "{SkullOwner: {Id: [I; 756137363, 842745165, -1849117768, 1511817683], Properties: {textures: [{Value: \"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjM2NTIyODQ5MjFhMmRiYTQ0MDA2MGYyZjYzYWEzYmEyYjBkZjYyYzljMzZiZjc4ODNhY2VkYzMzNmRmOTExYiJ9fX0=\"}]}}}}"
+    },
+    "impact": 3,
+    "unchoosable": true
+}
