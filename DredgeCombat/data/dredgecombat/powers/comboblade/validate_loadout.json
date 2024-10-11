@@ -14,7 +14,7 @@
                         "power": "dredgecombat:comboblade/loadout",
                         "item_condition": {
                             "type": "origins:nbt",
-                            "nbt": "{Combo_Axe_Prototype:1b}"
+                            "nbt": "{ComboAxePrototype:1b}"
                         },
                         "comparison": "!=",
                         "compare_to": 1
@@ -31,7 +31,7 @@
                         "power": "dredgecombat:comboblade/loadout",
                         "item_condition": {
                             "type": "origins:nbt",
-                            "nbt": "{Combo_Sword_Prototype:1b}"
+                            "nbt": "{ComboSwordPrototype:1b}"
                         },
                         "comparison": "!=",
                         "compare_to": 1
@@ -39,6 +39,23 @@
                     "action": {
                         "type": "origins:execute_command",
                         "command": "function dredgecombat:comboblade/validate_loadout/combo_sword_invalid"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "inventory_types": ["power"],
+                        "power": "dredgecombat:comboblade/loadout",
+                        "item_condition": {
+                            "type": "origins:nbt",
+                            "nbt": "{MoveToken:{Slot:BackSpecial}}"
+                        },
+                        "comparison": ">",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "function dredgecombat:move_token/validate_loadout/move_slot_conflict"
                     }
                 },
                 {

@@ -1,0 +1,19 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{MoveToken:{Type:TestToken, ToolTypes:[Axe], Slot:BackSpecial}}"
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{CustomModelData:985001}"
+  },
+  {
+    "function": "minecraft:set_name",
+    "name": [{"text":"TEST TOKEN","color":"#FF0064", "italic":false, "bold":true}]
+  },
+  {
+    "function": "apoli:add_power",
+    "power": "dredgecombat:move_token/test_token",
+    "slot": "mainhand"
+  }
+]

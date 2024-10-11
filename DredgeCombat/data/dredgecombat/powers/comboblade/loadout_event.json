@@ -1,7 +1,0 @@
-{
-    "type": "origins:item_on_item",
-    "entity_action": {
-        "type": "origins:execute_command",
-        "command": "tellraw @s { \"text\": \"⚠\", \"color\": \"#ff0018\" }"
-    }
-}

@@ -1,3 +1,3 @@
-scoreboard players set @s ValidLoadout 1
+scoreboard players set @s dredgecombat:ValidLoadout 1
 
 return 1

@@ -5,21 +5,18 @@ scoreboard objectives add Constants dummy
 scoreboard players set #ONE Constants 1
 scoreboard players set #ZERO Constants 0
 
-scoreboard objectives add ComboMeter dummy
-scoreboard players set #RANK_SSS ComboMeter 120
-scoreboard players set #RANK_SS ComboMeter 90
-scoreboard players set #RANK_S ComboMeter 60
-scoreboard players set #RANK_A ComboMeter 30
-scoreboard players set #RANK_B ComboMeter 15
-scoreboard players set #RANK_C ComboMeter 07
-scoreboard players set #RANK_D ComboMeter 01
+# Only used for local variables in functions during a single tick's execution, 
+# not for storing state across multiple ticks!
+scoreboard objectives add dredgecombat:Variables dummy
 
-# Only used internally in functions, not for storing state
-scoreboard objectives add Variables dummy
+# move timer
+scoreboard objectives add dredgecombat:MoveTime dummy
+scoreboard players set #TIMER_INTERVAL dredgecombat:MoveTime 2
 
 # Boolean values
-scoreboard objectives add MoveInUse dummy
-scoreboard objectives add ActiveMove dummy
-scoreboard objectives add ValidLoadout dummy
+scoreboard objectives add dredgecombat:ActiveMove dummy
+scoreboard objectives add dredgecombat:ValidLoadout dummy
+
+function dredgecombat:load/combo_meter_init
 
 tellraw @a { "text": "Loaded DredgeCombat!", "color": "#FF0064" }

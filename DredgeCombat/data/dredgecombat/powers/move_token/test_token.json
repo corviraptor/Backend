@@ -1,0 +1,10 @@
+{
+    "name": "TEST TOKEN",
+    "description": "TEST TOKEN",
+    "type": "origins:active_self",
+    "key": "key.use",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "tellraw @s { \"text\": \"Hip hip Horray!\"}"
+    }
+}

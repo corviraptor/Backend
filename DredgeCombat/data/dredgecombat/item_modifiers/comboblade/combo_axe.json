@@ -1,7 +1,7 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{Combo_Axe:1b, Combo_Axe_Prototype:0b, Prototype:0b}"
+    "tag": "{ComboAxe:1b, ComboAxePrototype:0b, Prototype:0b}"
   },
   {
     "function": "apoli:add_power",
@@ -11,13 +11,13 @@
   },
   {
     "function": "apoli:add_power",
-    "power": "dredgecombat:comboblade/draw/attack",
-    "hidden": true,
+    "power": "dredgecombat:comboblade/draw/begin",
     "slot": "mainhand"
   },
   {
     "function": "apoli:add_power",
-    "power": "dredgecombat:comboblade/draw/begin_draw",
+    "power": "dredgecombat:comboblade/draw/end_attack",
+    "hidden": true,
     "slot": "mainhand"
   },
   {

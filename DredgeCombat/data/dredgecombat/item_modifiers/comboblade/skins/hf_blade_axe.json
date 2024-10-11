@@ -5,11 +5,7 @@
   },
   {
     "function": "minecraft:set_nbt",
-    "tag": "{Combo_Axe:0b, Combo_Axe_Prototype:1b, Prototype:1b}"
-  },
-  {
-    "function": "minecraft:reference",
-    "name": "dredgecombat:prototype"
+    "tag": "{ComboAxe:0b, ComboAxePrototype:1b, Prototype:1b}"
   },
   {
     "function": "minecraft:set_name",
@@ -17,6 +13,6 @@
   },
   {
     "function": "minecraft:reference",
-    "name": "dredgecombat:comboblade/hf_blade_lore"
+    "name": "dredgecombat:comboblade/skins/hf_blade_lore"
   }
 ]

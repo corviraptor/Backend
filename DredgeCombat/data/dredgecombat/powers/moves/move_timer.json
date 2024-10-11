@@ -1,34 +1,19 @@
 {
-    "type": "origins:multiple",
-
-    "time": {
-        "type": "origins:resource",
-        "hud_render": {
-            "should_render": true
-        },
-        "min": 0,
-        "max": 500
-    },
-
-    "tick": {
-        "type":"origins:action_over_time",
+    
+    "type":"origins:action_over_time",
 
     "hidden": true,
 
     "entity_action": {
-        "type": "origins:modify_resource",
-        "resource": "dredgecombat:comboblade/draw/timer",
-        "modifier": {
-            "operation": "addition",
-            "value": -2
-        }
+        "type": "origins:execute_command",
+        "command": "scoreboard players operation @s dredgecombat:MoveTime -= #TIMER_INTERVAL dredgecombat:MoveTime"
     },
     
     "condition": {
-        "type":"origins:resource",
-        "resource": "dredgecombat:comboblade/draw/timer",
-        "compare_to": 1,
-        "comparison": "<"
+        "type":"origins:scoreboard",
+        "objective": "dredgecombat:MoveTime",
+        "compare_to": 0,
+        "comparison": "<="
     },
 
     "interval": 2,
@@ -49,6 +34,5 @@
             "type":"origins:emit_game_event",
             "event": "minecraft:dispense_fail"
         }
-    }
     }
 }

@@ -1,0 +1,1 @@
+tellraw @s { "text": "Up Slash Executed!!!", "color": "#00FF00" }

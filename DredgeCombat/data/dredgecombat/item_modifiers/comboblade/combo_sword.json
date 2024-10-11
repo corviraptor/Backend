@@ -1,7 +1,7 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{Combo_Sword:1b, Combo_Sword_Prototype:0b, Prototype:0b}"
+    "tag": "{ComboSword:1b, ComboSwordPrototype:0b, Prototype:0b}"
   },
   {
     "function": "apoli:add_power",
@@ -11,7 +11,7 @@
   },
   {
     "function": "apoli:add_power",
-    "power": "dredgecombat:comboblade/sheathe/sheathe",
+    "power": "dredgecombat:comboblade/sheathe/begin",
     "slot": "mainhand"
   },
   {

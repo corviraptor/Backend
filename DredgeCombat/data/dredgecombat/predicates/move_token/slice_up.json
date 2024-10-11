@@ -1,7 +1,0 @@
-{
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-        "nbt": "cardinal_components.\"apoli:powers\".Powers[{Type:\"dredgecombat:comboblade/loadout\"}].Data.Items[{tag:{MoveToken:{Type:SliceUp}}}]"
-    }
-}

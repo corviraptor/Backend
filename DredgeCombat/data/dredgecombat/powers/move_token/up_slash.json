@@ -1,0 +1,25 @@
+{
+    "name": "Upwards Slash",
+    "description": "Launches enemies in front of you into the air with an upwards slash!",
+    "type": "origins:active_self",
+    "key": "key.use",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "tellraw @s { \"text\": \"Upslash!\"}"
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+        {
+            "type": "origins:predicate",
+            "predicate": "dredgecombat:comboblade/holding_sword"
+        },
+        {
+            "type": "apugli:key_pressed",
+            "key": {
+                "key": "key.back",
+                "continuous": true
+            }
+        }]
+    }
+}

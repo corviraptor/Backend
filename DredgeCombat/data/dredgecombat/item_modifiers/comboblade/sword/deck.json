@@ -1,0 +1,22 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{Deck:{ToolType:ComboSword}}"
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{CustomModelData:981001}"
+  },
+  {
+    "function": "minecraft:set_name",
+    "name": [{"text":"Combo Sword Deck","color":"#FF0064", "italic":false, "bold":true}]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "replace": "true",
+    "lore": [
+        {"text":"Applied to your Combo Blade's Sword Phase."}
+    ]
+  }
+]
