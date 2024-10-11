@@ -1,7 +1,7 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{ComboSword:1b, ComboSwordPrototype:0b, Prototype:0b}"
+    "tag": "{LoadoutTool:{Type:combo_sword, Prototype:0b}}"
   },
   {
     "function": "apoli:add_power",

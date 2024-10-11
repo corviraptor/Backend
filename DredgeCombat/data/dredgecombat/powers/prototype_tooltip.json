@@ -2,7 +2,7 @@
     "type": "origins:tooltip",
     "item_condition": {
         "type": "origins:nbt",
-        "nbt": "{Prototype: 1b}"
+        "nbt": "{LoadoutTool:{Prototype:1b}}"
     },
     "text": "Prototype"
 }

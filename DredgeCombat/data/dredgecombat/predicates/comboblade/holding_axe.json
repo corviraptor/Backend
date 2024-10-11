@@ -7,7 +7,7 @@
       "predicate": {
         "equipment": {
           "mainhand": {
-            "nbt": "{ComboAxe:1b}"
+            "nbt": "{LoadoutTool:{Type:combo_axe, Prototype:0b}}"
           }
         }
       }

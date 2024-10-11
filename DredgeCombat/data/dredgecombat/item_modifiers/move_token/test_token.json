@@ -1,7 +1,7 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{MoveToken:{Type:TestToken, ToolTypes:[Axe], Slot:BackSpecial}}"
+    "tag": "{MoveToken:{Type:test_token, ToolTypes:[axe], Slot:back_special}}"
   },
   {
     "function": "minecraft:set_nbt",

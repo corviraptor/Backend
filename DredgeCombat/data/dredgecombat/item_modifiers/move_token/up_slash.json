@@ -1,7 +1,7 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{MoveToken:{Type:UpSlash, ToolTypes:[Sword, ComboSword], Slot:BackSpecial}}"
+    "tag": "{MoveToken:{Type:up_slash, ToolTypes:[sword, combo_sword], Slot:back_special}}"
   },
   {
     "function": "minecraft:set_nbt",

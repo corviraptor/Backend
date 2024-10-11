@@ -1,3 +1,3 @@
-scoreboard players set @s dredgecombat:ValidLoadout 1
+scoreboard players operation @s dredgecombat.ValidLoadout = #FAILURE dredgecombat.Constants
 
 return 1

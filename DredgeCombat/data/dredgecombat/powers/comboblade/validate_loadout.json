@@ -14,7 +14,7 @@
                         "power": "dredgecombat:comboblade/loadout",
                         "item_condition": {
                             "type": "origins:nbt",
-                            "nbt": "{ComboAxePrototype:1b}"
+                            "nbt": "{LoadoutTool:{Type:combo_axe, Prototype:1b}}"
                         },
                         "comparison": "!=",
                         "compare_to": 1
@@ -31,7 +31,7 @@
                         "power": "dredgecombat:comboblade/loadout",
                         "item_condition": {
                             "type": "origins:nbt",
-                            "nbt": "{ComboSwordPrototype:1b}"
+                            "nbt": "{LoadoutTool:{Type:combo_sword, Prototype:1b}}"
                         },
                         "comparison": "!=",
                         "compare_to": 1
@@ -48,7 +48,7 @@
                         "power": "dredgecombat:comboblade/loadout",
                         "item_condition": {
                             "type": "origins:nbt",
-                            "nbt": "{MoveToken:{Slot:BackSpecial}}"
+                            "nbt": "{MoveToken:{Slot:back_special}}"
                         },
                         "comparison": ">",
                         "compare_to": 1

@@ -6,12 +6,12 @@
 
     "entity_action": {
         "type": "origins:execute_command",
-        "command": "scoreboard players operation @s dredgecombat:MoveTime -= #TIMER_INTERVAL dredgecombat:MoveTime"
+        "command": "scoreboard players operation @s dredgecombat.MoveTime -= #TIMER_INTERVAL dredgecombat:MoveTime"
     },
     
     "condition": {
         "type":"origins:scoreboard",
-        "objective": "dredgecombat:MoveTime",
+        "objective": "dredgecombat.MoveTime",
         "compare_to": 0,
         "comparison": "<="
     },
@@ -21,8 +21,8 @@
     "falling_action": {
         "type": "origins:if_else",
         "condition": {
-            "type": "origins:resource",
-            "resource": "dredgecombat:comboblade/draw/timer",
+            "type": "origins:scoreboard",
+            "objective": "dredgecombat.MoveTime",
             "compare_to": 0,
             "comparison": "=="
         },

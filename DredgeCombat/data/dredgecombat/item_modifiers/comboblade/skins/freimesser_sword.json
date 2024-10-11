@@ -5,7 +5,7 @@
   },
   {
     "function": "minecraft:set_nbt",
-    "tag": "{ComboSword:0b, ComboSwordPrototype:1b, Prototype:1b}"
+    "tag": "{LoadoutTool:{Type:combo_sword, Prototype:1b}}"
   },
   {
     "function": "minecraft:set_name",

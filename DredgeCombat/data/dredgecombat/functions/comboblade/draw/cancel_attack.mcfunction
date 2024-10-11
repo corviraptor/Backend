@@ -1,4 +1,4 @@
-scoreboard players set @s dredgecombat:MoveTime 0
+scoreboard players set @s dredgecombat.MoveTime 0
 
 playsound item.axe.strip block @s ~ ~ ~ 3 0.5
 

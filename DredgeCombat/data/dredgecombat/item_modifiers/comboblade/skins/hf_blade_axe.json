@@ -5,7 +5,7 @@
   },
   {
     "function": "minecraft:set_nbt",
-    "tag": "{ComboAxe:0b, ComboAxePrototype:1b, Prototype:1b}"
+    "tag": "{LoadoutTool:{Type:combo_axe, Prototype:1b}}"
   },
   {
     "function": "minecraft:set_name",

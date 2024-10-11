@@ -5,7 +5,7 @@
     "key": "key.use",
     "entity_action": {
         "type": "origins:execute_command",
-        "command": "tellraw @s { \"text\": \"Upslash!\"}"
+        "command": "tellraw @s { \"text\": \"Up Slash!\"}"
     },
     "condition": {
         "type": "origins:and",
