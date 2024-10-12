@@ -10,5 +10,7 @@
 			"path": "../../../../../../../../../../repos/Backend.wiki"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"nixEnvSelector.nixFile": "${workspaceFolder}/shell.nix"
+	}
 }

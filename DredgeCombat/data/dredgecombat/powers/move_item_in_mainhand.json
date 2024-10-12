@@ -1,0 +1,17 @@
+{
+    "type": "origins:action_on_callback",
+    "entity_action_lost": {
+        "type": "origins:if_else",
+        "condition": {
+            "type": "origins:scoreboard",
+            "objective": "dredgecombat.MoveTime",
+            "compare_to": 0,
+            "comparison": "!="
+        },
+        "if_action": {
+            "type": "origins:execute_command",
+            "command": "function dredgecombat:moves/cancel",
+            "condition": ""
+        }
+    }
+}

@@ -1,0 +1,1 @@
+scoreboard players operation @s dredgecombat.MoveTime = #FAILURE dredgecombat.Constants
