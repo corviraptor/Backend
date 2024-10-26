@@ -1,0 +1,15 @@
+{
+    "name": "Not a Picky Eater",
+    "description": "You can eat all food for more hunger, but do not gain buffs or debuffs.",
+    "type": "origins:modify_food",
+    "food_modifier": {
+        "operation": "addition",
+        "value": 3
+    },
+    "saturation_modifier": {
+        "operation": "addition",
+        "value": 2
+    },
+    "always_edible": true,
+    "prevent_effects": true
+}

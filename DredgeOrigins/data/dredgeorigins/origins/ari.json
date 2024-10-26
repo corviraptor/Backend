@@ -11,13 +11,14 @@
         "dredgeorigins:beevory/food_mods",
         "dredgeorigins:beevory/honey_bottle",
         "dredgeorigins:beevory/honey_drip",
-        "dredgeorigins:beevory/meat_honey",
         "dredgeorigins:beevory/shaking",
         "dredgeorigins:beevory/stinger",
         "dredgeorigins:dev/berry_immune",
         "dredgeorigins:dev/cactus_immune",
         "dredgeorigins:dev/poison_immune",
-        "dredgeorigins:dev/sacks"
+        "dredgeorigins:dev/sacks",
+        "dredgeorigins:cumulus/flying_resource",
+        "dredgeorigins:cumulus/flying"
     ],
     "icon": "minecraft:honeycomb_block",
     "impact": 3,

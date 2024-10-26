@@ -1,0 +1,9 @@
+{
+    "name": "Fast Metabolism",
+    "description": "Your quick stomach causes you to become hungry more quickly.",
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 1.5
+    }
+}
