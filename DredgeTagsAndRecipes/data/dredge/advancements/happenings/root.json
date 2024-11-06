@@ -1,0 +1,31 @@
+{
+    "criteria": {
+        "entered_end_gateway": {
+            "conditions": {
+                "block": "minecraft:end_gateway"
+            },
+            "trigger": "minecraft:enter_block"
+        }
+    },
+    "display": {
+        "announce_to_chat": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/end.png",
+        "description": {
+            "text": "What awaits you here?"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "gofish:astral_crate"
+        },
+        "show_toast": false,
+        "title": {
+            "text": "Dredge"
+        }
+    },
+    "requirements": [
+        [
+           "entered_end_gateway"
+        ]
+    ]
+}

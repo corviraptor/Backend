@@ -1,0 +1,9 @@
+{
+    "replace": "false",
+    "values": [
+        "enva:titanium_helmet",
+        "enva:titanium_chestplate",
+        "enva:titanium_leggings",
+        "enva:titanium_boots"
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "parent": "dredge:happenings/root",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "biome": "dredge:the_door"
+                    }
+                }
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "The Door is open... what now?"
+        },
+        "frame": "goal",
+        "hidden": false,
+        "icon": {
+            "item": "gofish:astral_crate"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "The Beginning of The End"
+        }
+    },
+    "requirements": [
+        [
+            "requirement"
+        ]
+    ]
+}

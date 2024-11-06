@@ -332,5 +332,33 @@
             "name": "dredgeresources:misc/sitcom_ooh_pos"
         }
     ]
+  },
+  "geiger": {
+    "sounds": [
+      {
+        "name": "dredgeresources:geiger/counter_1"
+      },
+      {
+        "name": "dredgeresources:geiger/counter_2"
+      },
+      {
+        "name": "dredgeresources:geiger/counter_3"
+      },
+      {
+        "name": "dredgeresources:geiger/counter_4"
+      },
+      {
+        "name": "dredgeresources:geiger/counter_5"
+      },
+      {
+        "name": "dredgeresources:geiger/counter_6"
+      },
+      {
+        "name": "dredgeresources:geiger/counter_7"
+      },
+      {
+        "name": "dredgeresources:geiger/counter_8"
+      }
+    ]
   }
 }

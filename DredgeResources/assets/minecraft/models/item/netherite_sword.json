@@ -4,36 +4,65 @@
     "layer0": "minecraft:item/netherite_sword"
   },
   "overrides": [
-		
-		{
-            "predicate": {
-              "custom_model_data": 1450000
-            },
-            "model": "incendium:item/patron/daybreaker"
-        },
-		{
-            "predicate": {
-              "custom_model_data": 1450001
-            },
-            "model": "incendium:item/patron/witherblade"
-        },
-		{
-            "predicate": {
-              "custom_model_data": 1450003
-            },
-            "model": "incendium:item/chilling"
-        },
-        {
-            "predicate": {
-            	"custom_model_data": 1450004
-            },
-            "model": "incendium:item/sacrifice"
-        },
-        {
-            "predicate": {
-              "custom_model_data": 1450005
-            },
-            "model": "incendium:item/vampire"
-        }
-    ]
+    {
+      "predicate": {
+        "custom_model_data": 90000
+      },
+      "model": "stellarity:item/dragonblade"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 90001
+      },
+      "model": "stellarity:item/shulker_tools/sword"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 90002
+      },
+      "model": "stellarity:item/tamaris"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 90003
+      },
+      "model": "stellarity:item/stella"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 90004
+      },
+      "model": "stellarity:item/kaleidoscope"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1450000
+      },
+      "model": "incendium:item/patron/daybreaker"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1450001
+      },
+      "model": "incendium:item/patron/witherblade"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1450003
+      },
+      "model": "incendium:item/chilling"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1450004
+      },
+      "model": "incendium:item/sacrifice"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1450005
+      },
+      "model": "incendium:item/vampire"
+    }
+  ]
 }
