@@ -3,7 +3,7 @@
     "type": "origins:multiple",
     "hit-chance": {
         "type": "apugli:redirect_lightning",
-        "chance": 0.66
+        "chance": 0.0066
     },
     "battery-interact": {
         "type": "apugli:action_when_lightning_struck",
