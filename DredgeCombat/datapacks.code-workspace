@@ -4,10 +4,10 @@
 			"path": ".."
 		},
 		{
-			"path": "../../../../resourcepacks"
+			"path": "../../../../../../../../../../repos/MacroBackport"
 		},
 		{
-			"path": "../../../../../../../../../../repos/Backend.wiki"
+			"path": "../../../../../../../../../../repos/template-mod-template-1.20.2"
 		}
 	],
 	"settings": {
