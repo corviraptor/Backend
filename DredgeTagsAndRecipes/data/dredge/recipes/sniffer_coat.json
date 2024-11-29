@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S S",
+    "FNF",
+    "FFF"
+  ],
+  "key": {
+    "F":  {
+        "fabric:type": "fabric:nbt",
+        "base": {
+            "item": "minecraft:feather"
+        },
+        "nbt": "{snifferFur:1}"
+     },
+    "N": {
+      "item": "minecraft:gold_nugget"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "minecraft:leather_chestplate",
+    "data": {
+        "snifferCoat": 1
+    }
+  },
+  "show_notification": false
+}
+
