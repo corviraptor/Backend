@@ -1,0 +1,364 @@
+{
+  "fnaf2.ambient": {
+    "sounds": [
+      {
+        "name": "dredge:fnaf2/ambient",
+        "stream": true
+      }
+    ]
+  },
+
+  "fnaf2.bb_haha": {
+    "sounds": [
+      {
+        "name": "dredge:fnaf2/bb_haha"
+      }
+    ]
+  },
+  "fnaf2.bb_hello": {
+    "sounds": [
+      {
+        "name": "dredge:fnaf2/bb_hello"
+      }
+    ]
+  },
+  "fnaf2.bb_hi": {
+    "sounds": [
+      {
+        "name": "dredge:fnaf2/bb_hi"
+      }
+    ]
+  },
+  "fnaf2.bb": {
+    "sounds": [
+      {
+        "name": "dredge:fnaf2/bb_haha"
+      },
+      {
+        "name": "dredge:fnaf2/bb_hello"
+      },
+      {
+        "name": "dredge:fnaf2/bb_hi"
+      }
+    ]
+  },
+
+  "fnaf2.fan": {
+    "sounds": [
+      {
+        "name": "dredge:fnaf2/fan",
+        "stream": true
+      }
+    ]
+  },
+
+  "fnaf2.hallway_warning": {
+    "sounds": [
+      {
+        "name": "dredge:fnaf2/hallway_warning"
+      }
+    ]
+  },
+
+  "fnaf2.jumpscare": {
+    "sounds": [
+      {
+        "name": "dredge:fnaf2/jumpscare",
+        "stream": true
+      }
+    ]
+  },
+
+  "fnaf2.light_buzz": {
+    "sounds": [
+      {
+        "name": "dredge:fnaf2/light_buzz"
+      }
+    ]
+  },
+
+  "fnaf2.mangle": {
+    "sounds": [
+      {
+        "name": "dredge:fnaf2/mangle",
+        "stream": true
+      }
+    ]
+  },
+
+  "fnaf2.night1": {
+    "sounds": [
+      {
+        "name": "dredge:fnaf2/night1",
+        "stream": true
+      }
+    ]
+  },
+  "fnaf2.night2": {
+    "sounds": [
+      {
+        "name": "dredge:fnaf2/night2",
+        "stream": true
+      }
+    ]
+  },
+  "fnaf2.night3": {
+    "sounds": [
+      {
+        "name": "dredge:fnaf2/night3",
+        "stream": true
+      }
+    ]
+  },
+  "fnaf2.night4": {
+    "sounds": [
+      {
+        "name": "dredge:fnaf2/night4",
+        "stream": true
+      }
+    ]
+  },
+  "fnaf2.night5": {
+    "sounds": [
+      {
+        "name": "dredge:fnaf2/night5",
+        "stream": true
+      }
+    ]
+  },
+  "fnaf2.night6": {
+    "sounds": [
+      {
+        "name": "dredge:fnaf2/night6",
+        "stream": true
+      }
+    ]
+  },
+  "fnaf2.phone_guy": {
+    "sounds": [
+      {
+        "name": "dredge:fnaf2/night1",
+        "stream": true
+      },
+      {
+        "name": "dredge:fnaf2/night2",
+        "stream": true
+      },
+      {
+        "name": "dredge:fnaf2/night3",
+        "stream": true
+      },
+      {
+        "name": "dredge:fnaf2/night4",
+        "stream": true
+      },
+      {
+        "name": "dredge:fnaf2/night5",
+        "stream": true
+      },
+      {
+        "name": "dredge:fnaf2/night6",
+        "stream": true
+      }
+    ]
+  },
+
+  "fnaf2.puppet_box": {
+    "sounds": [
+      {
+        "name": "dredge:fnaf2/puppet_box"
+      }
+    ]
+  },
+
+  "fnaf2.six_am": {
+    "sounds": [
+      {
+        "name": "dredge:fnaf2/six_am"
+      }
+    ]
+  },
+
+  "fnaf2.windup": {
+    "sounds": [
+      {
+        "name": "dredge:fnaf2/windup"
+      }
+    ]
+  },
+
+  "clocktower.chimes1": {
+    "sounds": [
+        {
+            "name": "dredge:clocktower/chimes1",
+            "stream": true
+        }
+    ]
+  },
+  "clocktower.chimes2": {
+    "sounds": [
+        {
+            "name": "dredge:clocktower/chimes2",
+            "stream": true
+        }
+    ]
+  },
+  "clocktower.chimes3": {
+    "sounds": [
+        {
+            "name": "dredge:clocktower/chimes3",
+            "stream": true
+        }
+    ]
+  },
+  "clocktower.chimes4": {
+    "sounds": [
+        {
+            "name": "dredge:clocktower/chimes4",
+            "stream": true
+        }
+    ]
+  },
+  "clocktower.chimes5": {
+    "sounds": [
+        {
+            "name": "dredge:clocktower/chimes5",
+            "stream": true
+        }
+    ]
+  },
+  "clocktower.chimes6": {
+    "sounds": [
+        {
+            "name": "dredge:clocktower/chimes6",
+            "stream": true
+        }
+    ]
+  },
+  "clocktower.chimes7": {
+    "sounds": [
+        {
+            "name": "dredge:clocktower/chimes7",
+            "stream": true
+        }
+    ]
+  },
+  "clocktower.chimes8": {
+    "sounds": [
+        {
+            "name": "dredge:clocktower/chimes8",
+            "stream": true
+        }
+    ]
+  },
+  "clocktower.chimes9": {
+    "sounds": [
+        {
+            "name": "dredge:clocktower/chimes9",
+            "stream": true
+        }
+    ]
+  },
+  "clocktower.chimes10": {
+    "sounds": [
+        {
+            "name": "dredge:clocktower/chimes10",
+            "stream": true
+        }
+    ]
+  },
+  "clocktower.chimes11": {
+    "sounds": [
+        {
+            "name": "dredge:clocktower/chimes11",
+            "stream": true
+        }
+    ]
+  },
+  "clocktower.chimes12": {
+    "sounds": [
+        {
+            "name": "dredge:clocktower/chimes12",
+            "stream": true
+        }
+    ]
+  },
+
+  "misc.amogi": {
+    "sounds": [
+        {
+            "name": "dredge:misc/amogi"
+        }
+    ]
+  },
+  "misc.discord_ping": {
+    "sounds": [
+        {
+            "name": "dredge:misc/discord_ping"
+        }
+    ]
+  },
+  "misc.groan_tube_down": {
+    "sounds": [
+        {
+            "name": "dredge:misc/groan_tube_down"
+        }
+    ]
+  },
+  "misc.groan_tube_up": {
+    "sounds": [
+        {
+            "name": "dredge:misc/groan_tube_up"
+        }
+    ]
+  },
+  "misc.sitcom_laugh": {
+    "sounds": [
+        {
+            "name": "dredge:misc/sitcom_laugh"
+        }
+    ]
+  },
+  "misc.sitcom_ooh_neg": {
+    "sounds": [
+        {
+            "name": "dredge:misc/sitcom_ooh_neg"
+        }
+    ]
+  },
+  "misc.sitcom_ooh_pos": {
+    "sounds": [
+        {
+            "name": "dredge:misc/sitcom_ooh_pos"
+        }
+    ]
+  },
+  "geiger": {
+    "sounds": [
+      {
+        "name": "dredge:geiger/counter_1"
+      },
+      {
+        "name": "dredge:geiger/counter_2"
+      },
+      {
+        "name": "dredge:geiger/counter_3"
+      },
+      {
+        "name": "dredge:geiger/counter_4"
+      },
+      {
+        "name": "dredge:geiger/counter_5"
+      },
+      {
+        "name": "dredge:geiger/counter_6"
+      },
+      {
+        "name": "dredge:geiger/counter_7"
+      },
+      {
+        "name": "dredge:geiger/counter_8"
+      }
+    ]
+  }
+}

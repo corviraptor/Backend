@@ -1,0 +1,6 @@
+{
+    "parent": "item/crossbow",
+    "textures": {
+        "layer0": "dredge:item/hazelnut_crossbow_pulling_1"
+    }
+}
