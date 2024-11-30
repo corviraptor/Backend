@@ -1,0 +1,10 @@
+{
+    "name": "Shark Gills",
+    "description": "You can breath underwater.",
+    "type": "origins:action_over_time",
+    "interval": 5,
+    "entity_action": {
+        "type": "origins:gain_air",
+        "value": 20
+    }
+}
