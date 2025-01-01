@@ -25,6 +25,31 @@
             ]
         }
     },
+    "no-move": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_total",
+            "value": 0
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "dredgeorigins:hazel/dynamo_power",
+                    "compare_to": 0,
+                    "comparison": "=="
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "dredgeorigins:hazel/battery_power",
+                    "compare_to": 0,
+                    "comparison": "=="
+                }
+            ]
+        }
+    },
     "no-regen": {
         "condition": {
             "type": "origins:and",

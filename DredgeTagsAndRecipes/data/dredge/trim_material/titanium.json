@@ -1,0 +1,9 @@
+{
+    "asset_name": "titanium",
+    "description": {
+        "color": "#bac6f1",
+        "translate": "trim_material.dredge.titanium"
+    },
+    "ingredient": "enva:titanium_ingot",
+    "item_model_index": 0.85
+}

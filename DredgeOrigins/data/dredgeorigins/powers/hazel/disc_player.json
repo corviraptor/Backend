@@ -377,5 +377,5 @@
             }
         ]
     },
-    "cooldown": 1
+    "cooldown": 3600
 }

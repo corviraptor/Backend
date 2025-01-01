@@ -1,0 +1,10 @@
+{
+    "parent": "medievalweapons:item/netherite_javelin",
+    "textures": {
+        "layer0": "dredge:item/cherry_javelin.png"
+    },
+    "overrides": [
+        { "predicate": { "medievalweapons:gui": 1.0 }, "model": "dredge:item/cherry_javelin_gui" },
+        { "predicate": { "throwing": 1.0 }, "model": "dredge:item/cherry_javelin_throwing" }
+    ]
+}

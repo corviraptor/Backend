@@ -1,0 +1,14 @@
+{
+    "name": "Raccoon",
+    "description": "Everyone's cutest trash panda",
+    "powers": [
+        "dredgeorigins:raccoon/not_picky",
+        "dredgeorigins:raccoon/fast_metabolism",
+        "dredgeorigins:raccoon/grubby_hands",
+        "dredgeorigins:feline/nocturnal",
+        "moborigins:item_collector",
+        "dredgeorigins:raccoon/fragile"
+    ],
+    "icon": "minecraft:pink_wool",
+    "impact": 1
+}

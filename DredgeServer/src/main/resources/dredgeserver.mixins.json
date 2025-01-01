@@ -3,7 +3,11 @@
   "package": "com.kittykittykitkat.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "HungerManagerAccessor"
+    "HungerManagerAccessor",
+    "NoIceMelt",
+    "NoSnowMelt",
+    "PlaceIceSnow",
+    "SnowThroughLeaves"
   ],
   "injectors": {
     "defaultRequire": 1

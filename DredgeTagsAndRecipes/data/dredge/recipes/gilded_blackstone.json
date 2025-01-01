@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "blocks",
+    "pattern": [
+      "BNB",
+      "NBN",
+      "BNB"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:blackstone"
+      },
+      "N": {
+        "item": "minecraft:gold_nugget"
+      }
+    },
+    "result": {
+      "item": "minecraft:gilded_blackstone",
+      "count": 5
+    },
+    "show_notification": true
+  }

@@ -1,0 +1,26 @@
+{
+    "powers": [
+      "origins:nine_lives",
+      "dredgeorigins:feline/weak_arms",
+      "dredgeorigins:feline/milk",
+      "dredgeorigins:feline/fish",
+      "dredgeorigins:feline/jump",
+      "dredgeorigins:feline/pounce",
+      "origins:fall_immunity",
+      "origins:velvet_paws",
+      "dredgeorigins:feline/nocturnal",
+      "origins:scare_creepers",
+      "dredgeorigins:feline/feline_sounds",
+      "origins:like_water",
+      "dev:breathe_underwater",
+      "dredgeorigins:squid/water_vision"
+    ],
+    "icon": {
+      "item": "minecraft:water_bucket"
+    },
+    "order": 0,
+    "impact": 2,
+    "name": "Azure Caraway",
+    "description": "God of Whimsy and Pranks",
+    "unchoosable": true
+}

@@ -1,0 +1,9 @@
+{
+    "parent": "medievalweapons:item/netherite_rapier",
+    "textures": {
+        "layer0": "dredge:item/memory_amnesiac.png"
+    },
+    "overrides": [
+        { "predicate": { "medievalweapons:gui": 1.0 }, "model": "dredge:item/memory_amnesiac_gui" }
+    ]
+}

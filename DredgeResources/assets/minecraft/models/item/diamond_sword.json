@@ -4,11 +4,17 @@
     "layer0": "minecraft:item/diamond_sword"
   },
   "overrides": [
-        {
-            "predicate": {
-              "custom_model_data": 1450003
-            },
-            "model": "incendium:item/chilling"
-        }
-    ]
+    {
+      "predicate": {
+        "custom_model_data": 9e4
+      },
+      "model": "stellarity:item/spirit_dagger"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1450003
+      },
+      "model": "incendium:item/chilling"
+    }
+  ]
 }
